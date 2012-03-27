@@ -1,0 +1,246 @@
+{
+	"owners": {
+		"rwatkins": {
+			"name": "rwatkins",
+			"website": "http://www.ryanwatkins.net",
+			"twitter": ""
+		},
+		"omastudios": { 
+			"name": "omastudios",
+            "website": "http://oma-studios.co.uk/",
+            "twitter": "omastudios"
+		},
+		"MaKleSoft": { 
+			"name": "MaKleSoft",
+			"website": "http://maklesoft.com/",
+			"twitter": "MaKleSoft"
+		},
+		"villo": {
+			"name": "villo",
+			"website": "",
+			"twitter": ""
+		},
+		"germboy": {
+			"name": "germboy",
+			"website": "http://www.variablelimit.com/",
+			"twitter": "germboy"
+		},
+		"MacFJA": {
+			"name": "MacFJA",
+			"website": "",
+			"twitter": ""
+		},
+		"morethanreal": {
+			"name": "morethanreal",
+			"website": "",
+            "twitter": "morethanreal"
+		},
+		"isandunk": {
+			"name": "isandunk",
+            "website": "http://www.duncanstevenson.com/",
+			"twitter": ""
+		}
+	},
+    "widgets": [
+        {
+            "name": "rwatkins.MenuPane",
+            "displayName": "MenuPane Control",
+            "owner": "rwatkins",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/ryanwatkins/menupane",
+            "demoUrl": "http://www.ryanwatkins.net/software/menupane",
+			"submissionDate": "Mar 17, 2012",
+			"testedPlatforms": "Unknown",
+            "license": "Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.",
+            "version": "1",
+            "blurb": "An Enyo 2.0 control for managing Pane/View swapping via animated menus on the left and right of the Pane - much like the menu UI component used in the Path and Facebook apps on iOS and Android.  It takes a set of views to swap between, much like a simplified 1.0 Pane/View control. But also takes a set of controls to compose the left or right menus and animates the display of the menus. It does nice little things, like if you click a menu item it \"pushes out\" the view before doing the swap, or just closed the menu if the selection hasn't changed."
+        },
+        {
+            "name": "omastudios.Storage",
+            "displayName": "LocalStorage Wrapper",
+            "owner": "omastudios",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "http://forums.enyojs.com/discussion/comment/468#Comment_468",
+			"submissionDate": "Feb 12, 2012",
+			"testedPlatforms": "Unknown",
+            "license": "Unknown",
+            "version": "1",
+            "blurb": "Simple wrapper around browser localStorage."
+        },
+        {
+            "name": "MaKleSoft.AnimatedToggleButton",
+            "displayName": "Animated Togglebuttons",
+            "owner": "MaKleSoft",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/MaKleSoft/enyo-plugins/blob/master/v2/AnimatedToggleButton/AnimatedToggleButton.js",
+			"demoUrl": "http://maklesoft.com/Enyo-Plugins/v2/AnimatedToggleButton/AnimatedToggleButton.html",
+			"submissionDate": "Mar 3, 2012",
+			"testedPlatforms": "Unknown",
+            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+            "version": "1",
+            "blurb": "An extension fo the ToggleButton kind that animates between the on and off position and allows actual dragging of the knob."
+        },
+        {
+            "name": "villo.Book",
+            "displayName": "Books for Enyo 2",
+            "owner": "villo",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/villo/User-Portal/tree/master/source/book",
+			"submissionDate": "Mar 4, 2012",
+			"testedPlatforms": "Unknown",
+            "license": "Unknown",
+            "version": "1",
+            "blurb": "Enyo 2.0 Book. Contains \"Pages\", which can be viewed on demand."
+        },
+        {
+            "name": "germboy.Textarea",
+            "displayName": "Enyo Textarea control",
+            "owner": "germboy",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/germboy/Enyo2CustomControls",
+			"demoUrl": "http://www.variablelimit.com/enyo/samples/textarea-onyx/",
+			"submissionDate": "Mar 2, 2012",
+			"testedPlatforms": "Unknown",
+            "license": "Unknown",
+            "version": "1",
+            "blurb": "A simple textarea control, including a version with Onyx styling."
+        },
+        {
+            "name": "germboy.Progress",
+            "displayName": "Enyo Progress controls",
+            "owner": "germboy",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/germboy/Enyo2CustomControls",
+			"demoUrl": "http://www.variablelimit.com/enyo/samples/progressplayground-onyx/",
+			"submissionDate": "Mar 9, 2012",
+			"testedPlatforms": "Unknown",
+            "license": "Unknown",
+            "version": "1",
+            "blurb": "A set of progress controls (Progress, ProgressBar, and ProgressButton) with Onyx styling."
+        },
+        {
+            "name": "MacFJA.TextArea",
+            "displayName": "Onyx themed Textarea",
+            "owner": "MacFJA",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
+			"submissionDate": "Mar 7, 2012",
+			"testedPlatforms": "Unknown",
+            "license": "Unknown",
+            "version": "1",
+            "blurb": "A TextArea control (based on onyx.Input) that automatically resizes."
+        },
+        {
+            "name": "morethanreal.GoogleMap",
+            "displayName": "Enyo Google Maps control",
+            "owner": "morethanreal",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/morethanreal/enyo-googlemap",
+			"submissionDate": "Feb 2, 2012",
+			"testedPlatforms": "Chrome, Safari",
+            "license": "Unknown",
+            "version": "1",
+            "blurb": "A Google Map control for Enyo 2."
+        },
+        {
+            "name": "isandunk.onyx-graphical-assets",
+            "displayName": "Onyx Graphical Assets",
+            "owner": "isandunk",
+            "dependencies": [],
+            "url": "https://github.com/isandunk/Onyx-Graphical-Assets",
+			"demoUrl": "https://github.com/isandunk/Onyx-Graphical-Assets/blob/master/Onyx-Icons.png",
+			"submissionDate": "Mar 9, 2012",
+			"testedPlatforms": "Unknown",
+            "license": "Unknown",
+            "version": "1",
+            "blurb": "This is a selection of icons for Onyx, the widget library for EnyoJS. It is an attempt provide the community with a method of consistenty reproducing the interface icons that appear in many of the original Enyo 1.0 applications."
+        },
+        {
+            "name": "MaKleSoft.SelectDecorator",
+            "displayName": "SelectDecorator kind",
+            "owner": "MaKleSoft",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/MaKleSoft/enyo-plugins/tree/master/v2/SelectDecorator",
+			"demoUrl": "http://twitpic.com/91khzk",
+			"submissionDate": "Mar 26, 2012",
+			"testedPlatforms": "Unknown",
+            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+            "version": "1",
+            "blurb": "For one of my current projects I needed a way to style select elements so I came up with a SelectDecorator kind that can be wrapped around Select kinds to provide onyx-like styling. It works similar to the InputDecorator kind.  Note that the SelectDecorator does not style the actual selection popup."
+        },
+        {
+            "name": "MacFJA.LevelProgress",
+            "displayName": "LevelProgress & RatingLevel control",
+            "owner": "MacFJA",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
+			"submissionDate": "Mar 26, 2012",
+			"testedPlatforms": "Unknown",
+            "license": "Unknown",
+            "version": "1",
+            "blurb": "I've created 2 control (the second based on the first) to display level progress bar and a rating bar. Features live value change by clicking or \"sliding\" and critical value and warning value for \"LevelProgress\"."
+        }
+    ]
+}

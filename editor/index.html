@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Gallery Manifest Editor</title>
+		<script src="../../../../enyo/enyo.js"></script>
+		<script src="../../../../lib/layout/fittable/package.js"></script>
+		<script src="../../../../lib/onyx/package.js"></script>
+		<script src="Dependency.js"></script>
+		<script src="GalleryItem.js"></script>
+		<script src="Editor.js"></script>
+		<style>
+			.onyx-input-decorator > input, .onyx-input-decorator > textarea {
+				width: 100%;
+			}
+			.onyx-textarea {
+				min-height: 80px;
+			}
+			.middle {
+				padding: 10px;
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+			.middle > * {
+				width: 100%;
+				margin: 10px auto;
+				display: block;
+			}
+			.onyx-button {
+				min-width: 60px;
+			}
+			.inner-group {
+				padding: 10px 0;
+			}
+			.dep-name, .dep-ver{
+				margin: 0 20px;
+			}
+		</style>
+	</head>
+	<body class="onyx enyo-unselectable">
+		<script>
+			new Editor().write();
+		</script>
+	</body>
+</html>

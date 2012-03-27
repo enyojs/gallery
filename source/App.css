@@ -1,0 +1,184 @@
+.toolbar {
+	background-color: #090a0b;
+	padding: 5px;
+}
+
+.toolbar-inner {
+	display: block;
+	max-width: 1000px;
+	margin: 0 auto;
+	
+	font-size: 18px;
+	font-style: italic;
+	color: #939393;
+}
+
+.toolbar-logo {
+	margin: -6px 0 -8px;
+}
+
+.panels {
+	background-color: white;
+}
+
+.cards {
+	text-align: center;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.list {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.cards {
+		display: none;
+	}
+
+	.list {
+		display: block;
+	}
+}
+
+/* ListItem */
+
+.listitem {
+	height: 50px;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.listitem:active {
+	background-color: #cde7fe;
+	box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Info */
+
+.info-name {
+	font-weight: bold;
+	font-size: 16px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.info-owner {
+	display: inline-block;
+	font-size: 14px;
+}
+
+.info-links {
+	display: inline-block;
+}
+
+.info-links > * {
+	padding-left: 10px;
+}
+
+.info-icon-holder {
+	text-align: center;
+}
+
+.info-icon {
+	max-width: 100px;
+	max-height: 100px;
+	padding-top: 20px;
+}
+
+.info-blurb {
+	font-size: 14px;
+	font-style: italic;
+}
+
+.info-client {
+	padding-top: 40px;
+}
+
+/* Card */
+
+.card {
+	display: inline-block;
+	position: relative;
+	width: 220px;
+	height: 220px;
+	margin: 16px;
+	
+	border-radius: 15px;
+	box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+	
+	text-align: left;
+	font-size: 16px;
+}
+
+.card-empty {
+	box-shadow: none;
+}
+
+.card-info {
+	padding: 15px 10px;
+	overflow: hidden;
+}
+
+.card-info .info-blurb {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/* Details */
+
+.details-main {
+	max-width: 480px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.details-topbar .onyx-button {
+	font-size: 14px;
+	margin: 4px 6px;
+}
+
+.details-back-button {
+	color: #F2F2F2;
+	background-color: #555656;
+}
+
+.details-info {
+	padding-top: 30px;
+	margin: 16px;
+	background: white;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.details-info .info-name {
+	font-size: 24px;
+	padding-bottom: 4px;
+}
+
+.details-info .info-icon {
+	max-height: 200px;
+	max-width: 200px;
+}
+
+.details-info .info-blurb {
+	padding: 30px 0 20px;
+}
+
+/* Stars */
+
+.stars {
+	position: relative;
+	width: 100px;
+	height: 20px;
+	background-image: url(../images/star-empty.png);
+}
+
+.stars-fill {
+	position: relative;
+	height: 20px;
+	background-image: url(../images/star-full.png);
+}

@@ -91,10 +91,10 @@
                     "version": ""
                 }
             ],
-            "url": "https://github.com/MaKleSoft/enyo-plugins/blob/master/v2/AnimatedToggleButton/AnimatedToggleButton.js",
-			"demoUrl": "http://maklesoft.com/Enyo-Plugins/v2/AnimatedToggleButton/AnimatedToggleButton.html",
+            "url": "https://github.com/MaKleSoft/enyo-plugins/blob/master/v2/AnimatedToggleButton",
+			"demoUrl": "http://maklesoft.com/enyo-plugins/v2/AnimatedToggleButton/example.html",
 			"submissionDate": "Mar 3, 2012",
-			"testedPlatforms": "Unknown",
+			"testedPlatforms": "Google Chrome, Safari, IE 9",
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
             "version": "1",
             "blurb": "An extension fo the ToggleButton kind that animates between the on and off position and allows actual dragging of the knob."
@@ -211,12 +211,16 @@
                 {
                     "name": "Enyo 2",
                     "version": ""
+                },
+                {
+                    "name": "onyx",
+                    "version": ""
                 }
             ],
             "url": "https://github.com/MaKleSoft/enyo-plugins/tree/master/v2/SelectDecorator",
-			"demoUrl": "http://twitpic.com/91khzk",
+			"demoUrl": "http://maklesoft.com/enyo-plugins/v2/SelectDecorator/example.html",
 			"submissionDate": "Mar 26, 2012",
-			"testedPlatforms": "Unknown",
+			"testedPlatforms": "Google Chrome, Safari, IE 9",
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
             "version": "1",
             "blurb": "For one of my current projects I needed a way to style select elements so I came up with a SelectDecorator kind that can be wrapped around Select kinds to provide onyx-like styling. It works similar to the InputDecorator kind.  Note that the SelectDecorator does not style the actual selection popup."

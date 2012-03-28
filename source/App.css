@@ -115,6 +115,7 @@
 
 .card-empty {
 	box-shadow: none;
+	height: 0;
 }
 
 .card-info {

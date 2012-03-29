@@ -168,7 +168,7 @@
 				}
 			],
 			"url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
-			"demoUrl": "http://macfja.github.com/enyo2-lib/onyx/example/textarea.html",
+			"demoUrl": "http://macfja.github.com/enyo2-lib/onyx/textarea.html",
 			"submissionDate": "Mar 7, 2012",
 			"testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 17.0.963.56 (Mac), Safari (iOS 5.1)",
 			"license": "Apache 2.0",
@@ -242,12 +242,34 @@
 				}
 			],
 			"url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
-			"demoUrl": "http://macfja.github.com/enyo2-lib/onyx/example/level.html",
+			"demoUrl": "http://macfja.github.com/enyo2-lib/onyx/level.html",
 			"submissionDate": "Mar 26, 2012",
 			"testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 17.0.963.56 (Mac), Safari (iOS 5.1)",
 			"license": "Apache 2.0",
 			"version": "1.0",
 			"blurb": "2 controls (the second based on the first) to display level progress bar and a rating bar. Features live value change by clicking or \"sliding\", and critical value and warning value for \"LevelProgress\"."
+		},
+		{
+			"name": "MacFJA.UpDown",
+			"displayName": "Up and down control",
+			"owner": "MacFJA",
+			"dependencies": [
+				{
+					"name": "Enyo 2",
+					"version": ""
+				},
+				{
+					"name": "onyx",
+					"version": ""
+				}
+			],
+			"url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
+			"demoUrl": "http://macfja.github.com/enyo2-lib/onyx/updown.html",
+			"submissionDate": "Mar 30, 2012",
+			"testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 17.0.963.56 (Mac), Safari (iOS 5.1)",
+			"license": "Apache 2.0",
+			"version": "1.0",
+			"blurb": "A Up and Down control, maintaining the cursor increase progressively the event speed."
 		}
     ]
 }

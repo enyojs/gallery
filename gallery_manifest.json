@@ -16,9 +16,9 @@
 			"twitter": "MaKleSoft"
 		},
 		"villo": {
-			"name": "villo",
-			"website": "",
-			"twitter": ""
+			"name": "Villo Labs",
+			"website": "http://villo.me/labs/",
+			"twitter": "villo"
 		},
 		"germboy": {
 			"name": "germboy",
@@ -109,12 +109,13 @@
                     "version": ""
                 }
             ],
-            "url": "https://github.com/villo/User-Portal/tree/master/source/book",
+            "url": "https://github.com/villo/Labs/tree/master/Books",
+            "demoUrl": "http://villo.me/labs/projects/books/example/",
 			"submissionDate": "Mar 4, 2012",
-			"testedPlatforms": "Unknown",
-            "license": "Unknown",
+			"testedPlatforms": "Chrome, Safari, Firefox, IE",
+            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
             "version": "1",
-            "blurb": "Enyo 2.0 Book. Contains \"Pages\", which can be viewed on demand."
+            "blurb": "Books aims to replicate the Pane kind found in Enyo 1. Books create a collection of \"Pages\", with given page numbers and names that you can move between."
         },
         {
             "name": "germboy.Textarea",

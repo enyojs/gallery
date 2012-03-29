@@ -9,7 +9,7 @@ enyo.kind({
 				{content: "Community Gallery"},
 				{classes: "toolbar-search", components: [
 					{kind: "onyx.InputDecorator", style: "padding: 5px; padding-top: 0px;", components: [
-						{kind: "onyx.Input", placeholder: "Search...", onkeyup: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
+						{kind: "onyx.Input", placeholder: "Search...", onInputChange: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
 						{kind: "Image", src: "images/search-input-search.png"}
 					]}
 				]}
@@ -33,34 +33,30 @@ enyo.kind({
 		this.fetchGalleryData();
 	},
 	handleBlurFocus: function(inSender, inEvent){
-		if(inEvent.type === "focus"){
-			inSender.removeClass("toolbar-blurred");
-		}else if(inEvent.type === "blur"){
-			inSender.addClass("toolbar-blurred");
-		}
+		inSender.addRemoveClass("toolbar-blurred", inEvent.type === "focus");
 	},
 	handleSearch: function(inSender){
-		var searchValue = inSender.getValue().toLowerCase();
-		var searchResults = {};
-		
-		if(searchValue === ""){
-			this.renderItems();
-		}else{
-			for(var x in this.widgets){
-				//Check name:
-				if(this.widgets[x].name.toLowerCase().search(searchValue) !== -1){
-					searchResults[x] = this.widgets[x];
+		if (this.widgets) {
+			var searchValue = inSender.getValue().toLowerCase();
+			var searchResults = {};
+			if (searchValue === "") {
+				this.renderItems();
+			} else {
+				for (var x in this.widgets) {
+					var w = this.widgets[x];
+					//Check name:
+					if (w.name.toLowerCase().indexOf(searchValue) > -1) {
+						searchResults[x] = this.widgets[x];
+					//Check owner:
+					} else if (w.owner.name.toLowerCase().indexOf(searchValue) > -1) {
+						searchResults[x] = this.widgets[x];
+					//Check Blurb:
+					} else if (w.blurb.toLowerCase().indexOf(searchValue) > -1) {
+						searchResults[x] = this.widgets[x];
+					}
 				}
-				//Check owner:
-				else if(this.widgets[x].owner.name.toLowerCase().search(searchValue) !== -1){
-					searchResults[x] = this.widgets[x];
-				}
-				//Check Blurb:
-				else if(this.widgets[x].blurb.toLowerCase().search(searchValue) !== -1){
-					searchResults[x] = this.widgets[x];
-				}
+				this.renderItems(searchResults);
 			}
-			this.renderItems(searchResults);
 		}
 	},
 	fetchGalleryData: function() {

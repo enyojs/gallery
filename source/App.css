@@ -17,6 +17,15 @@
 	margin: -6px 0 -8px;
 }
 
+.toolbar-search {
+	margin-top: 1px;
+	float: right;
+}
+
+.toolbar-blurred {
+	color: #aaaaaa;
+}
+
 .panels {
 	background-color: white;
 }

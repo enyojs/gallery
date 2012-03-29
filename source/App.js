@@ -6,8 +6,14 @@ enyo.kind({
 		{classes: "toolbar", style: "height: 45px;", components: [
 			{classes: "onyx-toolbar-inline toolbar-inner", components: [
 				{kind: "Image", src: "images/enyo-logo.png", classes: "toolbar-logo"},
-				{content: "Community Gallery"}
-			]}
+				{content: "Community Gallery"},
+				{classes: "toolbar-search", components: [
+					{kind: "onyx.InputDecorator", style: "padding: 5px; padding-top: 0px;", components: [
+						{kind: "onyx.Input", placeholder: "Search...", onkeyup: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
+						{kind: "Image", src: "images/search-input-search.png"}
+					]}
+				]}
+			]},
 		]},
 		{name: "panels", classes: "panels enyo-fit", style: "top: 45px;", components: [
 			{name: "main", kind: "Scroller", classes: "enyo-fit", ondragfinish: "preventTap", components: [
@@ -26,6 +32,37 @@ enyo.kind({
 		this.inherited(arguments);
 		this.fetchGalleryData();
 	},
+	handleBlurFocus: function(inSender, inEvent){
+		if(inEvent.type === "focus"){
+			inSender.removeClass("toolbar-blurred");
+		}else if(inEvent.type === "blur"){
+			inSender.addClass("toolbar-blurred");
+		}
+	},
+	handleSearch: function(inSender){
+		var searchValue = inSender.getValue().toLowerCase();
+		var searchResults = {};
+		
+		if(searchValue === ""){
+			this.renderItems();
+		}else{
+			for(var x in this.widgets){
+				//Check name:
+				if(this.widgets[x].name.toLowerCase().search(searchValue) !== -1){
+					searchResults[x] = this.widgets[x];
+				}
+				//Check owner:
+				else if(this.widgets[x].owner.name.toLowerCase().search(searchValue) !== -1){
+					searchResults[x] = this.widgets[x];
+				}
+				//Check Blurb:
+				else if(this.widgets[x].blurb.toLowerCase().search(searchValue) !== -1){
+					searchResults[x] = this.widgets[x];
+				}
+			}
+			this.renderItems(searchResults);
+		}
+	},
 	fetchGalleryData: function() {
 		new enyo.Ajax({url: "gallery_manifest.json"})
 			.response(this, function(inSender, inResponse) {
@@ -41,11 +78,12 @@ enyo.kind({
 			})
 			.go();
 	},
-	renderItems: function() {
+	renderItems: function(customItems) {
 		this.$.cards.destroyClientControls();
 		this.$.list.destroyClientControls();
-		for (var n in this.widgets) {
-			var w = this.widgets[n];
+		var items = customItems || this.widgets;
+		for (var n in items) {
+			var w = items[n];
 			var more = {info: w, ontap: "itemTap"};
 			this.createComponent({kind: "Card", container: this.$.cards}, more);
 			this.createComponent({kind: "ListItem", container: this.$.list}, more);

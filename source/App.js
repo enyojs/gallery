@@ -5,7 +5,9 @@ enyo.kind({
 	components: [
 		{classes: "toolbar", style: "height: 45px;", components: [
 			{classes: "onyx-toolbar-inline toolbar-inner", components: [
-				{kind: "Image", src: "images/enyo-logo.png", classes: "toolbar-logo"},
+				{tag: "a", attributes: { href: "http://enyojs.com" }, components: [
+					{kind: "Image", src: "images/enyo-logo.png", classes: "toolbar-logo"}
+				]},
 				{content: "Community Gallery"},
 				{classes: "toolbar-search", components: [
 					{kind: "onyx.InputDecorator", style: "padding: 5px; padding-top: 0px;", components: [

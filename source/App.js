@@ -5,12 +5,14 @@ enyo.kind({
 	components: [
 		{classes: "toolbar", style: "height: 45px;", components: [
 			{classes: "onyx-toolbar-inline toolbar-inner", components: [
-				{kind: "Image", src: "images/enyo-logo.png", classes: "toolbar-logo"},
+				{tag: "a", attributes: { href: "http://enyojs.com" }, components: [
+					{kind: "Image", src: "images/enyo-logo.png", classes: "toolbar-logo"}
+				]},
 				{content: "Community Gallery"},
 				{classes: "toolbar-search", components: [
 					{kind: "onyx.InputDecorator", style: "padding: 5px; padding-top: 0px;", components: [
-						{kind: "onyx.Input", placeholder: "Search...", onkeyup: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
-						{kind: "Image", src: "images/search-input-search.png"}
+						{kind: "onyx.Input", name: "searchInput", placeholder: "Search...", onInputChange: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
+						{kind: "Image", name: "clearInput", src: "images/search-input-search.png", ontap: "clearInput"}
 					]}
 				]}
 			]},
@@ -33,34 +35,32 @@ enyo.kind({
 		this.fetchGalleryData();
 	},
 	handleBlurFocus: function(inSender, inEvent){
-		if(inEvent.type === "focus"){
-			inSender.removeClass("toolbar-blurred");
-		}else if(inEvent.type === "blur"){
-			inSender.addClass("toolbar-blurred");
-		}
+		inSender.addRemoveClass("toolbar-blurred", inEvent.type === "blur");
+	},
+	clearInput: function(){
+		this.$.searchInput.setValue("");
 	},
 	handleSearch: function(inSender){
-		var searchValue = inSender.getValue().toLowerCase();
-		var searchResults = {};
-		
-		if(searchValue === ""){
-			this.renderItems();
-		}else{
-			for(var x in this.widgets){
-				//Check name:
-				if(this.widgets[x].name.toLowerCase().search(searchValue) !== -1){
-					searchResults[x] = this.widgets[x];
+		if (this.widgets) {
+			var searchValue = inSender.getValue().toLowerCase();
+			var searchResults = {};
+			if (searchValue === "") {
+				this.renderItems();
+				this.$.clearInput.setSrc("images/search-input-search.png");
+			} else {
+				for (var x in this.widgets) {
+					var w = this.widgets[x];
+					if (w.name.toLowerCase().indexOf(searchValue) > -1) {
+						searchResults[x] = this.widgets[x];
+					} else if (w.owner.name.toLowerCase().indexOf(searchValue) > -1) {
+						searchResults[x] = this.widgets[x];
+					} else if (w.blurb.toLowerCase().indexOf(searchValue) > -1) {
+						searchResults[x] = this.widgets[x];
+					}
 				}
-				//Check owner:
-				else if(this.widgets[x].owner.name.toLowerCase().search(searchValue) !== -1){
-					searchResults[x] = this.widgets[x];
-				}
-				//Check Blurb:
-				else if(this.widgets[x].blurb.toLowerCase().search(searchValue) !== -1){
-					searchResults[x] = this.widgets[x];
-				}
+				this.renderItems(searchResults);
+				this.$.clearInput.setSrc("images/search-input-cancel.png");
 			}
-			this.renderItems(searchResults);
 		}
 	},
 	fetchGalleryData: function() {

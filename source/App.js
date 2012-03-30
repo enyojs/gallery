@@ -15,7 +15,7 @@ enyo.kind({
 						{kind: "Image", src: "images/search-input-search.png"}
 					]}
 				]}
-			]},
+			]}
 		]},
 		{name: "panels", classes: "panels enyo-fit", style: "top: 45px;", components: [
 			{name: "main", kind: "Scroller", classes: "enyo-fit", ondragfinish: "preventTap", components: [
@@ -119,7 +119,7 @@ enyo.kind({
 		inEvent.preventTap();
 	},
 	getHashComponentName: function() {
-		return window.location.hash.slice(1);;
+		return window.location.hash.slice(1);
 	},
 	setHashComponentName: function(inName) {
 		window.location.hash = inName;
@@ -139,7 +139,7 @@ enyo.kind({
 	published: {
 		info: "",
 		showLinks: false,
-		showBlurb: false,
+		showBlurb: false
 	},
 	components: [
 		{name: "name", classes: "info-name"},

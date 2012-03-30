@@ -9,10 +9,10 @@ enyo.kind({
 					{kind: "Image", src: "images/enyo-logo.png", classes: "toolbar-logo"}
 				]},
 				{content: "Community Gallery"},
-				{classes: "toolbar-search", components: [
-					{kind: "onyx.InputDecorator", style: "padding: 5px; padding-top: 0px;", components: [
-						{kind: "onyx.Input", placeholder: "Search...", onInputChange: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
-						{kind: "Image", src: "images/search-input-search.png"}
+				{classes: "toolbar-search", name: "searchBox", components: [
+					{kind: "onyx.InputDecorator", style: "padding: 5px; padding-top: 0px; background-color: white", components: [
+						{kind: "onyx.Input", name: "searchInput", placeholder: "Search...", onInputChange: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
+						{kind: "Image", name: "clearInput", src: "images/search-input-search.png", ontap: "clearInput"}
 					]}
 				]}
 			]}
@@ -37,6 +37,10 @@ enyo.kind({
 	handleBlurFocus: function(inSender, inEvent){
 		inSender.addRemoveClass("toolbar-blurred", inEvent.type === "focus");
 	},
+	clearInput: function() {
+		this.$.searchInput.setValue("");
+		this.$.clearInput.setSrc("images/search-input-search.png");
+	},
 	handleSearch: function(inSender){
 		if (this.widgets) {
 			var searchValue = inSender.getValue().toLowerCase();
@@ -58,6 +62,7 @@ enyo.kind({
 					}
 				}
 				this.renderItems(searchResults);
+				this.$.clearInput.setSrc("images/search-input-cancel.png");
 			}
 		}
 	},
@@ -103,6 +108,7 @@ enyo.kind({
 	},
 	showHome: function() {
 		this.$.main.show();
+		this.$.searchBox.show();
 		this.$.details.hide();
 	},
 	itemTap: function(inSender) {
@@ -113,6 +119,7 @@ enyo.kind({
 	showDetails: function(inInfo) {
 		this.$.details.setInfo(inInfo);
 		this.$.main.hide();
+		this.$.searchBox.hide();
 		this.$.details.show();
 	},
 	preventTap: function(inSender, inEvent) {

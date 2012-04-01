@@ -234,10 +234,6 @@
 				{
 					"name": "Enyo 2",
 					"version": ""
-				},
-				{
-					"name": "onyx",
-					"version": ""
 				}
 			],
 			"url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
@@ -256,10 +252,6 @@
 				{
 					"name": "Enyo 2",
 					"version": ""
-				},
-				{
-					"name": "onyx",
-					"version": ""
 				}
 			],
 			"url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
@@ -269,6 +261,24 @@
 			"license": "Apache 2.0",
 			"version": "1.0",
 			"blurb": "A Up and Down control, maintaining the cursor increase progressively the event speed."
+		},
+		{
+			"name": "MacFJA.NavigationBar",
+			"displayName": "Navigation/Path/History Bar",
+			"owner": "MacFJA",
+			"dependencies": [
+				{
+					"name": "Enyo 2",
+					"version": ""
+				}
+			],
+			"url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
+			"demoUrl": "http://macfja.github.com/enyo2-lib/onyx/navigationbar.html",
+			"submissionDate": "Mar 30, 2012",
+			"testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 17.0.963.56 (Mac), FireFox 11.0 (Mac)",
+			"license": "Apache 2.0",
+			"version": "1.0",
+			"blurb": "A path bar, that can be used as an history navigation bar"
 		}
     ]
 }

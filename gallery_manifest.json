@@ -39,7 +39,12 @@
 			"name": "isandunk",
             "website": "http://www.duncanstevenson.com/",
 			"twitter": ""
-		}
+		},
+		"JayCanuck": {
+		        "name": "Jason Robitaille",
+		        "website": "http://canuckcoding.ca/",
+			"twitter": "JayCanuck"
+        	}
 	},
     "widgets": [
         {
@@ -284,6 +289,28 @@
 			"license": "Apache 2.0",
 			"version": "1.0",
 			"blurb": "A path bar, that can be used as an history navigation bar"
-		}
+		},
+		{
+		        "name": "JayCanuck.XmlpRequest",
+		        "displayName": "XmlpRequest",
+		        "owner": "JayCanuck",
+		        "dependencies": [
+		                {
+		                    "name": "Enyo 2",
+		                    "version": ""
+		                },
+		                {
+				    "name": "JsonpRequest",
+				    "version": ""
+		                }
+		        ],
+		        "url": "https://github.com/JayCanuck/Enyo-2-Components/tree/master/xmlprequest",
+		        "demoUrl": "http://jaycanuck.github.com/Enyo-2-Components/xmlprequest/demo.html",
+		        "submissionDate": "April 2, 2012",
+		        "testedPlatforms": "Firefox 11.0 (Windows), Google Chrome 18.0.1025.142 (Windows),  Internet Explorer 9.0.8112.16421 (Windows)",
+		        "license": "MIT License",
+		        "version": "1.0",
+		        "blurb": "Cross-domain fetching of xml data, via YQL, returned converted into json format."
+        	}
     ]
 }

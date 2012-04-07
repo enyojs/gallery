@@ -264,7 +264,7 @@
 		},
 		{
 			"name": "MacFJA.NavigationBar",
-			"displayName": "Navigation/Path/History Bar",
+			"displayName": "Navigation/Path Bar",
 			"owner": "MacFJA",
 			"dependencies": [
 				{
@@ -277,7 +277,7 @@
 			"submissionDate": "Mar 30, 2012",
 			"testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 17.0.963.56 (Mac), FireFox 11.0 (Mac)",
 			"license": "Apache 2.0",
-			"version": "1.0",
+			"version": "1.1",
 			"blurb": "A path bar, that can be used as an history navigation bar"
 		},
 		{
@@ -297,6 +297,28 @@
 			"license": "Apache 2.0",
 			"version": "2.3",
 			"blurb": "Localize your Enyo 2 app"
+		},
+		{
+			"name": "MacFJA.GradientSlider",
+			"displayName": "Gradient Slider",
+			"owner": "MacFJA",
+			"dependencies": [
+				{
+					"name": "Enyo 2",
+					"version": ""
+				},
+				{
+					"name": "Onyx",
+					"version": ""
+				}
+			],
+			"url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
+			"demoUrl": "http://macfja.github.com/enyo2-lib/onyx/sliders.html",
+			"submissionDate": "Avr 7, 2012",
+			"testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 18.0.1025.151 (Mac), FireFox 11.0 (Mac)",
+			"license": "Apache 2.0",
+			"version": "1.0",
+			"blurb": "Simple extension to slider, that provide gradient display"
 		}
     ]
 }

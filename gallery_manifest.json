@@ -279,6 +279,24 @@
 			"license": "Apache 2.0",
 			"version": "1.0",
 			"blurb": "A path bar, that can be used as an history navigation bar"
+		},
+		{
+			"name": "MacFJA.Localize",
+			"displayName": "Localization module",
+			"owner": "MacFJA",
+			"dependencies": [
+				{
+					"name": "Enyo 2",
+					"version": ""
+				}
+			],
+			"url": "https://github.com/MacFJA/enyo2-lib/tree/master/localize",
+			"demoUrl": "http://macfja.github.com/enyo2-lib/localize/example/index.html",
+			"submissionDate": "Avr 6, 2012",
+			"testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 17.0.963.56 (Mac), FireFox 11.0 (Mac)",
+			"license": "Apache 2.0",
+			"version": "2.3",
+			"blurb": "Localize your Enyo 2 app"
 		}
     ]
 }

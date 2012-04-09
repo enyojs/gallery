@@ -311,6 +311,46 @@
 		        "license": "MIT License",
 		        "version": "1.0",
 		        "blurb": "Cross-domain fetching of xml data, via YQL, returned converted into json format."
+        	},
+        	{
+			"name": "JayCanuck.YqlpRequest",
+			"displayName": "YqlpRequest",
+			"owner": "JayCanuck",
+			"dependencies": [
+				{
+				    "name": "Enyo 2",
+				    "version": ""
+				},
+				{
+				    "name": "JsonpRequest",
+				    "version": ""
+				}
+			],
+			"url": "https://github.com/JayCanuck/Enyo-2-Components/tree/master/yqlprequest",
+			"demoUrl": "http://jaycanuck.github.com/Enyo-2-Components/yqlprequest/demo.html",
+			"submissionDate": "April 9, 2012",
+			"testedPlatforms": "Firefox 11.0 (Windows), Google Chrome 18.0.1025.142 (Windows),  Internet Explorer 9.0.8112.16421 (Windows)",
+			"license": "MIT License",
+			"version": "1.0",
+			"blurb": "Cross-domain fetching of YQL queries, returned in json format. More information on YQL format can be found at http://developer.yahoo.com/yql/ and an expansive collection of YQL data tables can be found at http://www.datatables.org"
+        	},
+        	{
+			"name": "JayCanuck.webOSExt",
+			"displayName": "webOSExt",
+			"owner": "JayCanuck",
+			"dependencies": [
+				{
+				    "name": "Enyo 2",
+				    "version": ""
+				}
+			],
+			"url": "https://github.com/JayCanuck/Enyo-2-Components/tree/master/webos-ext",
+			"demoUrl": "http://jaycanuck.github.com/Enyo-2-Components/webos-ext/demo.html",
+			"submissionDate": "April 9, 2012",
+			"testedPlatforms": "webOS 3.0.5",
+			"license": "Apache 2.0",
+			"version": "1.0",
+			"blurb": "webOSExt provides Enyo2 binding for an assortment of Mojo/Enyo1 webOS-exclusive API, including screen orientation, banner notifications, launch parameters, deviceinfo, palm service requests, etc."
         	}
     ]
 }

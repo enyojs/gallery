@@ -391,6 +391,28 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "Simple extension to slider, that provide gradient display"
+        },
+        {
+            "name": "germboy.Accordion",
+            "displayName": "Accordion Control",
+            "owner": "germboy",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/germboy/Accordion",
+            "demoUrl": "http://www.variablelimit.com/enyo/lib/germboy/Accordion/examples/accordion-stretched/",
+            "submissionDate": "Apr 11, 2012",
+            "testedPlatforms": "Google Chrome 18.0.1025.152 m (Windows), Google Chrome 18.0.1025.151 (Mac), Internet Explorer 9, Safari 5.1.5 (Mac), webOS 3.0.5, iOS 5+, Windows Phone 7.5 IE, Android 4.0.3, Google Chrome Beta 16.0.912.77 (Android)",
+            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+            "version": "1.0",
+            "blurb": "An accordion control for Enyo 2. Only 1 item can be open at a time, however all items can be closed at the same time."
         }
     ]
 }

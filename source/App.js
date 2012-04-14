@@ -5,8 +5,16 @@ enyo.kind({
 	components: [
 		{classes: "toolbar", style: "height: 45px;", components: [
 			{classes: "onyx-toolbar-inline toolbar-inner", components: [
-				{kind: "Image", src: "images/enyo-logo.png", classes: "toolbar-logo"},
-				{content: "Community Gallery"}
+				{tag: "a", attributes: { href: "http://enyojs.com" }, components: [
+					{kind: "Image", src: "images/enyo-logo.png", classes: "toolbar-logo"}
+				]},
+				{content: "Community Gallery"},
+				{classes: "toolbar-search", name: "searchBox", components: [
+					{kind: "onyx.InputDecorator", style: "padding: 5px; padding-top: 0px; background-color: white", components: [
+						{kind: "onyx.Input", name: "searchInput", placeholder: "Search...", onInputChange: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
+						{kind: "Image", name: "clearInput", src: "images/search-input-search.png", ontap: "clearInput"}
+					]}
+				]}
 			]}
 		]},
 		{name: "panels", classes: "panels enyo-fit", style: "top: 45px;", components: [
@@ -26,6 +34,38 @@ enyo.kind({
 		this.inherited(arguments);
 		this.fetchGalleryData();
 	},
+	handleBlurFocus: function(inSender, inEvent){
+		inSender.addRemoveClass("toolbar-blurred", inEvent.type === "focus");
+	},
+	clearInput: function() {
+		this.$.searchInput.setValue("");
+		this.$.clearInput.setSrc("images/search-input-search.png");
+	},
+	handleSearch: function(inSender){
+		if (this.widgets) {
+			var searchValue = inSender.getValue().toLowerCase();
+			var searchResults = {};
+			if (searchValue === "") {
+				this.renderItems();
+			} else {
+				for (var x in this.widgets) {
+					var w = this.widgets[x];
+					//Check name:
+					if (w.name.toLowerCase().indexOf(searchValue) > -1) {
+						searchResults[x] = this.widgets[x];
+					//Check owner:
+					} else if (w.owner.name.toLowerCase().indexOf(searchValue) > -1) {
+						searchResults[x] = this.widgets[x];
+					//Check Blurb:
+					} else if (w.blurb.toLowerCase().indexOf(searchValue) > -1) {
+						searchResults[x] = this.widgets[x];
+					}
+				}
+				this.renderItems(searchResults);
+				this.$.clearInput.setSrc("images/search-input-cancel.png");
+			}
+		}
+	},
 	fetchGalleryData: function() {
 		new enyo.Ajax({url: "gallery_manifest.json"})
 			.response(this, function(inSender, inResponse) {
@@ -41,11 +81,12 @@ enyo.kind({
 			})
 			.go();
 	},
-	renderItems: function() {
+	renderItems: function(customItems) {
 		this.$.cards.destroyClientControls();
 		this.$.list.destroyClientControls();
-		for (var n in this.widgets) {
-			var w = this.widgets[n];
+		var items = customItems || this.widgets;
+		for (var n in items) {
+			var w = items[n];
 			var more = {info: w, ontap: "itemTap"};
 			this.createComponent({kind: "Card", container: this.$.cards}, more);
 			this.createComponent({kind: "ListItem", container: this.$.list}, more);
@@ -67,6 +108,7 @@ enyo.kind({
 	},
 	showHome: function() {
 		this.$.main.show();
+		this.$.searchBox.show();
 		this.$.details.hide();
 	},
 	itemTap: function(inSender) {
@@ -77,13 +119,14 @@ enyo.kind({
 	showDetails: function(inInfo) {
 		this.$.details.setInfo(inInfo);
 		this.$.main.hide();
+		this.$.searchBox.hide();
 		this.$.details.show();
 	},
 	preventTap: function(inSender, inEvent) {
 		inEvent.preventTap();
 	},
 	getHashComponentName: function() {
-		return window.location.hash.slice(1);;
+		return window.location.hash.slice(1);
 	},
 	setHashComponentName: function(inName) {
 		window.location.hash = inName;
@@ -103,7 +146,7 @@ enyo.kind({
 	published: {
 		info: "",
 		showLinks: false,
-		showBlurb: false,
+		showBlurb: false
 	},
 	components: [
 		{name: "name", classes: "info-name"},

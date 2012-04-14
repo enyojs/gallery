@@ -1,6 +1,6 @@
 ### About the Enyo Community Gallery ###
 
-We are really excited by the amount of collaboration and sharing happening in the Enyo Forums, and the initial release of the Enyo Community Gallery is a first step at providing a way to showcase and discover new Enyo add-on components and libraries developed by the community.  There are a lot of directions we can go with this, like adding search, categorization, and even dependency management, but for now we wanted to get something barebones out quickly to capture all of the great work being produced by the community.
+We are really excited by the amount of collaboration and sharing happening in the [Enyo Forums](http://forums.enyojs.com/), and the initial release of the [Enyo Community Gallery](http://enyojs.com/gallery) is a first step at providing a way to showcase and discover new Enyo add-on components and libraries developed by the community.  There are a lot of directions we can go with this, like adding search, categorization, and even dependency management, but for now we wanted to get something barebones out quickly to capture all of the great work being produced by the community.
 
 Anyone interested in sharing their Enyo components, samples, etc. are encouraged to follow these instructions for getting their components showcased in the gallery.
 

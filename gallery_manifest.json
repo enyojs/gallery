@@ -319,6 +319,24 @@
 			"license": "Apache 2.0",
 			"version": "1.0",
 			"blurb": "Simple extension to slider, that provide gradient display"
-		}
+		},
+        {
+            "name": "MacFJA.DynamicList",
+            "displayName": "Dynamic loaded list",
+            "owner": "MacFJA",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
+            "demoUrl": "http://macfja.github.com/enyo2-lib/onyx/dynamiclist.html",
+            "submissionDate": "Avr 14, 2012",
+            "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 18.0.1025.151 (Mac), FireFox 11.0 (Mac)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A list that load only visible row"
+        }
     ]
 }

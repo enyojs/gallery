@@ -437,7 +437,6 @@
             "version": "1.0",
             "blurb": "A list that load only visible row"
         },
-        ,
         {
             "name": "MachiApps.CalendarSelector",
             "displayName": "Calendar Date Picker",

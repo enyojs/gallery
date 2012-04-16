@@ -44,6 +44,11 @@
             "name": "Jason Robitaille",
             "website": "http://canuckcoding.ca/",
             "twitter": "JayCanuck"
+        },
+        "MachiApps": {
+            "name": "MachiApps",
+            "website": "http://www.machiapps.com",
+            "twitter": "MachiApps"
         }
     },
     "widgets": [
@@ -431,6 +436,32 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A list that load only visible row"
+        },
+        {
+            "name": "MachiApps.CalendarSelector",
+            "displayName": "Calendar Date Picker",
+            "owner": "MachiApps",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                },
+                {
+                    "name": "MaKleSoft.SelectDecorator",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/MachiApps/Enyo-2-Components",
+            "demoUrl": "http://machiapps.com/components/bigCal.html",
+            "submissionDate": "Avr 15, 2012",
+            "testedPlatforms": "Safari 5.1.5 (Windows), Google Chrome 18.0.1025.152 (Windows)",
+            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+            "version": "1.0",
+            "blurb": "A Date Picker which includes a calendar"
         }
     ]
 }

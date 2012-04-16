@@ -496,7 +496,7 @@
         },
         {
             "name": "onecrayon.Database",
-            "displayName": "SQLite Database helper class",
+            "displayName": "SQLite Database class",
             "owner": "onecrayon",
             "dependencies": [],
             "url": "https://github.com/onecrayon/database-webos",

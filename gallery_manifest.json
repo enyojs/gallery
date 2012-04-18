@@ -506,6 +506,28 @@
             "license": "MIT",
             "version": "2.1.0",
             "blurb": "A class to ease working with HTML5 SQLite databases in Enyo and beyond"
+        },
+        {
+            "name": "germboy.DateScroller",
+            "displayName": "Date Scroller Calendar Control",
+            "owner": "germboy",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Fittable",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/germboy/DateScroller",
+            "demoUrl": "http://www.variablelimit.com/enyo/lib/germboy/DateScroller/examples/DateScroller/",
+            "submissionDate": "Apr 18, 2012",
+            "testedPlatforms": "Google Chrome 18.0.1025.152 m (Windows), Google Chrome 18.0.1025.151 (Mac), Internet Explorer 9, Safari 5.1.5 (Mac), Firefox 11 (Win & Mac), webOS 3.0.5, iOS 5+, Android 4.0.3, Google Chrome Beta 16.0.912.77 (Android), Windows Phone 7.5 IE*, webOS 2* - *Tap support only",
+            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+            "version": "1.1",
+            "blurb": "A date scroller calendar control for Enyo 2. Scroll through the columns or tap on row items to scroll to that date."
         }
     ]
 }

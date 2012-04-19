@@ -586,7 +586,7 @@
 		{
 			"name": "com.Pre101.Masonry",
 			"displayName": "Masonry Layout Control",
-			"owner": "webos101",
+			"owner": "webOS101",
             "dependencies": [],
 			"url": "https://github.com/webOS101/Enyo-Masonry",
 			"demoUrl": "http://dynaptic.com/enyo/Masonry/examples/SingleColumn.html",

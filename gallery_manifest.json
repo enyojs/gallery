@@ -54,6 +54,11 @@
             "name": "One Crayon",
             "website": "http://onecrayon.com/",
             "twitter": "ianbeck"
+        },
+        "GlitchTechScience": {
+            "name": "GlitchTech Science",
+            "website": "http://glitchtechscience.com/",
+            "twitter": "GlitchTech"
         }
     },
     "widgets": [
@@ -546,6 +551,32 @@
             "license": "Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.",
             "version": "1",
             "blurb": "An Enyo 2.0 Scroller control that 'snaps' to specific scroll positions for the controls it contains when released.  Similar to the Enyo 1.0 SnapScroller control."
+        },
+        {
+            "name": "gts.DatePicker",
+            "displayName": "Calendar Date Picker",
+            "owner": "GlitchTechScience",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                },
+                {
+                    "name": "Layout/Fittable",
+                    "version": ""
+                }
+            ],
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/5c2ab99f1d0b/DatePicker",
+            "demoUrl": "",
+            "submissionDate": "Apr 19, 2012",
+            "testedPlatforms": "webOS 3.0.5, Chrome 18 (Windows), Firefox (Windows), Internet Explorer 9",
+            "license": "Apache License, Version 2.0",
+            "version": "2.0.0",
+            "blurb": "Calendar style date picker for EnyoJS. This kind uses native Onyx and Layout/Fittable components to reduce dependencies and keep the style similar to the rest of Enyo's UI components. GTS.DatePicker uses a standard JavaScript date object for its value."
         }
     ]
 }

@@ -437,9 +437,9 @@
             "url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
             "demoUrl": "http://macfja.github.com/enyo2-lib/onyx/dynamiclist.html",
             "submissionDate": "Avr 14, 2012",
-            "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 18.0.1025.151 (Mac), FireFox 11.0 (Mac)",
+            "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 18.0.1025.151 (Mac), FireFox 11.0 (Mac), IE 9.0.8112.16421 (Windows)",
             "license": "Apache 2.0",
-            "version": "1.0",
+            "version": "1.2",
             "blurb": "A list that load only visible row"
         },
 		{

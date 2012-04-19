@@ -11,7 +11,8 @@ The gallery is a simple Enyo app hosted from our github repo.  To register a new
 1. Fork the github repo (`git@github.com:enyojs/gallery.git`)
 2. Edit the gallery_manifest.json file to add author and component info (see below)
 3. If you want, add a line to the noscript part of index.html for your component.
-4. Add a 200 x 200 px image/screenshot for your component to the gallery_images directory
+4. Add a 200 x 200 px image/screenshot for your component to the gallery_images directory.
+   It should be JPEG and named with your component's unique component ID, e.g. `me.awesomecontrol.jpg`.
 5. Commit your changes to your fork
 6. Submit a github pull request to the `gh-pages` branch of `enyojs/gallery`
 

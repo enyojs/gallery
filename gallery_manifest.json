@@ -54,21 +54,17 @@
             "name": "One Crayon",
             "website": "http://onecrayon.com/",
             "twitter": "ianbeck"
-<<<<<<< HEAD
 		},
 		"webOS101": {
 			"name": "Roy Sutton",
 			"website": "http://webos101.com",
 			"twitter": "pre101"
-		}
-=======
         },
         "GlitchTechScience": {
             "name": "GlitchTech Science",
             "website": "http://glitchtechscience.com/",
             "twitter": "GlitchTech"
         }
->>>>>>> upstream/gh-pages
     },
     "widgets": [
         {

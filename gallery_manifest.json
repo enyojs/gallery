@@ -54,12 +54,21 @@
             "name": "One Crayon",
             "website": "http://onecrayon.com/",
             "twitter": "ianbeck"
+<<<<<<< HEAD
+		},
+		"webOS101": {
+			"name": "Roy Sutton",
+			"website": "http://webos101.com",
+			"twitter": "pre101"
+		}
+=======
         },
         "GlitchTechScience": {
             "name": "GlitchTech Science",
             "website": "http://glitchtechscience.com/",
             "twitter": "GlitchTech"
         }
+>>>>>>> upstream/gh-pages
     },
     "widgets": [
         {
@@ -577,6 +586,19 @@
             "license": "Apache License, Version 2.0",
             "version": "2.0.0",
             "blurb": "Calendar style date picker for EnyoJS. This kind uses native Onyx and Layout/Fittable components to reduce dependencies and keep the style similar to the rest of Enyo's UI components. GTS.DatePicker uses a standard JavaScript date object for its value."
-        }
+		},
+		{
+			"name": "com.Pre101.Masonry",
+			"displayName": "Masonry Layout Control",
+			"owner": "webos101",
+            "dependencies": [],
+			"url": "https://github.com/webOS101/Enyo-Masonry",
+			"demoUrl": "http://dynaptic.com/enyo/Masonry/examples/SingleColumn.html",
+			"submissionDate": "Apr 19, 2012",
+			"testedPlatforms": "Tested in: Chrome 18 (Mac/PC), Safari 5 (Mac), Firefox 3.6 (Mac), Firefox 11 (Mac/PC), Opera 11 (PC), Internet Explorer 9 (PC), webOS 3.0.5, Windows Phone 7.5, iOS 5.1, Android 4",
+			"license": "MIT",
+			"version": "1",
+			"blurb": "The Masonry Layout kind is a port of the Vanilla Masonry from David DeSandro. It provides dynamic layout of a container's contents based on the sizes of the contents. It does its best to fit the contents as if they were bricks being arranged into a wall, hence the name Masonry."
+		}
     ]
 }

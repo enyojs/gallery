@@ -528,6 +528,24 @@
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
             "version": "1.1",
             "blurb": "A date scroller calendar control for Enyo 2. Scroll through the columns or tap on row items to scroll to that date."
+        },
+        {
+            "name": "rwatkins.SnapScroller",
+            "displayName": "SnapScroller Control",
+            "owner": "rwatkins",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/ryanwatkins/snapscroller",
+            "demoUrl": "http://www.ryanwatkins.net/software/snapscroller",
+            "submissionDate": "Apr 18, 2012",
+            "testedPlatforms": "Android 2+, iOS 5+, Chrome 17+, Safari 5.1+, Firefox 10+",
+            "license": "Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.",
+            "version": "1",
+            "blurb": "An Enyo 2.0 Scroller control that 'snaps' to specific scroll positions for the controls it contains when released.  Similar to the Enyo 1.0 SnapScroller control."
         }
     ]
 }

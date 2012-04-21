@@ -64,6 +64,11 @@
             "name": "GlitchTech Science",
             "website": "http://glitchtechscience.com/",
             "twitter": "GlitchTech"
+        },
+        "newness": {
+            "name": "Newness Developments",
+            "website": "http://www.newnessdevelopments.com/",
+            "twitter": "newnessdevs"
         }
     },
     "widgets": [
@@ -595,6 +600,25 @@
 			"license": "MIT",
 			"version": "1",
 			"blurb": "The Masonry Layout kind is a port of the Vanilla Masonry from David DeSandro. It provides dynamic layout of a container's contents based on the sizes of the contents. It does its best to fit the contents as if they were bricks being arranged into a wall, hence the name Masonry."
-		}
+		},
+        {
+            "name": "newness.Calliope",
+            "displayName": "Calliope Visual Editor",
+            "owner": "newness",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/Newness/Enyo-Calliope",
+            "demoUrl": "http://www.newnessdevelopments.com/demos/calliope",
+            "submissionDate": "Apr 21, 2012",
+            "testedPlatforms": "Chrome 18+, Safari 5.1+, Firefox 5+",
+            "license": "Apache 2.0",
+            "version": "0.1",
+            "blurb": "An Enyo 2.0 extensible rich text editor."
+        }
+
     ]
 }

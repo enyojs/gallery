@@ -49,6 +49,21 @@
             "name": "MachiApps",
             "website": "http://www.machiapps.com",
             "twitter": "MachiApps"
+        },
+        "onecrayon": {
+            "name": "One Crayon",
+            "website": "http://onecrayon.com/",
+            "twitter": "ianbeck"
+		},
+		"webOS101": {
+			"name": "Roy Sutton",
+			"website": "http://webos101.com",
+			"twitter": "pre101"
+        },
+        "GlitchTechScience": {
+            "name": "GlitchTech Science",
+            "website": "http://glitchtechscience.com/",
+            "twitter": "GlitchTech"
         }
     },
     "widgets": [
@@ -432,9 +447,9 @@
             "url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
             "demoUrl": "http://macfja.github.com/enyo2-lib/onyx/dynamiclist.html",
             "submissionDate": "Avr 14, 2012",
-            "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 18.0.1025.151 (Mac), FireFox 11.0 (Mac)",
+            "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 18.0.1025.151 (Mac), FireFox 11.0 (Mac), IE 9.0.8112.16421 (Windows)",
             "license": "Apache 2.0",
-            "version": "1.0",
+            "version": "1.2",
             "blurb": "A list that load only visible row"
         },
 		{
@@ -488,6 +503,120 @@
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
             "version": "1.0",
             "blurb": "A Date Picker which includes a calendar"
-        }
+        },
+        {
+            "name": "onecrayon.Database",
+            "displayName": "SQLite Database class",
+            "owner": "onecrayon",
+            "dependencies": [],
+            "url": "https://github.com/onecrayon/database-webos",
+            "demoUrl": "",
+            "submissionDate": "Apr 16, 2012",
+            "testedPlatforms": "webOS 1.4 - 3.0, Safari and other browsers supporting WebSQL API",
+            "license": "MIT",
+            "version": "2.1.0",
+            "blurb": "A class to ease working with HTML5 SQLite databases in Enyo and beyond"
+        },
+        {
+            "name": "germboy.DateScroller",
+            "displayName": "Date Scroller Calendar Control",
+            "owner": "germboy",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Fittable",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/germboy/DateScroller",
+            "demoUrl": "http://www.variablelimit.com/enyo/lib/germboy/DateScroller/examples/DateScroller/",
+            "submissionDate": "Apr 18, 2012",
+            "testedPlatforms": "Google Chrome 18.0.1025.152 m (Windows), Google Chrome 18.0.1025.151 (Mac), Internet Explorer 9, Safari 5.1.5 (Mac), Firefox 11 (Win & Mac), webOS 3.0.5, iOS 5+, Android 4.0.3, Google Chrome Beta 16.0.912.77 (Android), Windows Phone 7.5 IE*, webOS 2* - *Tap support only",
+            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+            "version": "1.1",
+            "blurb": "A date scroller calendar control for Enyo 2. Scroll through the columns or tap on row items to scroll to that date."
+        },
+        {
+            "name": "rwatkins.SnapScroller",
+            "displayName": "SnapScroller Control",
+            "owner": "rwatkins",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/ryanwatkins/snapscroller",
+            "demoUrl": "http://www.ryanwatkins.net/software/snapscroller",
+            "submissionDate": "Apr 18, 2012",
+            "testedPlatforms": "Android 2+, iOS 5+, Chrome 17+, Safari 5.1+, Firefox 10+",
+            "license": "Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.",
+            "version": "1",
+            "blurb": "An Enyo 2.0 Scroller control that 'snaps' to specific scroll positions for the controls it contains when released.  Similar to the Enyo 1.0 SnapScroller control."
+        },
+        {
+            "name": "gts.DatePicker",
+            "displayName": "Calendar Date Picker",
+            "owner": "GlitchTechScience",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                },
+                {
+                    "name": "Layout/Fittable",
+                    "version": ""
+                }
+            ],
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/5c2ab99f1d0b/DatePicker",
+            "demoUrl": "",
+            "submissionDate": "Apr 19, 2012",
+            "testedPlatforms": "webOS 3.0.5, Chrome 18 (Windows), Firefox (Windows), Internet Explorer 9",
+            "license": "Apache License, Version 2.0",
+            "version": "2.0.0",
+            "blurb": "Calendar style date picker for EnyoJS. This kind uses native Onyx and Layout/Fittable components to reduce dependencies and keep the style similar to the rest of Enyo's UI components. GTS.DatePicker uses a standard JavaScript date object for its value."
+		},
+		{
+			"name": "com.Pre101.Masonry",
+			"displayName": "Masonry Layout Control",
+			"owner": "webOS101",
+            "dependencies": [],
+			"url": "https://github.com/webOS101/Enyo-Masonry",
+			"demoUrl": "http://dynaptic.com/enyo/Masonry/examples/SingleColumn.html",
+			"submissionDate": "Apr 19, 2012",
+			"testedPlatforms": "Tested in: Chrome 18 (Mac/PC), Safari 5 (Mac), Firefox 3.6 (Mac), Firefox 11 (Mac/PC), Opera 11 (PC), Internet Explorer 9 (PC), webOS 3.0.5, Windows Phone 7.5, iOS 5.1, Android 4",
+			"license": "MIT",
+			"version": "1",
+			"blurb": "The Masonry Layout kind is a port of the Vanilla Masonry from David DeSandro. It provides dynamic layout of a container's contents based on the sizes of the contents. It does its best to fit the contents as if they were bricks being arranged into a wall, hence the name Masonry."
+		},
+        {
+            "name": "MachiApps.CheckBoxes",
+            "displayName": "Colored Checkboxes",
+            "owner": "MachiApps",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/MachiApps/Enyo-2-Components",
+            "demoUrl": "http://machiapps.com/components/checkboxes.html",
+            "submissionDate": "Apr 21, 2012",
+            "testedPlatforms": "Safari 5.1.5 (Windows), Google Chrome 18.0.1025.152 (Windows)",
+            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+            "version": "1.0",
+            "blurb": "Allows you to set a color to checkboxes.  Extends onyx.Checkbox.  Can set just 'color', or both 'checkedColor' and 'uncheckedColor'"
+        },
     ]
 }

@@ -597,7 +597,7 @@
             "blurb": "The Masonry Layout kind is a port of the Vanilla Masonry from David DeSandro. It provides dynamic layout of a container's contents based on the sizes of the contents. It does its best to fit the contents as if they were bricks being arranged into a wall, hence the name Masonry."
         },
         {
-            "name": "MachiApps.CheckBoxes",
+            "name": "MachiApps.Checkboxes",
             "displayName": "Colored Checkboxes",
             "owner": "MachiApps",
             "dependencies": [

@@ -64,7 +64,12 @@
             "name": "GlitchTech Science",
             "website": "http://glitchtechscience.com/",
             "twitter": "GlitchTech"
-        }
+        },
+        "newness": {
+            "name": "Newness Developments",
+            "website": "http://www.newnessdevelopments.com/",
+            "twitter": "newnessdevs"
+         }
     },
     "widgets": [
         {
@@ -617,6 +622,24 @@
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
             "version": "1.0",
             "blurb": "Allows you to set a color to checkboxes.  Extends onyx.Checkbox.  Can set just 'color', or both 'checkedColor' and 'uncheckedColor'"
+        },
+        {
+            "name": "newness.Calliope",
+            "displayName": "Calliope Visual Editor",
+            "owner": "newness",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/Newness/Enyo-Calliope",
+            "demoUrl": "http://www.newnessdevelopments.com/demos/calliope",
+            "submissionDate": "Apr 21, 2012",
+            "testedPlatforms": "Chrome 18+, Safari 5.1+, Firefox 5+",
+            "license": "Apache 2.0",
+            "version": "0.1",
+            "blurb": "An Enyo 2.0 extensible rich text editor."
         }
     ]
 }

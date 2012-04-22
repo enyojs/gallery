@@ -74,7 +74,7 @@ enyo.kind({
 				for (var i in ws) {
 					var w = ws[i];
 					this.widgets[w.name] = w;
-					this.widgets[w.name].owner = inResponse.owners[w.owner];
+					w.owner = inResponse.owners[w.owner];
 				}
 				this.renderItems();
 				this.hashChange();
@@ -84,9 +84,17 @@ enyo.kind({
 	renderItems: function(customItems) {
 		this.$.cards.destroyClientControls();
 		this.$.list.destroyClientControls();
+		//
 		var items = customItems || this.widgets;
+		//
+		// sort FIFO map into LIFO array
+		var inverted = [];
 		for (var n in items) {
-			var w = items[n];
+			inverted.unshift(items[n]);
+		}
+		items = inverted;
+		//
+		for (var i=0, w; w=items[i]; i++) {
 			var more = {info: w, ontap: "itemTap"};
 			this.createComponent({kind: "Card", container: this.$.cards}, more);
 			this.createComponent({kind: "ListItem", container: this.$.list}, more);

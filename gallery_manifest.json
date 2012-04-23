@@ -69,7 +69,7 @@
             "name": "Newness Developments",
             "website": "http://www.newnessdevelopments.com/",
             "twitter": "newnessdevs"
-         }
+        }
     },
     "widgets": [
         {
@@ -373,9 +373,27 @@
             "demoUrl": "http://jaycanuck.github.com/Enyo-2-Components/webos-ext/demo.html",
             "submissionDate": "April 9, 2012",
             "testedPlatforms": "webOS 3.0.5",
-            "license": "Apache 2.0",
+            "license": "MIT License",
             "version": "1.0",
             "blurb": "webOSExt provides Enyo2 binding for an assortment of Mojo/Enyo1 webOS-exclusive API, including screen orientation, banner notifications, launch parameters, deviceinfo, palm service requests, etc."
+        },
+        {
+            "name": "JayCanuck.JavaApplet",
+            "displayName": "JavaApplet",
+            "owner": "JayCanuck",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": "Java 1.5 or greater"
+                }
+            ],
+            "url": "https://github.com/JayCanuck/Enyo-2-Components/tree/master/javaapplet",
+            "demoUrl": "http://jaycanuck.github.com/Enyo-2-Components/javaapplet/demo.html",
+            "submissionDate": "April 22, 2012",
+            "testedPlatforms": "Firefox 11.0 (Windows), Google Chrome 18.0.1025.142 (Windows),  Internet Explorer 9.0.8112.16421 (Windows)",
+            "license": "MIT License",
+            "version": "1.0",
+            "blurb": "Java applets brought to Enyo2, with enhanced support for 2-way communication of data between the Java applet and javascript Enyo2 code. Requires the use of EnyoApplet/EnyoJApplet (instead of Applet/JApplet), included on the git prepackaged into the EnyoApplet.jar library."
         },
         {
             "name": "MacFJA.Localize",
@@ -640,28 +658,28 @@
             "license": "Apache 2.0",
             "version": "0.1",
             "blurb": "An Enyo 2.0 extensible rich text editor."
-        }	,
-	        {
-	            "name": "MacFJA.Notification",
-	            "displayName": "Notification",
-	            "owner": "MacFJA",
-	            "dependencies": [
-	                {
-	                    "name": "Enyo 2",
-	                    "version": ""
-	                },
-                    {
-	                    "name": "Animator",
-	                    "version": ""
-	                }
-	            ],
-	            "url": "https://github.com/MacFJA/enyo2-lib/tree/master/notification",
-	            "demoUrl": "http://macfja.github.com/enyo2-lib/notification/index.html",
-	            "submissionDate": "Avr 22, 2012",
-	            "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 18.0.1025.151 (Mac), FireFox 11.0 (Mac)",
-	            "license": "Apache 2.0",
-	            "version": "1.0",
-	            "blurb": "A notification center, inspered by Growl and other"
-	        }
+        },
+        {
+            "name": "MacFJA.Notification",
+            "displayName": "Notification",
+            "owner": "MacFJA",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Animator",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/MacFJA/enyo2-lib/tree/master/notification",
+            "demoUrl": "http://macfja.github.com/enyo2-lib/notification/index.html",
+            "submissionDate": "Avr 22, 2012",
+            "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 18.0.1025.151 (Mac), FireFox 11.0 (Mac)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A notification center, inspered by Growl and other"
+        }
     ]
 }

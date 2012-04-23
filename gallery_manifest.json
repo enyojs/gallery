@@ -348,9 +348,27 @@
 			"demoUrl": "http://jaycanuck.github.com/Enyo-2-Components/webos-ext/demo.html",
 			"submissionDate": "April 9, 2012",
 			"testedPlatforms": "webOS 3.0.5",
-			"license": "Apache 2.0",
+			"license": "MIT License",
 			"version": "1.0",
 			"blurb": "webOSExt provides Enyo2 binding for an assortment of Mojo/Enyo1 webOS-exclusive API, including screen orientation, banner notifications, launch parameters, deviceinfo, palm service requests, etc."
+        	}
+        	{
+			"name": "JayCanuck.JavaApplet",
+			"displayName": "JavaApplet",
+			"owner": "JayCanuck",
+			"dependencies": [
+				{
+				    "name": "Enyo 2",
+				    "version": "Java 1.5 or greater"
+				}
+			],
+			"url": "https://github.com/JayCanuck/Enyo-2-Components/tree/master/javaapplet",
+			"demoUrl": "http://jaycanuck.github.com/Enyo-2-Components/javaapplet/demo.html",
+			"submissionDate": "April 22, 2012",
+			"testedPlatforms": "Firefox 11.0 (Windows), Google Chrome 18.0.1025.142 (Windows),  Internet Explorer 9.0.8112.16421 (Windows)",
+			"license": "MIT License",
+			"version": "1.0",
+			"blurb": "Java applets brought to Enyo2, with enhanced support for 2-way communication of data between the Java applet and javascript Enyo2 code. Requires the use of EnyoApplet/EnyoJApplet (instead of Applet/JApplet), included on the git prepackaged into the EnyoApplet.jar library."
         	}
     ]
 }

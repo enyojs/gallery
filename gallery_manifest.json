@@ -680,6 +680,28 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A notification center, inspered by Growl and other"
-        }
+        },
+        {
+            "name": "newness.InfiniteSlidingPane",
+            "displayName": "Infinite SlidingPane",
+            "owner": "newness",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx"
+                }
+            ],
+            "url": "https://github.com/Newness/Labs/tree/master/InfiniteSlidingPane",
+            "demoUrl": "http://www.newnessdevelopments.com/demos/infiniteslidingpane",
+            "submissionDate": "Apr 25, 2012",
+            "testedPlatforms": "Chrome 18+ (Mac), Safari 5.1+ (Mac), Firefox 5+ (Mac), iOS 5+, webOS 3+",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "Infinite SlidingPane, as seen on TV, and Facebook apps on webOS and iOS."
+        },
+
     ]
 }

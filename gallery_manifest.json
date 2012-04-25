@@ -701,7 +701,6 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "Infinite SlidingPane, as seen on TV, and Facebook apps on webOS and iOS."
-        },
-
+        }
     ]
 }

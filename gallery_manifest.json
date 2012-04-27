@@ -69,6 +69,11 @@
             "name": "Newness Developments",
             "website": "http://www.newnessdevelopments.com/",
             "twitter": "newnessdevs"
+        },		
+        "sfeast": {
+            "name": "sfeast",
+            "website": "",
+            "twitter": ""
         }
     },
     "widgets": [
@@ -701,6 +706,24 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "Infinite SlidingPane, as seen on TV, and Facebook apps on webOS and iOS."
+        },
+        {
+            "name": "sfeast.SelectableRepeaters",
+            "displayName": "Selectable Repeaters",
+            "owner": "sfeast",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/sfeast/SelectableRepeaters",
+            "demoUrl": "http://apps.stevenf.webfactional.com/examples/enyo/SelectableRepeaters/examples/MultiSelectableRepeater/",
+            "submissionDate": "Apr 26, 2012",
+            "testedPlatforms": "Google Chrome 18.0.1025.162 m (Windows), Google Chrome 18.0.1025.165 (Mac), Safari 5.1.2 (Mac), Firefox 12 (Win & Mac), iOS 5.1, Android 2.3.6",
+            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+            "version": "1.0",
+            "blurb": "Repeater controls for Enyo 2 that allows for single and multi-selectable rows"
         }
     ]
 }

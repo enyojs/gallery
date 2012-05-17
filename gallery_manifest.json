@@ -79,7 +79,12 @@
             "name": "Robert Kowalski",
             "website": "http://robert-kowalski.de",
             "twitter": "robinson_k"
-        }
+        }, 
+     "whatfield": {
+            "name": "Will Hatfield", 
+            "website": "http://designtechllc.com",
+            "twitter": "cbcames"
+         } 
     },
     "widgets": [
         {
@@ -647,128 +652,4 @@
             "demoUrl": "http://machiapps.com/components/checkboxes.html",
             "submissionDate": "Apr 21, 2012",
             "testedPlatforms": "Safari 5.1.5 (Windows), Google Chrome 18.0.1025.152 (Windows)",
-            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
-            "version": "1.0",
-            "blurb": "Allows you to set a color to checkboxes.  Extends onyx.Checkbox.  Can set just 'color', or both 'checkedColor' and 'uncheckedColor'"
-        },
-        {
-            "name": "newness.Calliope",
-            "displayName": "Calliope Visual Editor",
-            "owner": "newness",
-            "dependencies": [
-                {
-                    "name": "Enyo 2",
-                    "version": ""
-                }
-            ],
-            "url": "https://github.com/Newness/Enyo-Calliope",
-            "demoUrl": "http://www.newnessdevelopments.com/demos/calliope",
-            "submissionDate": "Apr 21, 2012",
-            "testedPlatforms": "Chrome 18+, Safari 5.1+, Firefox 5+",
-            "license": "Apache 2.0",
-            "version": "0.1",
-            "blurb": "An Enyo 2.0 extensible rich text editor."
-        },
-        {
-            "name": "MacFJA.Notification",
-            "displayName": "Notification",
-            "owner": "MacFJA",
-            "dependencies": [
-                {
-                    "name": "Enyo 2",
-                    "version": ""
-                },
-                {
-                    "name": "Animator",
-                    "version": ""
-                }
-            ],
-            "url": "https://github.com/MacFJA/enyo2-lib/tree/master/notification",
-            "demoUrl": "http://macfja.github.com/enyo2-lib/notification/index.html",
-            "submissionDate": "Avr 22, 2012",
-            "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 18.0.1025.151 (Mac), FireFox 11.0 (Mac)",
-            "license": "Apache 2.0",
-            "version": "1.0",
-            "blurb": "A notification center, inspered by Growl and other"
-        },
-        {
-            "name": "newness.InfiniteSlidingPane",
-            "displayName": "Infinite SlidingPane",
-            "owner": "newness",
-            "dependencies": [
-                {
-                    "name": "Enyo 2",
-                    "version": ""
-                },
-                {
-                    "name": "Onyx"
-                }
-            ],
-            "url": "https://github.com/Newness/Labs/tree/master/InfiniteSlidingPane",
-            "demoUrl": "http://www.newnessdevelopments.com/demos/infiniteslidingpane",
-            "submissionDate": "Apr 25, 2012",
-            "testedPlatforms": "Chrome 18+ (Mac), Safari 5.1+ (Mac), Firefox 5+ (Mac), iOS 5+, webOS 3+",
-            "license": "Apache 2.0",
-            "version": "1.0",
-            "blurb": "Infinite SlidingPane, as seen on TV, and Facebook apps on webOS and iOS."
-        },
-        {
-            "name": "sfeast.SelectableRepeaters",
-            "displayName": "Selectable Repeaters",
-            "owner": "sfeast",
-            "dependencies": [
-                {
-                    "name": "Enyo 2",
-                    "version": ""
-                }
-            ],
-            "url": "https://github.com/sfeast/SelectableRepeaters",
-            "demoUrl": "http://apps.stevenf.webfactional.com/examples/enyo/SelectableRepeaters/examples/MultiSelectableRepeater/",
-            "submissionDate": "Apr 26, 2012",
-            "testedPlatforms": "Google Chrome 18.0.1025.162 m (Windows), Google Chrome 18.0.1025.165 (Mac), Safari 5.1.2 (Mac), Firefox 12 (Win & Mac), iOS 5.1, Android 2.3.6",
-            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
-            "version": "1.0",
-            "blurb": "Repeater controls for Enyo 2 that allows for single and multi-selectable rows"
-        },
-        {
-            "name": "MachiApps.ColorPicker",
-            "displayName": "Color Picker",
-            "owner": "MachiApps",
-            "dependencies": [
-                {
-                    "name": "Enyo 2",
-                    "version": ""
-                },
-                {
-                    "name": "Onyx",
-                    "version": ""
-                }
-            ],
-            "url": "https://github.com/MachiApps/Enyo-2-Components",
-            "demoUrl": "http://machiapps.com/components/colorPicker.html",
-            "submissionDate": "May 9, 2012",
-            "testedPlatforms": "Safari 5.1.5 (Windows), Google Chrome 18.0.1025.152 (Windows)",
-            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
-            "version": "1.0",
-            "blurb": "Pretty Basic Color Picker"
-        },
-        {
-            "name": "rok.geolocation",
-            "displayName": "Geolocation",
-            "owner": "rok",
-            "dependencies": [
-                {
-                    "name": "Enyo 2",
-                    "version": ""
-                }
-            ],
-            "url": "https://github.com/robertkowalski/enyo-geolocation",
-            "demoUrl": "http://robertkowalski.github.com/enyo-geolocation/",
-            "submissionDate": "May 13, 2012",
-            "testedPlatforms": "Firefox 12.0 (Linux), Chrome 18.0.1025.168 (Linux), webOS 3.0.5 Browser, Android 2.1 Emulator, mobile Safari (iOS 5.1), iOS 5.1 (Phonegap)",
-            "license": "New BSD",
-            "version": "1.0",
-            "blurb": "Geolocation for Enyo - Phonegap compatible"
-        }
-    ]
-}
+            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copi

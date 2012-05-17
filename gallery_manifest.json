@@ -789,7 +789,7 @@
             "submissionDate": "May 17, 2012",
             "testedPlatforms": "Chrome 19",
             "license": "Apache 2.0",
-            "version": "1.0"
+            "version": "1.0",
             "blurb": "This is mostly to help ease porting Enyo 1.0 apps and to an extent Mojo apps.  Simply replace 'components' in the Webservice object with 'published' and get rid of the '[]' around the components.  Should just work after that.  Haven't tested to a great degree so let me know if you run into problems.  this.service will give you access to the xhr object if you need to debug."
         }
     ]

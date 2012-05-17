@@ -777,7 +777,7 @@
         },
         {
             "name": "whatfield73.webservice",
-            "displayName": "WebService Beta",
+            "displayName": "WebService Classic",
             "owner": "whatfield73",
             "dependencies": [
                 {

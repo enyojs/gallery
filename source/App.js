@@ -210,18 +210,20 @@ enyo.kind({
 	name: "Details",
 	kind: "onyx.Popup",
 	kindClasses: "details",
+	layoutKind: "FittableRowsLayout",
 	published: {
 		info: "",
 		maxHeight: ""
 	},
 	components: [
-		{name: "close", kind: "onyx.Icon", src: "images/close-icon.png", classes: "details-close", ontap: "hide"},
-		{kind: "Scroller", horizontal: "hidden", touch: true, classes: "details-scroller", components: [
+		{classes: "details-header", components: [
+			{name: "close", kind: "onyx.Icon", src: "images/close-icon.png", classes: "details-close", ontap: "hide"},
+			{name: "name", classes: "name"},
+			{name: "owner", classes: "owner"},
+			{name: "links", classes: "links", allowHtml: true}
+		]},
+		{kind: "Scroller", horizontal: "hidden", touch: true, fit: true, classes: "details-scroller", components: [
 			{classes: "details-scroller-content", components: [
-				//{name: "close", kind: "onyx.Icon", src: "images/close-icon.png", classes: "details-close", ontap: "hide"},
-				{name: "name", classes: "name"},
-				{name: "owner", classes: "owner"},
-				{name: "links", classes: "links", allowHtml: true},
 				{name: "blurb", classes: "blurb", allowHtml: true},
 				{classes: "icon-holder", components: [
 					{name: "icon", kind: "Image", classes: "icon"}

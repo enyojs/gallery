@@ -89,7 +89,7 @@
 }
 
 .blurb {
-	padding: 30px 0 20px;
+	padding: 18px 0 20px;
 	font-size: 14px;
 	font-style: italic;
 }
@@ -142,8 +142,11 @@
 	border-radius: 16px;
 	background-color: white;
 	font-size: 14px;
-	
-	-webkit-transition: -webkit-transform 0.3s;
+}
+
+.details-header {
+	padding: 22px 48px 16px;
+	border-bottom: 1px solid #eee;
 }
 
 .details-buttons {
@@ -158,15 +161,11 @@
 }
 
 .details-scroller {
-	position: absolute;
-	top: 10px;
-	right: 0;
-	bottom: 10px;
-	left: 0;
+	padding-bottom: 10px;
 }
 
 .details-scroller-content {
-	padding: 22px 48px;
+	padding: 0px 48px 22px;
 }
 
 .details-close {
@@ -222,10 +221,5 @@
 	
 	.details-scroller-content {
 		padding: 6px 16px;
-	}
-	
-	.details-close {
-		top: 2px;
-		right: 2px;
 	}
 }

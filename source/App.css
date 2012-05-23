@@ -1,3 +1,5 @@
+/* toolbar */
+
 .toolbar {
 	background-color: #090a0b;
 	padding: 5px;
@@ -7,6 +9,7 @@
 	display: block;
 	max-width: 1000px;
 	margin: 0 auto;
+	padding-right: 10px;
 	
 	font-size: 18px;
 	font-style: italic;
@@ -14,7 +17,7 @@
 }
 
 .toolbar-logo {
-	margin: -6px 0 -8px;
+	margin: -8px 0 -16px;
 }
 
 .toolbar-search {
@@ -22,11 +25,19 @@
 	float: right;
 }
 
+.toolbar-search-input-decorator {
+	padding: 5px;
+	padding-top: 0px;
+	background-color: white;
+}
+
 .toolbar-blurred {
 	color: #aaaaaa;
 }
 
-.panels {
+/* main */
+
+.main {
 	background-color: white;
 }
 
@@ -41,14 +52,46 @@
 	display: none;
 }
 
-@media (max-width: 600px) {
-	.cards {
-		display: none;
-	}
+/* */
 
-	.list {
-		display: block;
-	}
+.name {
+	font-weight: bold;
+	font-size: 16px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.owner {
+	display: inline-block;
+	font-size: 14px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.links {
+	display: inline-block;
+}
+
+.links > * {
+	padding-left: 10px;
+}
+
+.icon-holder {
+	text-align: center;
+	padding-top: 16px;
+}
+
+.icon {
+	width: 96px;
+	height: 96px;
+}
+
+.blurb {
+	padding: 30px 0 20px;
+	font-size: 14px;
+	font-style: italic;
 }
 
 /* ListItem */
@@ -64,62 +107,26 @@
 	box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Info */
-
-.info-name {
-	font-weight: bold;
-	font-size: 16px;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-
-.info-owner {
-	display: inline-block;
-	font-size: 14px;
-}
-
-.info-links {
-	display: inline-block;
-}
-
-.info-links > * {
-	padding-left: 10px;
-}
-
-.info-icon-holder {
-	text-align: center;
-}
-
-.info-icon {
-	max-width: 100px;
-	max-height: 100px;
-	padding-top: 20px;
-}
-
-.info-blurb {
-	font-size: 14px;
-	font-style: italic;
-}
-
-.info-client {
-	padding-top: 40px;
-}
-
 /* Card */
 
 .card {
 	display: inline-block;
-	position: relative;
+	overflow: hidden;
 	width: 220px;
 	height: 220px;
 	margin: 16px;
 	
-	border-radius: 15px;
+	border-radius: 16px;
 	box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
 	
 	text-align: left;
 	font-size: 16px;
+}
+
+.card-topbar {
+	background-color: #EAEAEA;
+	padding: 16px;
+	color: #5A5A5A;
 }
 
 .card-empty {
@@ -127,68 +134,98 @@
 	height: 0;
 }
 
-.card-info {
-	padding: 15px 10px;
-	overflow: hidden;
-}
-
-.card-info .info-blurb {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-
 /* Details */
 
-.details-main {
-	max-width: 480px;
-	margin: 0 auto;
-	padding: 30px 0;
-}
-
-.details-topbar .onyx-button {
+.details {
+	position: absolute;
+	z-index: 10;
+	border-radius: 16px;
+	background-color: white;
 	font-size: 14px;
-	margin: 4px 6px;
+	
+	-webkit-transition: -webkit-transform 0.3s;
 }
 
-.details-back-button {
-	color: #F2F2F2;
-	background-color: #555656;
+.details-buttons {
+	text-align: center;
+	padding: 32px 0 16px;
 }
 
-.details-info {
-	padding-top: 30px;
-	margin: 16px;
-	background: white;
-	border-radius: 5px;
+.details-buttons .onyx-button {
 	font-size: 14px;
+	margin: 4px 16px;
+	width: 120px;
 }
 
-.details-info .info-name {
+.details-scroller {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	bottom: 10px;
+	left: 0;
+}
+
+.details-scroller-content {
+	padding: 22px 48px;
+}
+
+.details-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	z-index: 1;
+}
+
+.details .name {
 	font-size: 24px;
 	padding-bottom: 4px;
 }
 
-.details-info .info-icon {
+.details .icon {
+	width: auto;
+	height: auto;
 	max-height: 200px;
 	max-width: 200px;
 }
 
-.details-info .info-blurb {
-	padding: 30px 0 20px;
+/* Field */
+
+.field {
+	padding: 16px 0;
 }
 
-/* Stars */
-
-.stars {
-	position: relative;
-	width: 100px;
-	height: 20px;
-	background-image: url(../images/star-empty.png);
+.field-name {
+	font-size: 16px;
+	font-weight: bold;
 }
 
-.stars-fill {
-	position: relative;
-	height: 20px;
-	background-image: url(../images/star-full.png);
+.field-value {
+	padding-top: 4px;
+	font-size: 14px;
+	font-style: italic;
+}
+
+/* */
+
+@media (max-width: 600px) {
+	.cards {
+		display: none;
+	}
+
+	.list {
+		display: block;
+	}
+	
+	.toolbar-search {
+		display: none;
+	}
+	
+	.details-scroller-content {
+		padding: 6px 16px;
+	}
+	
+	.details-close {
+		top: 2px;
+		right: 2px;
+	}
 }

@@ -84,6 +84,11 @@
             "name": "Will Hatfield",
             "website": "http://designtechllc.com",
             "twitter": "cbcames"
+        },
+        "fxspec06": {
+            "name": "Bryan Leasot",
+            "website": "",
+            "twitter": "fxspec06"
         }
     },
     "widgets": [
@@ -792,6 +797,27 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "This is mostly to help ease porting Enyo 1.0 apps and to an extent Mojo apps.  Simply replace 'components' in the Webservice object with 'published' and get rid of the '[]' around the components.  Should just work after that.  Haven't tested to a great degree so let me know if you run into problems.  this.service will give you access to the xhr object if you need to debug."
+        },
+        {
+            "name": "fxspec06.Alert",
+            "displayName": "Alert",
+            "owner": "fxspec06",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/fxspec06/enyo-alert/",
+            "submissionDate": "May 26, 2012",
+            "testedPlatforms": "Chrome 19",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "Replaces JavaScript alert() and adds extended functionality"
         }
     ]
 }

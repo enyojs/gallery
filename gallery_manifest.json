@@ -69,12 +69,12 @@
             "name": "Newness Developments",
             "website": "http://www.newnessdevelopments.com/",
             "twitter": "newnessdevs"
-        },    	
+        },
         "sfeast": {
             "name": "sfeast",
             "website": "",
             "twitter": ""
-        },		
+        },
         "rok": {
             "name": "Robert Kowalski",
             "website": "http://robert-kowalski.de",
@@ -776,7 +776,6 @@
             "blurb": "Geolocation for Enyo - Phonegap compatible"
         },
         {
-
             "name": "whatfield73.webserviceclassic",
             "displayName": "WebService Classic",
             "owner": "whatfield73",
@@ -792,6 +791,24 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "This is mostly to help ease porting Enyo 1.0 apps and to an extent Mojo apps.  Simply replace 'components' in the Webservice object with 'published' and get rid of the '[]' around the components.  Should just work after that.  Haven't tested to a great degree so let me know if you run into problems.  this.service will give you access to the xhr object if you need to debug."
+        },
+        {
+            "name": "whatfield73.localstoragedb",
+            "displayName": "LocalStorage DB",
+            "owner": "whatfield73",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/whatfield73/db/",
+            "demoUrl": "http://jsfiddle.net/dCuUg/1/",
+            "submissionDate": "June 7, 2012",
+            "testedPlatforms": "Chrome 19",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "This is mostly to help ease using localStorage as a simple database also in helping port 1.0 apps using db8.  See the example on jsfiddle."
         }
     ]
 }

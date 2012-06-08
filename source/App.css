@@ -1,3 +1,7 @@
+a img {
+	border: none;
+}
+
 /* toolbar */
 
 .toolbar {
@@ -81,6 +85,7 @@
 .icon-holder {
 	text-align: center;
 	padding-top: 16px;
+	background-color: white;
 }
 
 .icon {
@@ -223,3 +228,11 @@
 		padding: 6px 16px;
 	}
 }
+
+/* IE8 border hack */
+@media \0screen {
+	.card {
+		border: 1px solid rgb(234, 234, 234);
+	}
+}
+

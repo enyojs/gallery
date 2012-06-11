@@ -858,7 +858,7 @@
             "url": "https://github.com/ShiftyAxel/more-arrangers",
             "demoUrl": "",
             "submissionDate": "June 11, 2012",
-            "testedPlatforms": "Chrome 19+, Safari 5.1+",
+            "testedPlatforms": "Chrome 19+, Safari 5.1+, webOS 2.2.4",
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A set of additional cross-platform arrangers for enyo.Panels. Supports hardware-accellerated 3D CSS transitions and falls back to 2D where required."

@@ -842,7 +842,7 @@
             "blurb": "Replaces JavaScript alert() and adds extended functionality"
         },
         {
-            "name": "ShiftyAxel.MoreArrangers",
+            "name": "ShiftyAxel.more-arrangers",
             "displayName": "More Arrangers",
             "owner": "ShiftyAxel",
             "dependencies": [
@@ -862,6 +862,24 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A set of additional cross-platform arrangers for enyo.Panels. Supports hardware-accellerated 3D CSS transitions and falls back to 2D where required."
+        },
+        {
+            "name": "ShiftyAxel.vendor-prefix",
+            "displayName": "Vendor Prefix",
+            "owner": "ShiftyAxel",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/ShiftyAxel/vendor-prefix",
+            "demoUrl": "",
+            "submissionDate": "June 12, 2012",
+            "testedPlatforms": "Chrome 19+, Safari 5.1+, webOS 2.2.4",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A simple plugin for easy access to the host browser's CSS vendor prefix."
         }
     ]
 }

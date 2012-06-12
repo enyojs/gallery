@@ -842,7 +842,7 @@
             "blurb": "Replaces JavaScript alert() and adds extended functionality"
         },
         {
-            "name": "ShiftyAxel.MoreArrangers",
+            "name": "ShiftyAxel.more-arrangers",
             "displayName": "More Arrangers",
             "owner": "ShiftyAxel",
             "dependencies": [

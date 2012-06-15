@@ -880,6 +880,50 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A simple plugin for easy access to the host browser's CSS vendor prefix."
+        },
+        {
+            "name": "gts.Joystick",
+            "displayName": "Touch Joystick",
+            "owner": "GlitchTechScience",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "EnyoJS Canvas",
+                    "version": ""
+                }
+            ],
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/3a5786b5c199/Joystick",
+            "demoUrl": "",
+            "submissionDate": "June 15, 2012",
+            "testedPlatforms": "webOS 3.0.5, Chrome 18 (Windows, Linux), Firefox (Windows, Linux)",
+            "license": "Apache License, Version 2.0",
+            "version": "1.0.0",
+            "blurb": "gts.Joystick is a onscreen controller for games and other apps that would use a joystick. When moving the joystick, the kind will send events for all analog movements and digitial events (ie when the joystick is moved into the up position). The joystick is designed to be absolutely positioned in a relatively positioned container. Image and kind inspiration from http://www.sparkfun.com/products/9182"
+        },
+        {
+            "name": "gts.Keyboard",
+            "displayName": "On Screen Simple Keyboard",
+            "owner": "GlitchTechScience",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/3a5786b5c199/Keyboard",
+            "demoUrl": "",
+            "submissionDate": "June 15, 2012",
+            "testedPlatforms": "Chrome 18 (Windows, Linux), Firefox (Windows, Linux)",
+            "license": "Apache License, Version 2.0",
+            "version": "1.0.0",
+            "blurb": "gts.Keyboard is a simple on screen keyboard. It was developed for use in a kiosk system."
         }
     ]
 }

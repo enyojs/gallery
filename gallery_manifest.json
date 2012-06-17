@@ -924,6 +924,27 @@
             "license": "Apache License, Version 2.0",
             "version": "1.0.0",
             "blurb": "gts.Keyboard is a simple on screen keyboard. It was developed for use in a kiosk system."
+        },
+        {
+            "name": "newness.Carousels",
+            "displayName": "Carousels",
+            "owner": "newness",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Enyo Panels"
+                }
+            ],
+            "url": "https://github.com/Newness/Labs/tree/master/Carousels",
+            "demoUrl": "http://www.newnessdevelopments.com/demos/Carousels",
+            "submissionDate": "Jun 17, 2012",
+            "testedPlatforms": "Chrome 18+ (Mac), Safari 5.1+ (Mac), Firefox 5+ (Mac), iOS 5+",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "An Enyo.Panels control that provides the ability to slide back and forth between different views without having to load all the views initially."
         }
     ]
 }

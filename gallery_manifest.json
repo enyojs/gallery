@@ -94,7 +94,12 @@
             "name": "Josh Palmer",
             "website": "",
             "twitter": "ShiftyAxel"
-        }
+        },
+		"sugardave": {
+			"name": "sugardave",
+			"website": "http://app.sugardave.com",
+			"twitter": "sugar_dave"
+		}
     },
     "widgets": [
         {
@@ -945,6 +950,28 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "An Enyo.Panels control that provides the ability to slide back and forth between different views without having to load all the views initially."
+        },
+		{
+            "name": "com.sugardave.View",
+            "displayName": "View",
+            "owner": "sugardave",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "layout",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/sugardave/View",
+            "demoUrl": "http://sugardave.github.com/View",
+            "submissionDate": "Jun 20, 2012",
+            "testedPlatforms": "Chrome 18+ (Mac), Safari 5.1+ (Mac), Firefox 5+ (Mac)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A simple generic view control.  Optional headerComponents and footerComponents properties allow you to easily custom your View.  Works great with Panels!"
         }
     ]
 }

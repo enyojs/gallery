@@ -10,7 +10,8 @@ enyo.kind({
 				{content: "Community Gallery"},
 				{classes: "toolbar-search", components: [
 					{kind: "onyx.InputDecorator", classes: "toolbar-search-input-decorator", components: [
-						{kind: "onyx.Input", name: "searchInput", placeholder: "Search...", onInputChange: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
+						{kind: "onyx.Input", name: "searchInput", placeholder: "Search...",
+							oninput: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
 						{kind: "Image", name: "clearInput", src: "images/search-input-search.png", ontap: "clearInput"}
 					]}
 				]}
@@ -93,13 +94,13 @@ enyo.kind({
 		// to sorted by submission date array
 		items = this.toDateSortedArray(items);
 		//
-		for (var i=0, w; w=items[i]; i++) {
+		for (var i=0, w; (w=items[i]); i++) {
 			var more = {info: w, ontap: "itemTap"};
 			this.createComponent({kind: "Card", container: this.$.cards}, more);
 			this.createComponent({kind: "ListItem", container: this.$.list}, more);
 		}
 		// to make cards in last row left-aligned
-		for (var i=0; i<3; i++) {
+		for (i=0; i<3; i++) {
 			this.createComponent({kind: "Card", container: this.$.cards, classes: "card-empty"});
 		}
 		this.$.cards.render();
@@ -202,7 +203,9 @@ enyo.kind({
 	],
 	infoChanged: function() {
 		this.inherited(arguments);
-		this.info && this.$.icon.setSrc("gallery_images/" + this.info.name + ".jpg");
+		if (this.info) {
+			this.$.icon.setSrc("gallery_images/" + this.info.name + ".jpg");
+		}
 	}
 });
 
@@ -222,7 +225,7 @@ enyo.kind({
 			{name: "owner", classes: "owner"},
 			{name: "links", classes: "links", allowHtml: true}
 		]},
-		{kind: "Scroller", horizontal: "hidden", touch: true, fit: true, classes: "details-scroller", components: [
+		{kind: "Scroller", horizontal: "hidden", fit: true, classes: "details-scroller", components: [
 			{classes: "details-scroller-content", components: [
 				{name: "blurb", classes: "blurb", allowHtml: true},
 				{classes: "icon-holder", components: [

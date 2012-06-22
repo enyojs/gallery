@@ -7,7 +7,7 @@
 	create: function() {
 		this.inherited(arguments);
 		if (this.floating) {
-			this.setParent(onyx.floatingLayer);
+			this.setParent(enyo.floatingLayer);
 		}
 	},
 	showingChanged: function() {

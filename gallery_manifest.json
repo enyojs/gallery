@@ -95,11 +95,16 @@
             "website": "",
             "twitter": "ShiftyAxel"
         },
-		"sugardave": {
-			"name": "sugardave",
-			"website": "http://app.sugardave.com",
-			"twitter": "sugar_dave"
-		}
+	"sugardave": {
+		"name": "sugardave",
+		"website": "http://app.sugardave.com",
+		"twitter": "sugar_dave"
+	},
+	"JakeMorrison": {
+		"name": "JMTK",
+		"website": "",
+		"twitter": "@jakemorrison24"
+	}
     },
     "widgets": [
         {
@@ -951,7 +956,7 @@
             "version": "1.0",
             "blurb": "An Enyo.Panels control that provides the ability to slide back and forth between different views without having to load all the views initially."
         },
-		{
+	{
             "name": "sugardave.View",
             "displayName": "View",
             "owner": "sugardave",
@@ -972,6 +977,24 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A simple generic view control.  Optional headerComponents and footerComponents properties allow you to easily custom your View.  Works great with Panels!"
-        }
+        },
+	{
+		"name": "jmtk.Spinner",
+		"displayName": "Spinner (Canvas)",
+		"owner": "JakeMorrison",
+		"dependencies": [
+		    {
+			"name": "Enyo 2",
+			"version": "Beta 5+"
+		    }
+		],
+		"url": "https://github.com/JakeMorrison/Enyo-2---Canvas-Spinner",
+		"demoUrl": "http://heartcode.robertpataki.com/canvasloader/",
+		"submissionDate": "Jun 21, 2012",
+		"testedPlatforms": "Chrome 18+ (Win7), Safari 5.1+ (Win7), Internet Explorer 9 (Win7), HP Touchpad",
+		"license": "Apache 2.0/MIT license",
+		"version": "1.0",
+		"blurb": "A canvas Spinner 'kind'. Has several properties such as color, shape, speed, etc. that can change dynamically. Can be small and compact, or can be big for placing in the middle of the screen."
+	}
     ]
 }

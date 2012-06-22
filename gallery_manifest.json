@@ -992,7 +992,7 @@
 		"demoUrl": "http://heartcode.robertpataki.com/canvasloader/",
 		"submissionDate": "Jun 21, 2012",
 		"testedPlatforms": "Chrome 18+ (Win7), Safari 5.1+ (Win7), Internet Explorer 9 (Win7), HP Touchpad",
-		"license": "Apache 2.0/MIT license"
+		"license": "Apache 2.0/MIT license",
 		"version": "1.0",
 		"blurb": "A canvas Spinner 'kind'. Has several properties such as color, shape, speed, etc. that can change dynamically. Can be small and compact, or can be big for placing in the middle of the screen."
 	}

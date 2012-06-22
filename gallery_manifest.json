@@ -981,7 +981,7 @@
 	{
 		"name": "jmtk.Spinner",
 		"displayName": "Spinner (Canvas)",
-		"owner", "JakeMorrison",
+		"owner": "JakeMorrison",
 		"dependencies": [
 		    {
 			"name": "Enyo 2",

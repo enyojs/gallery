@@ -100,11 +100,11 @@
             "website": "http://app.sugardave.com",
             "twitter": "sugar_dave"
         },
-        "JakeMorrison": {
-            "name": "JMTK",
-            "website": "",
-            "twitter": "@jakemorrison24"
-        }
+        "JMTK": {
+    		"name": "JMTK",
+    		"website": "http://cs.clemson.edu/~tkimmet/JMTK/",
+    		"twitter": "@jakemorrison24"
+    	}
     },
     "widgets": [
         {
@@ -978,23 +978,41 @@
             "version": "1.0",
             "blurb": "A simple generic view control.  Optional headerComponents and footerComponents properties allow you to easily custom your View.  Works great with Panels!"
         },
-        {
-            "name": "jmtk.spinner",
-            "displayName": "Spinner (Canvas)",
-            "owner": "JakeMorrison",
-            "dependencies": [
-                {
-                    "name": "Enyo 2",
-                    "version": "Beta 5+"
-                }
-            ],
-            "url": "https://github.com/JakeMorrison/Enyo-2---Canvas-Spinner",
-            "demoUrl": "http://heartcode.robertpataki.com/canvasloader/",
-            "submissionDate": "Jun 21, 2012",
-            "testedPlatforms": "Chrome 18+ (Win7), Safari 5.1+ (Win7), Internet Explorer 9 (Win7), HP Touchpad",
-            "license": "Apache 2.0/MIT license",
-            "version": "1.0",
-            "blurb": "A canvas Spinner 'kind'. Has several properties such as color, shape, speed, etc. that can change dynamically. Can be small and compact, or can be big for placing in the middle of the screen."
-        }
+    	{
+			"name": "jmtk.Spinner",
+			"displayName": "Spinner (Canvas)",
+			"owner": "JMTK",
+			"dependencies": [
+				{
+				"name": "Enyo 2",
+				"version": "Beta 5+"
+				}
+			],
+			"url": "https://github.com/JMTK/canvas-spinner",
+			"demoUrl": "http://cs.clemson.edu/~tkimmet/JMTK/index.html?page=spinner",
+			"submissionDate": "Jun 21, 2012",
+			"testedPlatforms": "Chrome 18+ (Win7), Safari 5.1+ (Win7), Internet Explorer 9 (Win7), HP Touchpad",
+			"license": "Apache 2.0/MIT license",
+			"version": "1.0",
+			"blurb": "A canvas Spinner 'kind'. Has several properties such as color, shape, speed, etc. that can change dynamically. Can be small and compact, or can be big for placing in the middle of the screen."
+		},
+		{
+			"name": "jmtk.FileInput",
+			"displayName": "Decorated File Input",
+			"owner": "JMTK",
+			"dependencies": [
+				{
+				"name": "Enyo 2",
+				"version": "Beta 5+"
+				}
+			],
+			"url": "https://github.com/JMTK/decorated-file-input",
+			"demoUrl": "http://cs.clemson.edu/~tkimmet/JMTK/index.html?page=fileinput",
+			"submissionDate": "Jul 3, 2012",
+			"testedPlatforms": "Chrome 18+ (Win7), Safari 5.1+ (Win7), Internet Explorer 9 (Win7), HP Touchpad",
+			"license": "Apache 2.0",
+			"version": "1.0",
+			"blurb": "A decorator for the HTML <input type=\"file\"> or in Enyo 2 {kind:\"enyo.Input\", type:\"file\"}. See the Source for much more information on usage."
+		}
     ]
 }

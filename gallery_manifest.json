@@ -996,7 +996,7 @@
             "version": "1.0",
             "blurb": "A canvas Spinner 'kind'. Has several properties such as color, shape, speed, etc. that can change dynamically. Can be small and compact, or can be big for placing in the middle of the screen."
         },
-		{
+        {
             "name": "jmtk.fileinput",
             "displayName": "Decorated File Input",
             "owner": "JMTK",

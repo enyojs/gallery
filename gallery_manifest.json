@@ -100,9 +100,9 @@
             "website": "http://app.sugardave.com",
             "twitter": "sugar_dave"
         },
-        "JakeMorrison": {
+        "JMTK": {
             "name": "JMTK",
-            "website": "",
+            "website": "http://cs.clemson.edu/~tkimmet/JMTK/",
             "twitter": "@jakemorrison24"
         }
     },
@@ -981,20 +981,38 @@
         {
             "name": "jmtk.spinner",
             "displayName": "Spinner (Canvas)",
-            "owner": "JakeMorrison",
+            "owner": "JMTK",
             "dependencies": [
                 {
                     "name": "Enyo 2",
                     "version": "Beta 5+"
                 }
             ],
-            "url": "https://github.com/JakeMorrison/Enyo-2---Canvas-Spinner",
-            "demoUrl": "http://heartcode.robertpataki.com/canvasloader/",
+            "url": "https://github.com/JMTK/canvas-spinner",
+            "demoUrl": "http://cs.clemson.edu/~tkimmet/JMTK/?page=spinner",
             "submissionDate": "Jun 21, 2012",
             "testedPlatforms": "Chrome 18+ (Win7), Safari 5.1+ (Win7), Internet Explorer 9 (Win7), HP Touchpad",
             "license": "Apache 2.0/MIT license",
             "version": "1.0",
             "blurb": "A canvas Spinner 'kind'. Has several properties such as color, shape, speed, etc. that can change dynamically. Can be small and compact, or can be big for placing in the middle of the screen."
+        },
+		{
+            "name": "jmtk.fileinput",
+            "displayName": "Decorated File Input",
+            "owner": "JMTK",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": "Beta 5+"
+                }
+            ],
+            "url": "https://github.com/JMTK/decorated-file-input",
+            "demoUrl": "http://cs.clemson.edu/~tkimmet/JMTK/?page=fileinput",
+            "submissionDate": "Jul 5, 2012",
+            "testedPlatforms": "Chrome 18+ (Win7), Safari 5.1+ (Win7), Internet Explorer 9 (Win7)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A decorator for the HTML <input type=\"file\"> or the Enyo 2 kind {kind:\"Input\", type:\"file\"}. View Source README for more information on usage."
         }
     ]
 }

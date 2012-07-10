@@ -1,0 +1,6 @@
+RedirectMatch 403 /\..*$
+
+# If you do not have mod_rewrite installed, you should remove these
+# directories from your webroot or otherwise protect them from being
+# downloaded.
+RewriteRule "(^|/)\." - [F] ¶

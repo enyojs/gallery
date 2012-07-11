@@ -1013,6 +1013,32 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A decorator for the HTML <input type=\"file\"> or the Enyo 2 kind {kind:\"Input\", type:\"file\"}. View Source README for more information on usage."
+        },
+		{
+            "name": "sugardave.PulloutToolbar",
+            "displayName": "PulloutToolbar",
+            "owner": "sugardave",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "layout",
+                    "version": ""
+                },
+				{
+					"name": "onyx",
+					"version": ""
+				}
+            ],
+            "url": "https://github.com/sugardave/PulloutToolbar",
+            "demoUrl": "http://sugardave.github.com/PulloutToolbar",
+            "submissionDate": "Jul 11, 2012",
+            "testedPlatforms": "Chrome 19 (Mac), Safari 5.1 (Mac), Firefox 13 (Mac)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A simple pullout toolbar control based on enyo.Popup."
         }
     ]
 }

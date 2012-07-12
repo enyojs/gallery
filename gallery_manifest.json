@@ -713,7 +713,7 @@
             "submissionDate": "Apr 22, 2012",
             "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 18.0.1025.151 (Mac), FireFox 11.0 (Mac)",
             "license": "Apache 2.0",
-            "version": "1.0",
+            "version": "1.1",
             "blurb": "A notification center, inspered by Growl and other"
         },
         {
@@ -1039,6 +1039,42 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A simple pullout toolbar control based on enyo.Popup."
+        },
+        {
+            "name": "MacFJA.Marquee",
+            "displayName": "Marquee",
+            "owner": "MacFJA",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+			"url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
+            "demoUrl": "http://macfja.github.com/enyo2-lib/onyx/marquee.html",
+            "submissionDate": "Jul 12, 2012",
+            "testedPlatforms": "Chrome 20.0.1132.57 (Mac), Safari 5.1.7 (Mac), Firefox 13.0.1 (Mac), Opera 11.64 (Mac)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "Marquee: Slide too long text"
+        },
+        {
+            "name": "MacFJA.Folding",
+            "displayName": "Folding",
+            "owner": "MacFJA",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+			"url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
+            "demoUrl": "http://macfja.github.com/enyo2-lib/onyx/folding.html",
+            "submissionDate": "Jul 12, 2012",
+            "testedPlatforms": "Chrome 20.0.1132.57 (Mac), Safari 5.1.7 (Mac), Firefox 13.0.1 (Mac), Opera 11.64 (Mac)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "Fold and unfold part of page"
         }
     ]
 }

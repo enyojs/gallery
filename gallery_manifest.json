@@ -1075,6 +1075,84 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "Fold and unfold part of page"
+        },
+        {
+            "name": "gts.DividerDrawer",
+            "displayName": "Divider Drawer",
+            "owner": "GlitchTechScience",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                },
+                {
+                    "name": "Layout/Fittable",
+                    "version": ""
+                }
+            ],
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/59cd3a0c4f4d/DividerDrawer",
+            "demoUrl": "",
+            "submissionDate": "July 13, 2012",
+            "testedPlatforms": "Chrome (Linux)",
+            "license": "Apache License, Version 2.0",
+            "version": "2.0.0",
+            "blurb": "Mimics Enyo 1.0 DividerDrawer look and functionality."
+        },
+        {
+            "name": "gts.SelectorBar",
+            "displayName": "Selector Bar",
+            "owner": "GlitchTechScience",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                },
+                {
+                    "name": "Layout/Fittable",
+                    "version": ""
+                }
+            ],
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/59cd3a0c4f4d/SelectorBar",
+            "demoUrl": "",
+            "submissionDate": "July 13, 2012",
+            "testedPlatforms": "Chrome (Linux)",
+            "license": "Apache License, Version 2.0",
+            "version": "2.0.0",
+            "blurb": "Selector that takes up an entire row. Does not look like a giant button."
+        },
+        {
+            "name": "gts.ToggleBar",
+            "displayName": "Toggle Bar",
+            "owner": "GlitchTechScience",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                },
+                {
+                    "name": "Layout/Fittable",
+                    "version": ""
+                }
+            ],
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/59cd3a0c4f4d/ToggleBar",
+            "demoUrl": "",
+            "submissionDate": "July 13, 2012",
+            "testedPlatforms": "Chrome (Linux)",
+            "license": "Apache License, Version 2.0",
+            "version": "2.0.0",
+            "blurb": "Displays ToggleButton in an Item row kind. Text is on the left, toggle is on the right."
         }
     ]
 }

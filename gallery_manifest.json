@@ -1012,7 +1012,7 @@
             "testedPlatforms": "Chrome 18+ (Win7), Safari 5.1+ (Win7), Internet Explorer 9 (Win7)",
             "license": "Apache 2.0",
             "version": "1.0",
-            "blurb": "A decorator for the HTML <input type=\"file\"> or the Enyo 2 kind {kind:\"Input\", type:\"file\"}. View Source README for more information on usage."
+            "blurb": "A decorator for the HTML &lt;input type=\"file\"&gt; or the Enyo 2 kind {kind:\"Input\", type:\"file\"}. View Source README for more information on usage."
         },
 		{
             "name": "sugardave.PulloutToolbar",

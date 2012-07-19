@@ -1153,6 +1153,24 @@
             "license": "Apache License, Version 2.0",
             "version": "2.0.0",
             "blurb": "Displays ToggleButton in an Item row kind. Text is on the left, toggle is on the right."
+        },
+	 {
+            "name": "whatfield73.ajaxwebview",
+            "displayName": "Ajax Webview",
+            "owner": "whatfield73",
+            "dependencies": [
+                {
+                    "name": "Enyo 2.0",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/whatfield73/WebView/",
+	    "demoUrl": "http://jsfiddle.net/FuUXv/",
+            "submissionDate": "July 19, 2012",
+            "testedPlatforms": "Chrome 19, Android, WP7",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "This is a rework of Josh Marinacci's webview using Ajax and Enyo 2 (used by permission).  It doesn't do everything a webOS webView did but it shouldn't be difficult to add new features.  It allows you to change the sizing of the page easily.  The basic capabilities are that it will load pages and follow clicks of both links and images.  Still to be done for now: process forms when submitted.  Known issues: Doesn't process css for Android 2.3 in webview."
         }
     ]
 }

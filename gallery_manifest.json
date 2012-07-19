@@ -633,13 +633,13 @@
                     "version": ""
                 }
             ],
-            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/5c2ab99f1d0b/DatePicker",
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/ab3541f2f1d0/DatePicker",
             "demoUrl": "",
             "submissionDate": "Apr 19, 2012",
             "testedPlatforms": "webOS 3.0.5, Chrome 18 (Windows), Firefox (Windows), Internet Explorer 9",
             "license": "Apache License, Version 2.0",
             "version": "2.0.0",
-            "blurb": "Calendar style date picker for EnyoJS. This kind uses native Onyx and Layout/Fittable components to reduce dependencies and keep the style similar to the rest of Enyo's UI components. GTS.DatePicker uses a standard JavaScript date object for its value."
+            "blurb": "Calendar style date picker for EnyoJS. This kind uses native Onyx and Layout/Fittable components to reduce dependencies and keep the style similar to the rest of Enyo's UI components. GTS.DatePicker uses a standard JavaScript date object for its value. *Update* Now has a client control area for easy visual integration of gts.TimePicker. The time picker will still require seperate handling."
         },
         {
             "name": "com.Pre101.Masonry",
@@ -1171,6 +1171,28 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "This is a rework of Josh Marinacci's webview using Ajax and Enyo 2 (used by permission).  It doesn't do everything a webOS webView did but it shouldn't be difficult to add new features.  It allows you to change the sizing of the page easily.  The basic capabilities are that it will load pages and follow clicks of both links and images.  Still to be done for now: process forms when submitted.  Known issues: Doesn't process css for Android 2.3 in webview."
+        },
+        {
+            "name": "gts.TimePicker",
+            "displayName": "Time Picker",
+            "owner": "GlitchTechScience",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": "2.0-GA"
+                },
+                {
+                    "name": "Onyx",
+                    "version": "2.0-GA"
+                }
+            ],
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/ab3541f2f1d0/TimePicker",
+            "demoUrl": "",
+            "submissionDate": "July 19, 2012",
+            "testedPlatforms": "Chrome (Linux)",
+            "license": "Apache License, Version 2.0",
+            "version": "2.0.0",
+            "blurb": "Time picker kind. Uses onyx.Picker for the select options. Returns a date object. Can be placed inside of gts.DatePicker, but will still require seperate handling."
         }
     ]
 }

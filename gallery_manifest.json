@@ -633,7 +633,7 @@
                     "version": ""
                 }
             ],
-            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/ab3541f2f1d0/DatePicker",
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/DatePicker",
             "demoUrl": "",
             "submissionDate": "Apr 19, 2012",
             "testedPlatforms": "webOS 3.0.5, Chrome 18 (Windows), Firefox (Windows), Internet Explorer 9",
@@ -905,7 +905,7 @@
                     "version": ""
                 }
             ],
-            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/3a5786b5c199/Joystick",
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/Joystick",
             "demoUrl": "",
             "submissionDate": "June 15, 2012",
             "testedPlatforms": "webOS 3.0.5, Chrome 18 (Windows, Linux), Firefox (Windows, Linux)",
@@ -927,7 +927,7 @@
                     "version": ""
                 }
             ],
-            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/3a5786b5c199/Keyboard",
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/Keyboard",
             "demoUrl": "",
             "submissionDate": "June 15, 2012",
             "testedPlatforms": "Chrome 18 (Windows, Linux), Firefox (Windows, Linux)",
@@ -1094,7 +1094,7 @@
                     "version": ""
                 }
             ],
-            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/59cd3a0c4f4d/DividerDrawer",
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/DividerDrawer",
             "demoUrl": "",
             "submissionDate": "July 13, 2012",
             "testedPlatforms": "Chrome (Linux)",
@@ -1120,7 +1120,7 @@
                     "version": ""
                 }
             ],
-            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/59cd3a0c4f4d/SelectorBar",
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/SelectorBar",
             "demoUrl": "",
             "submissionDate": "July 13, 2012",
             "testedPlatforms": "Chrome (Linux)",
@@ -1146,7 +1146,7 @@
                     "version": ""
                 }
             ],
-            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/59cd3a0c4f4d/ToggleBar",
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/ToggleBar",
             "demoUrl": "",
             "submissionDate": "July 13, 2012",
             "testedPlatforms": "Chrome (Linux)",
@@ -1186,7 +1186,7 @@
                     "version": "2.0-GA"
                 }
             ],
-            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/ab3541f2f1d0/TimePicker",
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/TimePicker",
             "demoUrl": "",
             "submissionDate": "July 19, 2012",
             "testedPlatforms": "Chrome (Linux)",

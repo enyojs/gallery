@@ -247,7 +247,7 @@
             "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 17.0.963.56 (Mac), Safari (iOS 5.1)",
             "license": "Apache 2.0",
             "version": "1.1",
-            "blurb": "A TextArea control (based on onyx.Input) that automatically resizes."
+            "blurb": "A TextArea control (based on onyx.Input) that automatically resizes. (Prefer MacFJA.GrowTextBox)"
         },
         {
             "name": "morethanreal.GoogleMap",
@@ -1220,6 +1220,42 @@
             "license": "MIT License",
             "version": "0.1.0",
             "blurb": "Abstracts the enyo.TestSuite finish() method into this.assert calls (similar to the Test Package Wishlist)"
+        },
+        {
+            "name": "MacFJA.GrowTextBox",
+            "displayName": "GrowTextBox",
+            "owner": "MacFJA",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
+            "demoUrl": "http://macfja.github.com/enyo2-lib/onyx/growtextbox.html",
+            "submissionDate": "August 4, 2012",
+            "testedPlatforms": "Safari 5.1.7 (Mac), Firefox 13.0.1 (Mac)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "Automatic resizing text area (vertical or horizontal or both or none)"
+        },
+        {
+            "name": "MacFJA.UndoRedo",
+            "displayName": "UndoRedo",
+            "owner": "MacFJA",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
+            "demoUrl": "http://macfja.github.com/enyo2-lib/UndoRedo/example.html",
+            "submissionDate": "August 4, 2012",
+            "testedPlatforms": "Safari 5.1.7 (Mac), Firefox 13.0.1 (Mac), Opera 11.64 (Mac)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "Add to Component the ability to undone properties changes"
         }
     ]
 }

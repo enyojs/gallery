@@ -104,6 +104,11 @@
             "name": "JMTK",
             "website": "http://cs.clemson.edu/~tkimmet/JMTK/",
             "twitter": "@jakemorrison24"
+        },
+        "phated": {
+            "name": "Blaine Bublitz",
+            "website": "http://www.iceddev.com",
+            "twitter": "BlaineBublitz"
         }
     },
     "widgets": [
@@ -1193,6 +1198,28 @@
             "license": "Apache License, Version 2.0",
             "version": "2.0.0",
             "blurb": "Time picker kind. Uses onyx.Picker for the select options. Returns a date object. Can be placed inside of gts.DatePicker, but will still require seperate handling."
+        },
+        {
+            "name": "phated.Assertions",
+            "displayName": "Assertions",
+            "owner": "phated",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "test",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/phated/enyo-assertions",
+            "demoUrl": "http://phated.github.com/enyo-assertions/",
+            "submissionDate": "August 4, 2012",
+            "testedPlatforms": "Chrome 21 (Linux), Firefox 14.0.1 (Linux), Chromium 18 (Linux)",
+            "license": "MIT License",
+            "version": "0.1.0",
+            "blurb": "Abstracts the enyo.TestSuite finish() method into this.assert calls (similar to the Test Package Wishlist)"
         }
     ]
 }

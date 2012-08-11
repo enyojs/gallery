@@ -102,7 +102,7 @@
         },
         "JMTK": {
             "name": "JMTK",
-            "website": "http://cs.clemson.edu/~tkimmet/JMTK/",
+            "website": "http://jmtk.us.to/",
             "twitter": "@jakemorrison24"
         },
         "phated": {
@@ -994,7 +994,7 @@
                 }
             ],
             "url": "https://github.com/JMTK/canvas-spinner",
-            "demoUrl": "http://cs.clemson.edu/~tkimmet/JMTK/?page=spinner",
+            "demoUrl": "http://jmtk.us.to/#spinner",
             "submissionDate": "Jun 21, 2012",
             "testedPlatforms": "Chrome 18+ (Win7), Safari 5.1+ (Win7), Internet Explorer 9 (Win7), HP Touchpad",
             "license": "Apache 2.0/MIT license",
@@ -1012,7 +1012,7 @@
                 }
             ],
             "url": "https://github.com/JMTK/decorated-file-input",
-            "demoUrl": "http://cs.clemson.edu/~tkimmet/JMTK/?page=fileinput",
+            "demoUrl": "http://jmtk.us.to/#fileinput",
             "submissionDate": "Jul 5, 2012",
             "testedPlatforms": "Chrome 18+ (Win7), Safari 5.1+ (Win7), Internet Explorer 9 (Win7)",
             "license": "Apache 2.0",

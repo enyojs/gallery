@@ -102,13 +102,18 @@
         },
         "JMTK": {
             "name": "JMTK",
-            "website": "http://cs.clemson.edu/~tkimmet/JMTK/",
+            "website": "http://jmtk.us.to/",
             "twitter": "@jakemorrison24"
         },
         "phated": {
             "name": "Blaine Bublitz",
             "website": "http://www.iceddev.com",
             "twitter": "BlaineBublitz"
+       },
+        "ryanjduffy": {
+            "name": "ryanjduffy",
+            "website": "http://blog.technisode.com",
+            "twitter": "ryanjduffy"
         }
     },
     "widgets": [
@@ -994,7 +999,7 @@
                 }
             ],
             "url": "https://github.com/JMTK/canvas-spinner",
-            "demoUrl": "http://cs.clemson.edu/~tkimmet/JMTK/?page=spinner",
+            "demoUrl": "http://jmtk.us.to/#spinner",
             "submissionDate": "Jun 21, 2012",
             "testedPlatforms": "Chrome 18+ (Win7), Safari 5.1+ (Win7), Internet Explorer 9 (Win7), HP Touchpad",
             "license": "Apache 2.0/MIT license",
@@ -1012,7 +1017,7 @@
                 }
             ],
             "url": "https://github.com/JMTK/decorated-file-input",
-            "demoUrl": "http://cs.clemson.edu/~tkimmet/JMTK/?page=fileinput",
+            "demoUrl": "http://jmtk.us.to/#fileinput",
             "submissionDate": "Jul 5, 2012",
             "testedPlatforms": "Chrome 18+ (Win7), Safari 5.1+ (Win7), Internet Explorer 9 (Win7)",
             "license": "Apache 2.0",
@@ -1256,6 +1261,24 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "Add to Component the ability to undone properties changes"
-        }
+        },
+        {
+            "name": "extras.GridLayout",
+            "displayName": "GridLayout",
+            "owner":"ryanjduffy",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/tiqtech/enyo-extras",
+            "demoUrl": "http://tiqtech.com/gallery/grid.html",
+            "submissionDate": "July 26th, 2012",
+            "testedPlatforms": "Chrome v20",
+            "license": "Apache 2.0",
+            "version": "2.0",
+            "blurb": "Lays out client controls in a grid.  Configurable cell height, width, margin, and alignment.  When the control is resized, the components animate to their new position using CSS transitions."
+		}
     ]
 }

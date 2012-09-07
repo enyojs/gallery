@@ -1,5 +1,10 @@
 {
     "owners": {
+        "tjwebb": {
+            "name": "NBT Solutions",
+            "website": "http://www.nbtsolutions.com",
+            "twitter": "NBTSolutions"
+        },
         "rwatkins": {
             "name": "Ryan Watkins",
             "website": "http://www.ryanwatkins.net",
@@ -117,6 +122,28 @@
         }
     },
     "widgets": [
+        {
+            "name": "nbt.OpenLayers",
+            "displayName": "OpenLayers Control",
+            "owner": "tjwebb",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "OpenLayers",
+                    "version": "2.x"
+                }
+            ],
+            "url": "https://github.com/NBTSolutions/enyo-openlayers",
+            "demoUrl": "http://dev.nbtsolutions.net/enyo-openlayers/",
+            "submissionDate": "Sept 7, 2012",
+            "testedPlatforms": "All"
+            "license": "LGPL 3",
+            "version": "1.0",
+            "blurb": "Enyo 2 Control for OpenLayers (openlayers.org)"
+        },
         {
             "name": "rwatkins.MenuPane",
             "displayName": "MenuPane Control",

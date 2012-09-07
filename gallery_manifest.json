@@ -114,7 +114,7 @@
             "name": "Blaine Bublitz",
             "website": "http://www.iceddev.com",
             "twitter": "BlaineBublitz"
-       },
+        },
         "ryanjduffy": {
             "name": "ryanjduffy",
             "website": "http://blog.technisode.com",
@@ -139,7 +139,7 @@
             "url": "https://github.com/NBTSolutions/enyo-openlayers",
             "demoUrl": "http://dev.nbtsolutions.net/enyo-openlayers/",
             "submissionDate": "Sept 7, 2012",
-            "testedPlatforms": "All"
+            "testedPlatforms": "All",
             "license": "LGPL 3",
             "version": "1.0",
             "blurb": "Enyo 2 Control for OpenLayers (openlayers.org)"
@@ -1051,7 +1051,7 @@
             "version": "1.0",
             "blurb": "A decorator for the HTML &lt;input type=\"file\"&gt; or the Enyo 2 kind {kind:\"Input\", type:\"file\"}. View Source README for more information on usage."
         },
-		{
+        {
             "name": "sugardave.PulloutToolbar",
             "displayName": "PulloutToolbar",
             "owner": "sugardave",
@@ -1064,10 +1064,10 @@
                     "name": "layout",
                     "version": ""
                 },
-				{
-					"name": "onyx",
-					"version": ""
-				}
+                {
+                    "name": "onyx",
+                    "version": ""
+                }
             ],
             "url": "https://github.com/sugardave/PulloutToolbar",
             "demoUrl": "http://sugardave.github.com/PulloutToolbar",
@@ -1087,7 +1087,7 @@
                     "version": ""
                 }
             ],
-			"url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
+            "url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
             "demoUrl": "http://macfja.github.com/enyo2-lib/onyx/marquee.html",
             "submissionDate": "Jul 12, 2012",
             "testedPlatforms": "Chrome 20.0.1132.57 (Mac), Safari 5.1.7 (Mac), Firefox 13.0.1 (Mac), Opera 11.64 (Mac)",
@@ -1105,7 +1105,7 @@
                     "version": ""
                 }
             ],
-			"url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
+            "url": "https://github.com/MacFJA/enyo2-lib/tree/master/onyx",
             "demoUrl": "http://macfja.github.com/enyo2-lib/onyx/folding.html",
             "submissionDate": "Jul 12, 2012",
             "testedPlatforms": "Chrome 20.0.1132.57 (Mac), Safari 5.1.7 (Mac), Firefox 13.0.1 (Mac), Opera 11.64 (Mac)",
@@ -1191,7 +1191,7 @@
             "version": "2.0.0",
             "blurb": "Displays ToggleButton in an Item row kind. Text is on the left, toggle is on the right."
         },
-	 {
+        {
             "name": "whatfield73.ajaxwebview",
             "displayName": "Ajax Webview",
             "owner": "whatfield73",
@@ -1202,7 +1202,7 @@
                 }
             ],
             "url": "https://github.com/whatfield73/WebView/",
-	    "demoUrl": "http://jsfiddle.net/FuUXv/",
+            "demoUrl": "http://jsfiddle.net/FuUXv/",
             "submissionDate": "July 19, 2012",
             "testedPlatforms": "Chrome 19, Android, WP7",
             "license": "Apache 2.0",
@@ -1292,7 +1292,7 @@
         {
             "name": "extras.GridLayout",
             "displayName": "GridLayout",
-            "owner":"ryanjduffy",
+            "owner": "ryanjduffy",
             "dependencies": [
                 {
                     "name": "Enyo 2",
@@ -1306,6 +1306,6 @@
             "license": "Apache 2.0",
             "version": "2.0",
             "blurb": "Lays out client controls in a grid.  Configurable cell height, width, margin, and alignment.  When the control is resized, the components animate to their new position using CSS transitions."
-		}
+        }
     ]
 }

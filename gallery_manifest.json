@@ -1306,6 +1306,28 @@
             "license": "Apache 2.0",
             "version": "2.0",
             "blurb": "Lays out client controls in a grid.  Configurable cell height, width, margin, and alignment.  When the control is resized, the components animate to their new position using CSS transitions."
+        },
+        {
+            "name": "gts.ProgressDialog",
+            "displayName": "Progress Dialog",
+            "owner": "GlitchTechScience",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/ProgressDialog",
+            "demoUrl": "",
+            "submissionDate": "September 13, 2012",
+            "testedPlatforms": "Chrome 18",
+            "license": "Apache License, Version 2.0",
+            "version": "2.0.0",
+            "blurb": "Progress display dialog with title, text, progress bar, and (optional) cancel button. For easy use, just include an object with the paramaters and their values you wish to update when calling show. ex: this.$['progress'].show( { 'title': 'Some Progress', 'message': 'Linking to some system...', 'progress': 25 });"
         }
     ]
 }

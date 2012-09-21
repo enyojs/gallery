@@ -1328,6 +1328,28 @@
             "license": "Apache License, Version 2.0",
             "version": "2.0.0",
             "blurb": "Progress display dialog with title, text, progress bar, and (optional) cancel button. For easy use, just include an object with the paramaters and their values you wish to update when calling show. ex: this.$['progress'].show( { 'title': 'Some Progress', 'message': 'Linking to some system...', 'progress': 25 });"
+        },
+        {
+            "name": "extras.AutoCorrectInputDecorator",
+            "displayName": "AutoCorrectInputDecorator",
+            "owner": "ryanjduffy",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/tiqtech/enyo-extras",
+            "demoUrl": "http://tiqtech.com/gallery/autocorrect.html",
+            "submissionDate": "September 21st, 2012",
+            "testedPlatforms": "Chrome v20",
+            "license": "Apache 2.0",
+            "version": "2.0",
+            "blurb": "Adds auto-correct to input fields via a Menu control"
         }
     ]
 }

@@ -1,5 +1,10 @@
 {
     "owners": {
+	"Rahien": {
+	    "name": "Rahien",
+	    "website": "https://github.com/Rahien",
+	    "twitter": "",
+	},
         "tjwebb": {
             "name": "NBT Solutions",
             "website": "http://www.nbtsolutions.com",
@@ -122,6 +127,28 @@
         }
     },
     "widgets": [
+	{
+            "name": "rahien.ReorderableList",
+            "displayName": "Reorderable List",
+            "owner": "Rahien",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "layout",
+                    "version": "2.x"
+                }
+            ],
+            "url": "https://github.com/Rahien/enyo-ReorderableList.git",
+            "demoUrl": "http://rahien.github.com/enyo-ReorderableList/example.html",
+            "submissionDate": "Oct 4, 2012",
+            "testedPlatforms": "Chromium 18.0.1025.168 and 20.0.1132.47 (linux), Firefox 15.0.1 (linux, windows 7), Opera 12.02 (linux, windows 7), Firefox for mobile v. 15.0 (android 2.3), Safari IOS 5.1.1 (ipod), IE 9 (warning: mystical move event prevents dragging in one movement, two clicks are required) (windows 7), Chrome 21.0.1180.89 (windows 7)",
+            "license": "MIT",
+            "version": "1.0",
+            "blurb": "This component is a multi-purpose extension of the enyojs list component. It allows the user to select items in the list by holding, pull them out and insert them at another location. All using drag and drop."
+        },
         {
             "name": "nbt.OpenLayers",
             "displayName": "OpenLayers Control",

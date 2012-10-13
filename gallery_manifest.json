@@ -1377,6 +1377,24 @@
             "license": "Apache 2.0",
             "version": "2.0",
             "blurb": "Adds auto-complete to input fields via a Menu control"
+        },
+        {
+            "name": "MacFJA.Griddable",
+            "displayName": "Griddable Layout",
+            "owner": "MacFJA",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/MacFJA/enyo2-lib/tree/master/griddable",
+            "demoUrl": "http://macfja.github.com/enyo2-lib/griddable/basic.html",
+            "submissionDate": "oct 13, 2012",
+            "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.7 (Mac), Google Chrome 18.0.1025.151 (Mac), FireFox 11.0 (Mac)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A Grid layout"
         }
     ]
 }

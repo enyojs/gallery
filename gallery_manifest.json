@@ -124,7 +124,12 @@
             "name": "ryanjduffy",
             "website": "http://blog.technisode.com",
             "twitter": "ryanjduffy"
-        }
+        },
+		"DougReeder": {
+			"name": "Doug Reeder",
+			"website": "http://hominidsoftware.com/",
+			"twitter": "reeder29"
+		}
     },
     "widgets": [
 	{
@@ -1395,6 +1400,19 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A Grid layout"
-        }
+        },
+		{
+			"name": "Video",
+			"displayName": "Video",
+			"owner": "DougReeder",
+			"dependencies": [],
+			"url": "https://github.com/DougReeder/bootplate",
+			"demoUrl": "http://hominidsoftware.com/enyoVideo/",
+			"submissionDate": "Oct 18, 2012",
+			"testedPlatforms": "OS X Chrome 22.0.1229.94, OS X Firefox 13.0.1, OS X Safari 5.1.7, Windows XP IE8, Windows XP Firefox, Windows XP Safari, webOS 2.2.4 browser, webOS 3.0.5 browser",
+			"license": "Apache License, Version 2.0",
+			"version": "0.1",
+			"blurb": "a general-purpose video player, which uses HTML 5 video or Flash Media Playback, as appropriate for the platform where it runs.  Currently a proof of concept (you must specify the video source before the Control is rendered)."
+		}
     ]
 }

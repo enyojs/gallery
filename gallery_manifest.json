@@ -1435,6 +1435,6 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "Styles all controls the same width, and correctly rounds all corners, even when the control has to wrap on smaller screens"
-        },
+        }
     ]
 }

@@ -129,7 +129,11 @@
 			"name": "Doug Reeder",
 			"website": "http://hominidsoftware.com/",
 			"twitter": "reeder29"
-		}
+		},
+        "appsbychris": {
+            "name": "Chris Van Hooser",
+            "website": "http://chrishptouchpadapps.tumblr.com/"
+        }
     },
     "widgets": [
 	{
@@ -1413,6 +1417,24 @@
 			"license": "Apache License, Version 2.0",
 			"version": "0.1",
 			"blurb": "a general-purpose video player, which uses HTML 5 video or Flash Media Playback, as appropriate for the platform where it runs.  Currently a proof of concept (you must specify the video source before the Control is rendered)."
-		}
+		},
+        {
+            "name": "expandable.RadioGroup",
+            "displayName": "Expandable Radio Group",
+            "owner": "appsbychris",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/appsbychris/enyo2-stuff/tree/master/ExpandableRadioGroup",
+            "demoUrl": "http://jsfiddle.net/3L6jL/14/",
+            "submissionDate": "oct 28, 2012",
+            "testedPlatforms": "Google Chrome (PC), FireFox (PC), Android 4.0+",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "Styles all controls the same width, and correctly rounds all corners, even when the control has to wrap on smaller screens"
+        }
     ]
 }

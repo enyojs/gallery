@@ -1435,6 +1435,28 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "Styles all controls the same width, and correctly rounds all corners, even when the control has to wrap on smaller screens"
+        },
+        {
+            "name": "TitledMenu",
+            "displayName": "Titled Menu",
+            "owner": "appsbychris",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/appsbychris/enyo2-stuff/tree/master/TitledMenu",
+            "demoUrl": "http://jsfiddle.net/sqHSL/",
+            "submissionDate": "nov 7, 2012",
+            "testedPlatforms": "Google Chrome (PC), FireFox (PC), Android 4.0+",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A menu with a title. You can set custom classes and height to the title bar."
         }
     ]
 }

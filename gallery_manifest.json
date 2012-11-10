@@ -1253,11 +1253,11 @@
             ],
             "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/TimePicker",
             "demoUrl": "",
-            "submissionDate": "July 19, 2012",
+            "submissionDate": "November 10, 2012",
             "testedPlatforms": "Chrome (Linux)",
             "license": "Apache License, Version 2.0",
-            "version": "2.0.0",
-            "blurb": "Time picker kind. Uses onyx.Picker for the select options. Returns a date object. Can be placed inside of gts.DatePicker, but will still require seperate handling."
+            "version": "2.1.0",
+            "blurb": "Extends onyx.TimePicker. Adds options for minute interval and picker label."
         },
         {
             "name": "phated.Assertions",

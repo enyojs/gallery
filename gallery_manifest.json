@@ -595,18 +595,14 @@
                 {
                     "name": "Onyx",
                     "version": ""
-                },
-                {
-                    "name": "MaKleSoft.SelectDecorator",
-                    "version": ""
                 }
             ],
             "url": "https://github.com/MachiApps/Enyo-2-Components",
-            "demoUrl": "http://machiapps.com/components/datePicker.html",
+            "demoUrl": "http://www.machiapps.com/Components/Cal.html",
             "submissionDate": "Apr 15, 2012",
             "testedPlatforms": "Safari 5.1.5 (Windows), Google Chrome 18.0.1025.152 (Windows)",
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
-            "version": "1.0",
+            "version": "2.0",
             "blurb": "Date Picker"
         },
         {
@@ -621,18 +617,14 @@
                 {
                     "name": "Onyx",
                     "version": ""
-                },
-                {
-                    "name": "MaKleSoft.SelectDecorator",
-                    "version": ""
                 }
             ],
             "url": "https://github.com/MachiApps/Enyo-2-Components",
-            "demoUrl": "http://machiapps.com/components/bigCal.html",
+            "demoUrl": "http://www.machiapps.com/Components/Cal.html",
             "submissionDate": "Apr 15, 2012",
             "testedPlatforms": "Safari 5.1.5 (Windows), Google Chrome 18.0.1025.152 (Windows)",
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
-            "version": "1.0",
+            "version": "2.0",
             "blurb": "A Date Picker which includes a calendar"
         },
         {
@@ -742,11 +734,11 @@
                 }
             ],
             "url": "https://github.com/MachiApps/Enyo-2-Components",
-            "demoUrl": "http://machiapps.com/components/checkboxes.html",
+            "demoUrl": "http://machiapps.com/Components/CheckBoxes.html",
             "submissionDate": "Apr 21, 2012",
             "testedPlatforms": "Safari 5.1.5 (Windows), Google Chrome 18.0.1025.152 (Windows)",
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
-            "version": "1.0",
+            "version": "2.0",
             "blurb": "Allows you to set a color to checkboxes.  Extends onyx.Checkbox.  Can set just 'color', or both 'checkedColor' and 'uncheckedColor'"
         },
         {
@@ -843,11 +835,11 @@
                 }
             ],
             "url": "https://github.com/MachiApps/Enyo-2-Components",
-            "demoUrl": "http://machiapps.com/components/colorPicker.html",
+            "demoUrl": "http://machiapps.com/Components/ColorPicker.html",
             "submissionDate": "May 9, 2012",
             "testedPlatforms": "Safari 5.1.5 (Windows), Google Chrome 18.0.1025.152 (Windows)",
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
-            "version": "1.0",
+            "version": "2.0",
             "blurb": "Pretty Basic Color Picker"
         },
         {
@@ -1457,6 +1449,28 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A menu with a title. You can set custom classes and height to the title bar."
+        },
+        {
+            "name": "MachiApps.PinEntry",
+            "displayName": "Pin Entry",
+            "owner": "MachiApps",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/MachiApps/Enyo-2-Components",
+            "demoUrl": "http://machiapps.com/Components/PinEntry.html",
+            "submissionDate": "Nov. 9, 2012",
+            "testedPlatforms": "Safari 5.1.5 (Windows), Google Chrome 18.0.1025.152 (Windows)",
+            "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
+            "version": "2.0",
+            "blurb": "Four Digit Pin Entry Form"
         }
     ]
 }

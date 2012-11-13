@@ -437,8 +437,8 @@
                     "version": ""
                 }
             ],
-            "url": "https://github.com/JayCanuck/Enyo-2-Components/tree/master/xmlprequest",
-            "demoUrl": "http://jaycanuck.github.com/Enyo-2-Components/xmlprequest/demo.html",
+            "url": "https://github.com/JayCanuck/enyo-2-components/tree/master/xmlprequest",
+            "demoUrl": "http://jaycanuck.github.com/enyo-2-components/xmlprequest/demo.html",
             "submissionDate": "April 2, 2012",
             "testedPlatforms": "Firefox 11.0 (Windows), Google Chrome 18.0.1025.142 (Windows),  Internet Explorer 9.0.8112.16421 (Windows)",
             "license": "MIT License",
@@ -459,8 +459,8 @@
                     "version": ""
                 }
             ],
-            "url": "https://github.com/JayCanuck/Enyo-2-Components/tree/master/yqlprequest",
-            "demoUrl": "http://jaycanuck.github.com/Enyo-2-Components/yqlprequest/demo.html",
+            "url": "https://github.com/JayCanuck/enyo-2-components/tree/master/yqlprequest",
+            "demoUrl": "http://jaycanuck.github.com/enyo-2-components/yqlprequest/demo.html",
             "submissionDate": "April 9, 2012",
             "testedPlatforms": "Firefox 11.0 (Windows), Google Chrome 18.0.1025.142 (Windows),  Internet Explorer 9.0.8112.16421 (Windows)",
             "license": "MIT License",
@@ -477,8 +477,8 @@
                     "version": ""
                 }
             ],
-            "url": "https://github.com/JayCanuck/Enyo-2-Components/tree/master/webos-ext",
-            "demoUrl": "http://jaycanuck.github.com/Enyo-2-Components/webos-ext/demo.html",
+            "url": "https://github.com/JayCanuck/enyo-2-components/tree/master/webos-ext",
+            "demoUrl": "http://jaycanuck.github.com/enyo-2-components/webos-ext/demo.html",
             "submissionDate": "April 9, 2012",
             "testedPlatforms": "webOS 3.0.5",
             "license": "MIT License",
@@ -495,13 +495,31 @@
                     "version": "Java 1.5 or greater"
                 }
             ],
-            "url": "https://github.com/JayCanuck/Enyo-2-Components/tree/master/javaapplet",
-            "demoUrl": "http://jaycanuck.github.com/Enyo-2-Components/javaapplet/demo.html",
+            "url": "https://github.com/JayCanuck/enyo-2-components/tree/master/javaapplet",
+            "demoUrl": "http://jaycanuck.github.com/enyo-2-components/javaapplet/demo.html",
             "submissionDate": "April 22, 2012",
             "testedPlatforms": "Firefox 11.0 (Windows), Google Chrome 18.0.1025.142 (Windows),  Internet Explorer 9.0.8112.16421 (Windows)",
             "license": "MIT License",
             "version": "1.0",
             "blurb": "Java applets brought to Enyo2, with enhanced support for 2-way communication of data between the Java applet and javascript Enyo2 code. Requires the use of EnyoApplet/EnyoJApplet (instead of Applet/JApplet), included on the git prepackaged into the EnyoApplet.jar library."
+        },
+        {
+	    "name": "JayCanuck.FileInputDecorator",
+	    "displayName": "FileInputDecorator",
+	    "owner": "JayCanuck",
+	    "dependencies": [
+		{
+		    "name": "Enyo 2",
+		    "version": ""
+		}
+	    ],
+	    "url": "https://github.com/JayCanuck/enyo-2-components/tree/master/fileinputdecorator",
+	    "demoUrl": "http://jaycanuck.github.com/enyo-2-components/fileinputdecorator/demo.html",
+	    "submissionDate": "Nov 13, 2012",
+	    "testedPlatforms": "Firefox 16.0.2 (Windows), Google Chrome 23.0.1271.64 (Windows),  Internet Explorer 9.0.8112.16421 (Windows)",
+	    "license": "MIT License",
+	    "version": "1.0",
+	    "blurb": "Allows for improved customizable file input, with support for filetype filters, multiple file selection, html5 media capture across a wide breadth of browsers, including iOS6 and Android 3.x+. Note: filetype filters, multiple file support, and media capture not supported in IE."
         },
         {
             "name": "MacFJA.Localize",

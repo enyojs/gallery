@@ -1489,6 +1489,24 @@
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
             "version": "2.0",
             "blurb": "Four Digit Pin Entry Form"
+        },
+        {
+            "name": "android.HSnapScroller",
+            "displayName": "android.HSnapScroller",
+            "owner": "appsbychris",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/appsbychris/enyo2-stuff/tree/master/android.HSnapScroller",
+            "demoUrl": "http://appsbychris.webege.com/SnapScrollerDemo/index.html",
+            "submissionDate": "nov 23, 2012",
+            "testedPlatforms": "Google Chrome (PC), Android 4.0+",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A horizontal snap scroller for android and webkit browsers. Supports infinite views, better reaction time on android vs. panels."
         }
     ]
 }

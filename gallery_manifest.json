@@ -132,7 +132,7 @@
 		},
         "appsbychris": {
             "name": "Chris Van Hooser",
-            "website": "http://chrishptouchpadapps.tumblr.com/"
+            "website": "http://appsbychris.net/"
         }
     },
     "widgets": [
@@ -1501,7 +1501,7 @@
                 }
             ],
             "url": "https://github.com/appsbychris/enyo2-stuff/tree/master/android.HSnapScroller",
-            "demoUrl": "http://appsbychris.webege.com/SnapScrollerDemo/index.html",
+            "demoUrl": "http://appsbychris.net/snapscrollerdemo/",
             "submissionDate": "nov 23, 2012",
             "testedPlatforms": "Google Chrome (PC), Android 4.0+",
             "license": "Apache 2.0",

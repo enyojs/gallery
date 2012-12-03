@@ -949,7 +949,7 @@
                 }
             ],
             "url": "https://github.com/ShiftyAxel/more-arrangers",
-            "demoUrl": "",
+            "demoUrl": "http://shiftyaxel.github.com/more-arrangers/index.html",
             "submissionDate": "June 11, 2012",
             "testedPlatforms": "Chrome 19+, Safari 5.1+, webOS 2.2.4",
             "license": "Apache 2.0",

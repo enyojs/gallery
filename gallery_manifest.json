@@ -133,6 +133,11 @@
         "appsbychris": {
             "name": "Chris Van Hooser",
             "website": "http://appsbychris.net/"
+        },
+        "pcimino": {
+            "name": "Paul L. Cimino",
+            "website": "http://translunardesigns.com",
+			"twitter": "PLCimino"
         }
     },
     "widgets": [
@@ -1507,6 +1512,28 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A horizontal snap scroller for android and webkit browsers. Supports infinite views, better reaction time on android vs. panels."
-        }
+        },
+		{
+            "name": "tld.Shape2D",
+            "displayName": "Shape2D",
+            "owner": "pcimino",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Canvas",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/pcimino/Shape2D.git",
+            "demoUrl": "http://jsfiddle.net/pcimino/3utgx/",
+            "submissionDate": "December 8, 2012",
+            "testedPlatforms": "webOS 3.0.5, webOS 2.2.4, Google Chrome Version 23.0.1271.91 m (Windows),  Fire Fox 16.0.2 (Windows)",
+            "license": "MIT License",
+            "version": "1.0",
+            "blurb": "Basic canvas shapes wrapped as an Enyo package."
+        },
     ]
 }

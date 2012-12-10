@@ -137,7 +137,7 @@
         "pcimino": {
             "name": "Paul L. Cimino",
             "website": "http://translunardesigns.com",
-			"twitter": "PLCimino"
+            "twitter": "PLCimino"
         }
     },
     "widgets": [
@@ -1513,7 +1513,7 @@
             "version": "1.0",
             "blurb": "A horizontal snap scroller for android and webkit browsers. Supports infinite views, better reaction time on android vs. panels."
         },
-		{
+	{
             "name": "tld.Shape2D",
             "displayName": "Shape2D",
             "owner": "pcimino",
@@ -1534,6 +1534,6 @@
             "license": "MIT License",
             "version": "1.0",
             "blurb": "Basic canvas shapes wrapped as an Enyo package."
-        },
+        }
     ]
 }

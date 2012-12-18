@@ -138,6 +138,11 @@
             "name": "Paul L. Cimino",
             "website": "http://translunardesigns.com",
             "twitter": "PLCimino"
+        },
+        "webosports": {
+            "name": "WebOS Ports",
+            "website": "http://webos-ports.org/wiki/",
+            "twitter": "webosports"
         }
     },
     "widgets": [
@@ -1534,6 +1539,28 @@
             "license": "MIT License",
             "version": "1.0",
             "blurb": "Basic canvas shapes wrapped as an Enyo package."
+        },
+	{
+            "name": "webosports.webos-ports-lib",
+            "displayName": "webos-ports-lib",
+            "owner": "webosports",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/webOS-ports/webos-ports-lib",
+            "demoUrl": "",
+            "submissionDate": "December 18, 2012",
+            "testedPlatforms": "Open webOS, webOS 3.0.5, webOS 2.2.4, Google Chrome",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A selection of additional enyo2 kinds to aid development for Open webOS, including Random Tagline Titlebars, cross-device Back Gesture handling and more to come!"
         }
     ]
 }

@@ -1579,7 +1579,6 @@
             "license": "MIT License",
             "version": "1.0",
             "blurb": "Easy drop in to provide an image of the user's avatar, if their email is registered with https://en.gravatar.com/"
-         }
         }
     ]
 }

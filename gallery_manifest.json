@@ -1513,7 +1513,7 @@
             "version": "1.0",
             "blurb": "A horizontal snap scroller for android and webkit browsers. Supports infinite views, better reaction time on android vs. panels."
         },
-	{
+		{
             "name": "tld.Shape2D",
             "displayName": "Shape2D",
             "owner": "pcimino",
@@ -1534,6 +1534,24 @@
             "license": "MIT License",
             "version": "1.0",
             "blurb": "Basic canvas shapes wrapped as an Enyo package."
+        },
+		{
+            "name": "tld.Gravatar",
+            "displayName": "Gravatar",
+            "owner": "pcimino",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/pcimino/Gravatar.git",
+            "demoUrl": "http://jsfiddle.net/pcimino/VBNSM/",
+            "submissionDate": "December 18, 2012",
+            "testedPlatforms": "webOS 3.0.5, webOS 2.2.4, Google Chrome Version 23.0.1271.91 m (Windows),  Fire Fox 16.0.2 (Windows)",
+            "license": "MIT License",
+            "version": "1.0",
+            "blurb": "Easy drop in to provide an image of the user's avatar, if their email is registered with https://en.gravatar.com/"
         }
     ]
 }

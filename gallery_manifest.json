@@ -1,10 +1,10 @@
 {
     "owners": {
-	"Rahien": {
-	    "name": "Rahien",
-	    "website": "https://github.com/Rahien",
-	    "twitter": ""
-	},
+        "Rahien": {
+            "name": "Rahien",
+            "website": "https://github.com/Rahien",
+            "twitter": ""
+        },
         "tjwebb": {
             "name": "NBT Solutions",
             "website": "http://www.nbtsolutions.com",
@@ -125,11 +125,11 @@
             "website": "http://blog.technisode.com",
             "twitter": "ryanjduffy"
         },
-		"DougReeder": {
-			"name": "Doug Reeder",
-			"website": "http://hominidsoftware.com/",
-			"twitter": "reeder29"
-		},
+        "DougReeder": {
+            "name": "Doug Reeder",
+            "website": "http://hominidsoftware.com/",
+            "twitter": "reeder29"
+        },
         "appsbychris": {
             "name": "Chris Van Hooser",
             "website": "http://appsbychris.net/"
@@ -146,7 +146,7 @@
         }
     },
     "widgets": [
-	{
+        {
             "name": "rahien.ReorderableList",
             "displayName": "Reorderable List",
             "owner": "Rahien",
@@ -514,22 +514,22 @@
             "blurb": "Java applets brought to Enyo2, with enhanced support for 2-way communication of data between the Java applet and javascript Enyo2 code. Requires the use of EnyoApplet/EnyoJApplet (instead of Applet/JApplet), included on the git prepackaged into the EnyoApplet.jar library."
         },
         {
-	    "name": "JayCanuck.FileInputDecorator",
-	    "displayName": "FileInputDecorator",
-	    "owner": "JayCanuck",
-	    "dependencies": [
-		{
-		    "name": "Enyo 2",
-		    "version": ""
-		}
-	    ],
-	    "url": "https://github.com/JayCanuck/enyo-2-components/tree/master/fileinputdecorator",
-	    "demoUrl": "http://jaycanuck.github.com/enyo-2-components/fileinputdecorator/demo.html",
-	    "submissionDate": "Nov 13, 2012",
-	    "testedPlatforms": "Firefox 16.0.2 (Windows), Google Chrome 23.0.1271.64 (Windows),  Internet Explorer 9.0.8112.16421 (Windows)",
-	    "license": "MIT License",
-	    "version": "1.0",
-	    "blurb": "Allows for improved customizable file input, with support for filetype filters, multiple file selection, html5 media capture across a wide breadth of browsers, including iOS6 and Android 3.x+. Note: filetype filters, multiple file support, and media capture not supported in IE."
+            "name": "JayCanuck.FileInputDecorator",
+            "displayName": "FileInputDecorator",
+            "owner": "JayCanuck",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/JayCanuck/enyo-2-components/tree/master/fileinputdecorator",
+            "demoUrl": "http://jaycanuck.github.com/enyo-2-components/fileinputdecorator/demo.html",
+            "submissionDate": "Nov 13, 2012",
+            "testedPlatforms": "Firefox 16.0.2 (Windows), Google Chrome 23.0.1271.64 (Windows),  Internet Explorer 9.0.8112.16421 (Windows)",
+            "license": "MIT License",
+            "version": "1.0",
+            "blurb": "Allows for improved customizable file input, with support for filetype filters, multiple file selection, html5 media capture across a wide breadth of browsers, including iOS6 and Android 3.x+. Note: filetype filters, multiple file support, and media capture not supported in IE."
         },
         {
             "name": "MacFJA.Localize",
@@ -1425,19 +1425,19 @@
             "version": "1.0",
             "blurb": "A Grid layout"
         },
-		{
-			"name": "Video",
-			"displayName": "Video",
-			"owner": "DougReeder",
-			"dependencies": [],
-			"url": "https://github.com/DougReeder/bootplate",
-			"demoUrl": "http://hominidsoftware.com/enyoVideo/",
-			"submissionDate": "Oct 18, 2012",
-			"testedPlatforms": "OS X Chrome 22.0.1229.94, OS X Firefox 13.0.1, OS X Safari 5.1.7, Windows XP IE8, Windows XP Firefox, Windows XP Safari, webOS 2.2.4 browser, webOS 3.0.5 browser",
-			"license": "Apache License, Version 2.0",
-			"version": "0.1",
-			"blurb": "a general-purpose video player, which uses HTML 5 video or Flash Media Playback, as appropriate for the platform where it runs.  Currently a proof of concept (you must specify the video source before the Control is rendered)."
-		},
+        {
+            "name": "Video",
+            "displayName": "Video",
+            "owner": "DougReeder",
+            "dependencies": [],
+            "url": "https://github.com/DougReeder/bootplate",
+            "demoUrl": "http://hominidsoftware.com/enyoVideo/",
+            "submissionDate": "Oct 18, 2012",
+            "testedPlatforms": "OS X Chrome 22.0.1229.94, OS X Firefox 13.0.1, OS X Safari 5.1.7, Windows XP IE8, Windows XP Firefox, Windows XP Safari, webOS 2.2.4 browser, webOS 3.0.5 browser",
+            "license": "Apache License, Version 2.0",
+            "version": "0.1",
+            "blurb": "a general-purpose video player, which uses HTML 5 video or Flash Media Playback, as appropriate for the platform where it runs.  Currently a proof of concept (you must specify the video source before the Control is rendered)."
+        },
         {
             "name": "expandable.RadioGroup",
             "displayName": "Expandable Radio Group",
@@ -1518,7 +1518,7 @@
             "version": "1.0",
             "blurb": "A horizontal snap scroller for android and webkit browsers. Supports infinite views, better reaction time on android vs. panels."
         },
-	{
+        {
             "name": "tld.Shape2D",
             "displayName": "Shape2D",
             "owner": "pcimino",
@@ -1540,7 +1540,7 @@
             "version": "1.0",
             "blurb": "Basic canvas shapes wrapped as an Enyo package."
         },
-	{
+        {
             "name": "webosports.webos-ports-lib",
             "displayName": "webos-ports-lib",
             "owner": "webosports",
@@ -1561,6 +1561,25 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A selection of additional enyo2 kinds to aid development for Open webOS, including Random Tagline Titlebars, cross-device Back Gesture handling and more to come!"
+        },
+        {
+            "name": "tld.Gravatar",
+            "displayName": "Gravatar",
+            "owner": "pcimino",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/pcimino/Gravatar.git",
+            "demoUrl": "http://jsfiddle.net/pcimino/VBNSM/",
+            "submissionDate": "December 18, 2012",
+            "testedPlatforms": "webOS 3.0.5, webOS 2.2.4, Google Chrome Version 23.0.1271.91 m (Windows),  Fire Fox 16.0.2 (Windows)",
+            "license": "MIT License",
+            "version": "1.0",
+            "blurb": "Easy drop in to provide an image of the user's avatar, if their email is registered with https://en.gravatar.com/"
+         }
         }
     ]
 }

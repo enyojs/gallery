@@ -1579,6 +1579,28 @@
             "license": "MIT License",
             "version": "1.0",
             "blurb": "Easy drop in to provide an image of the user's avatar, if their email is registered with https://en.gravatar.com/"
+        },
+        {
+            "name": "gts.IntegerPicker",
+            "displayName": "Integer Picker",
+            "owner": "GlitchTechScience",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": "2.1"
+                },
+                {
+                    "name": "Onyx",
+                    "version": "2.1"
+                }
+            ],
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/IntegerPicker",
+            "demoUrl": "",
+            "submissionDate": "January 05, 2013",
+            "testedPlatforms": "Chrome (Linux)",
+            "license": "Apache License, Version 2.0",
+            "version": "2.1.0",
+            "blurb": "Integer picker (extending Onyx.Picker). Set min, max, step, and value as needed."
         }
     ]
 }

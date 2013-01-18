@@ -143,6 +143,11 @@
             "name": "WebOS Ports",
             "website": "http://webos-ports.org/wiki/",
             "twitter": "webosports"
+        },
+        "cayasso": {
+            "name": "Jonathan Brumley",
+            "website": "https://github.com/cayasso",
+            "twitter": "cayasso"
         }
     },
     "widgets": [
@@ -1601,6 +1606,24 @@
             "license": "Apache License, Version 2.0",
             "version": "2.1.0",
             "blurb": "Integer picker (extending Onyx.Picker). Set min, max, step, and value as needed."
+        },
+        {
+            "name": "jb.InAppBrowser",
+            "displayName": "InAppBrowser",
+            "owner": "cayasso",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/cayasso/InAppBrowser",
+            "demoUrl": "",
+            "submissionDate": "January 18, 2013",
+            "testedPlatforms": "iOS 5.1, iOS 6",
+            "license": "MIT License",
+            "version": "1.0",
+            "blurb": "A little InAppBrowser(new PhoneGap 2.3+ feature) wrapper for Enyo 2."
         }
     ]
 }

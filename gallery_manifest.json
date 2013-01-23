@@ -537,6 +537,28 @@
             "blurb": "Allows for improved customizable file input, with support for filetype filters, multiple file selection, html5 media capture across a wide breadth of browsers, including iOS6 and Android 3.x+. Note: filetype filters, multiple file support, and media capture not supported in IE."
         },
         {
+	    "name": "JayCanuck.WebAppInstaller",
+	    "displayName": "WebAppInstaller",
+	    "owner": "JayCanuck",
+	    "dependencies": [
+		{
+		    "name": "Enyo 2",
+		    "version": ""
+		},
+		{
+		    "name": "Onyx",
+		    "version": ""
+		}
+	    ],
+	    "url": "https://github.com/JayCanuck/enyo-2-components/tree/master/webappinstaller",
+	    "demoUrl": "http://enyo2-sampler.canuckcoding.ca/",
+	    "submissionDate": "Jan 23, 2013",
+	    "testedPlatforms": "Firefox 18.0.1 (Windows), Firefox 17.0 (Android), FirefoxOS 1.0.0-prerelease (platform v18.0), Google Chrome 24.0.1312.52 (Windows), iOS 6.0.1",
+	    "license": "MIT License",
+	    "version": "1.0",
+	    "blurb": "Unified web app installation library for Firefox, Firefox for Android, FirefoxOS, Chrome, and iOS. Includes a WebAppButton control that hides (or turns into an "Update button) onces the web app is installed or on unsupported browsers. Inspired by the installation library in Mozilla's mortar app stub."
+        },
+        {
             "name": "MacFJA.Localize",
             "displayName": "Localization module",
             "owner": "MacFJA",

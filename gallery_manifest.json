@@ -556,7 +556,7 @@
 	    "testedPlatforms": "Firefox 18.0.1 (Windows), Firefox 17.0 (Android), FirefoxOS 1.0.0-prerelease (platform v18.0), Google Chrome 24.0.1312.52 (Windows), iOS 6.0.1",
 	    "license": "MIT License",
 	    "version": "1.0",
-	    "blurb": "Unified web app installation library for Firefox, Firefox for Android, FirefoxOS, Chrome, and iOS. Includes a WebAppButton control that hides (or turns into an "Update button) onces the web app is installed or on unsupported browsers. Inspired by the installation library in Mozilla's mortar app stub."
+	    "blurb": "Unified web app installation library for Firefox, Firefox for Android, FirefoxOS, Chrome, and iOS. Includes a WebAppButton control that hides (or turns into an Update button) onces the web app is installed or on unsupported browsers. Inspired by the installation library in Mozilla's mortar app stub."
         },
         {
             "name": "MacFJA.Localize",

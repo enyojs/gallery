@@ -1646,6 +1646,28 @@
             "license": "MIT License",
             "version": "1.0",
             "blurb": "A little InAppBrowser(new PhoneGap 2.3+ feature) wrapper for Enyo 2."
+        },
+        {
+            "name": "gts.EventMenu",
+            "displayName": "Event Menu",
+            "owner": "GlitchTechScience",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": "2.1"
+                },
+                {
+                    "name": "Onyx",
+                    "version": "2.1"
+                }
+            ],
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/EventMenu",
+            "demoUrl": "",
+            "submissionDate": "January 31, 2013",
+            "testedPlatforms": "Chrome (Linux)",
+            "license": "Apache License, Version 2.0",
+            "version": "2.1.0",
+            "blurb": "Extends onyx.Menu to work with enyo.Popup#showAtEvent instead of a set activator. showAtEvent accepts a touch event as its parameter. This Menu is not designed to be coupled with an activating button."
         }
     ]
 }

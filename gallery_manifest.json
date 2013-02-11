@@ -1686,6 +1686,50 @@
             "license": "Apache License, Version 2.0",
             "version": "2.1.0",
             "blurb": "Extends onyx.Menu to work with enyo.Popup#showAtEvent instead of a set activator. showAtEvent accepts a touch event as its parameter. This Menu is not designed to be coupled with an activating button."
+        },
+        {
+            "name": "rwatkins.Panorama",
+            "displayName": "Panorama Control",
+            "owner": "rwatkins",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "layout",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/ryanwatkins/panorama",
+            "demoUrl": "http://www.ryanwatkins.net/software/panorama",
+            "submissionDate": "Feb 10, 2013",
+            "testedPlatforms": "Chrome 24+, Safari 6.0.2+, Firefox 17+, Windows Phone 8.0",
+            "license": "Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.",
+            "version": "1",
+            "blurb": "An Enyo 2.0 control to roughly emulate the Windows Phone horizontal scrolling Panorama control with a parallax effect."
+        },
+        {
+            "name": "rwatkins.PivotMenu",
+            "displayName": "PivotMenu Control",
+            "owner": "rwatkins",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "layout",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/ryanwatkins/pivotmenu",
+            "demoUrl": "http://www.ryanwatkins.net/software/pivotmenu",
+            "submissionDate": "Feb 10, 2013",
+            "testedPlatforms": "Chrome 24+, Safari 6.0.2+, Firefox 17+, Windows Phone 8.0",
+            "license": "Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.",
+            "version": "1",
+            "blurb": "An Enyo 2.0 control to roughy emulate the Windows Phone Pivot Menu control that provides a 'tabbed'-like control for switching between panels with custom titles.
         }
     ]
 }

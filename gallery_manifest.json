@@ -1757,6 +1757,42 @@
             "license": "MIT",
             "version": "1",
             "blurb": "A simple tally list kind"
+        },
+        {
+            "name": "extras.TagInput",
+            "displayName": "TagInput",
+            "owner": "ryanjduffy",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/tiqtech/enyo-extras",
+            "demoUrl": "http://tiqtech.github.com/enyo-extras/index.html#/~/input",
+            "submissionDate": "March 28, 2013",
+            "testedPlatforms": "Chrome",
+            "license": "Apache 2.0",
+            "version": "2.0",
+            "blurb": "Input control that prepends removable 'tags' within the InputDecorator. Modeled off the tagging control in the Tumblr post UI."
+        },
+        {
+            "name": "extras.TypeAheadInput",
+            "displayName": "TypeAheadInput",
+            "owner": "ryanjduffy",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/tiqtech/enyo-extras",
+            "demoUrl": "http://tiqtech.github.com/enyo-extras/index.html#/~/input",
+            "submissionDate": "March 28, 2013",
+            "testedPlatforms": "Chrome",
+            "license": "Apache 2.0",
+            "version": "2.0",
+            "blurb": "Input control that will suggest values matching what the user has started typing"
         }
     ]
 }

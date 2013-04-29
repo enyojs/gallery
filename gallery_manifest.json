@@ -777,7 +777,7 @@
                 }
             ],
             "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/DatePicker",
-            "demoUrl": "",
+            "demoUrl": "http://jsfiddle.net/glitchtechscience/SCknQ/",
             "submissionDate": "Apr 19, 2012",
             "testedPlatforms": "webOS 3.0.5, Chrome 18 (Windows), Firefox (Windows), Internet Explorer 9",
             "license": "Apache License, Version 2.0",

@@ -153,6 +153,11 @@
             "name": "Johann Jacobsohn",
             "website": "https://github.com/johannjacobsohn",
             "twitter": ""
+        },
+        "emilkm": {
+            "name": "Emil Malinov",
+            "website": "https://github.com/emilkm",
+            "twitter": ""
         }
     },
     "widgets": [
@@ -1793,6 +1798,24 @@
             "license": "Apache 2.0",
             "version": "2.0",
             "blurb": "Input control that will suggest values matching what the user has started typing"
+        },
+        {
+            "name": "emilkm.enyo-amf",
+            "displayName": "enyo-amf",
+            "owner": "emilkm",
+            "dependencies": [
+                {
+                    "name": "Enyo 2.2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/emilkm/enyo-amf",
+            "demoUrl": "",
+            "submissionDate": "May 16, 2013",
+            "testedPlatforms": "Chrome 26 (Win), Firefox 20 (Win), IE 9 (Win), Android 2.3.6 (against modified AMFPHP)",
+            "license": "Apache 2.0",
+            "version": "2.0",
+            "blurb": "AMF 3 Remoting for Enyo"
         }
     ]
 }

@@ -1816,6 +1816,28 @@
             "license": "Apache 2.0",
             "version": "2.0",
             "blurb": "AMF 3 Remoting for Enyo"
-        }
+        },
+        {
+            "name": "gts.MenuImageItem",
+            "displayName": "Menu Image Item",
+            "owner": "GlitchTechScience",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": "2.2"
+                },
+                {
+                    "name": "Onyx",
+                    "version": "2.2"
+                }
+            ],
+            "url": "https://bitbucket.org/GlitchTechScience/gts-plugins/src/master/MenuImageItem",
+            "demoUrl": "http://jsfiddle.net/glitchtechscience/7WY5S/",
+            "submissionDate": "May 20, 2013",
+            "testedPlatforms": "Chrome (Linux)",
+            "license": "Apache License, Version 2.0",
+            "version": "2.2.0",
+            "blurb": "Extends onyx.MenuItem. Easily add icons to Menu Items. If there is no icon added, the menu item will look and behave as normal."
+        },
     ]
 }

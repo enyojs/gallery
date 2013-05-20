@@ -547,44 +547,44 @@
             "blurb": "Allows for improved customizable file input, with support for filetype filters, multiple file selection, html5 media capture across a wide breadth of browsers, including iOS6 and Android 3.x+. Note: filetype filters, multiple file support, and media capture not supported in IE."
         },
         {
-	    "name": "JayCanuck.WebAppInstaller",
-	    "displayName": "WebAppInstaller",
-	    "owner": "JayCanuck",
-	    "dependencies": [
-		{
-		    "name": "Enyo 2",
-		    "version": ""
-		},
-		{
-		    "name": "Onyx",
-		    "version": ""
-		}
-	    ],
-	    "url": "https://github.com/JayCanuck/enyo-2-components/tree/master/webappinstaller",
-	    "demoUrl": "http://enyo2-sampler.canuckcoding.ca/",
-	    "submissionDate": "Jan 23, 2013",
-	    "testedPlatforms": "Firefox 18.0.1 (Windows), Firefox 17.0 (Android), FirefoxOS 1.0.0-prerelease (platform v18.0), Google Chrome 24.0.1312.52 (Windows), iOS 6.0.1",
-	    "license": "MIT License",
-	    "version": "1.0",
-	    "blurb": "Unified web app installation library for Firefox, Firefox for Android, FirefoxOS, Chrome, and iOS. Includes a WebAppButton control that hides (or turns into an Update button) onces the web app is installed or on unsupported browsers. Inspired by the installation library in Mozilla's mortar app stub."
+            "name": "JayCanuck.WebAppInstaller",
+            "displayName": "WebAppInstaller",
+            "owner": "JayCanuck",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/JayCanuck/enyo-2-components/tree/master/webappinstaller",
+            "demoUrl": "http://enyo2-sampler.canuckcoding.ca/",
+            "submissionDate": "Jan 23, 2013",
+            "testedPlatforms": "Firefox 18.0.1 (Windows), Firefox 17.0 (Android), FirefoxOS 1.0.0-prerelease (platform v18.0), Google Chrome 24.0.1312.52 (Windows), iOS 6.0.1",
+            "license": "MIT License",
+            "version": "1.0",
+            "blurb": "Unified web app installation library for Firefox, Firefox for Android, FirefoxOS, Chrome, and iOS. Includes a WebAppButton control that hides (or turns into an Update button) onces the web app is installed or on unsupported browsers. Inspired by the installation library in Mozilla's mortar app stub."
         },
         {
-	    "name": "JayCanuck.Fader",
-	    "displayName": "Fader",
-	    "owner": "JayCanuck",
-	    "dependencies": [
-		{
-		    "name": "Enyo 2",
-		    "version": ""
-		}
-	    ],
-	    "url": "https://github.com/JayCanuck/enyo-2-components/tree/master/fader",
-	    "demoUrl": "http://jaycanuck.github.com/enyo-2-components/fader/demo.html",
-	    "submissionDate": "Feb 4, 2013",
-	    "testedPlatforms": "Firefox 18.0.1 (Windows), Google Chrome 24.0.1312.52 (Windows),  Internet Explorer 9.0.8112.16421 (Windows)",
-	    "license": "MIT License",
-	    "version": "1.0",
-	    "blurb": "A wrapper component that provides animated fading functionality. Works on all browsers that Enyo2 supports and includes a static function, enyo.Fader.attachTo(), that attaches a fader functionality to a control itself."
+            "name": "JayCanuck.Fader",
+            "displayName": "Fader",
+            "owner": "JayCanuck",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/JayCanuck/enyo-2-components/tree/master/fader",
+            "demoUrl": "http://jaycanuck.github.com/enyo-2-components/fader/demo.html",
+            "submissionDate": "Feb 4, 2013",
+            "testedPlatforms": "Firefox 18.0.1 (Windows), Google Chrome 24.0.1312.52 (Windows),  Internet Explorer 9.0.8112.16421 (Windows)",
+            "license": "MIT License",
+            "version": "1.0",
+            "blurb": "A wrapper component that provides animated fading functionality. Works on all browsers that Enyo2 supports and includes a static function, enyo.Fader.attachTo(), that attaches a fader functionality to a control itself."
         },
         {
             "name": "MacFJA.Localize",
@@ -1838,6 +1838,6 @@
             "license": "Apache License, Version 2.0",
             "version": "2.2.0",
             "blurb": "Extends onyx.MenuItem. Easily add icons to Menu Items. If there is no icon added, the menu item will look and behave as normal."
-        },
+        }
     ]
 }

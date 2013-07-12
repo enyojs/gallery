@@ -158,6 +158,11 @@
             "name": "Emil Malinov",
             "website": "https://github.com/emilkm",
             "twitter": ""
+        },
+        "oncron": {
+            "name": "OnCron Engineering, Inc.",
+            "website": "http://www.oncron.com",
+            "twitter": "OnCronEng"
         }
     },
     "widgets": [
@@ -1838,6 +1843,24 @@
             "license": "Apache License, Version 2.0",
             "version": "2.2.0",
             "blurb": "Extends onyx.MenuItem. Easily add icons to Menu Items. If there is no icon added, the menu item will look and behave as normal."
+        },
+        {
+            "name": "oncron.FusionCharts",
+            "displayName": "FusionCharts",
+            "owner": "oncron",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/oncron/enyo-fusioncharts",
+            "demoUrl": "",
+            "submissionDate": "July 11, 2013",
+            "testedPlatforms": "Chrome 28+, Firefox 17+",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "An Enyo 2.0 control for FusionCharts. Provides a wrapper to present, control, and receive events from these charts."
         }
     ]
 }

@@ -1861,6 +1861,24 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "An Enyo 2.0 control for FusionCharts. Provides a wrapper to present, control, and receive events from these charts."
+        },
+        {
+            "name": "SlideableMenu",
+            "displayName": "SlideableMenu",
+            "owner": "appsbychris",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": "2.2"
+                }
+            ],
+            "url": "https://github.com/appsbychris/enyo2-stuff/tree/master/SlideableControls/SlideableMenu",
+            "demoUrl": "http://jsfiddle.net/xgJhG/1/",
+            "submissionDate": "aug 22, 2012",
+            "testedPlatforms": "Google Chrome (PC), Android 4.0+, Blackberry 10, FireFox, IE 10",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "An animating menu that slides in from on of the sides of the screen. You can have it anchored to a side of the screen, or unanchored to open at your desired coords. Has scrim support, floating support, autoDismiss support, and modal support."
         }
     ]
 }

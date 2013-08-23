@@ -1879,6 +1879,24 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "An animating menu that slides in from on of the sides of the screen. You can have it anchored to a side of the screen, or unanchored to open at your desired coords. Has scrim support, floating support, autoDismiss support, and modal support."
+        },
+        {
+            "name": "ToasterPopup",
+            "displayName": "ToasterPopup",
+            "owner": "appsbychris",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": "2.2"
+                }
+            ],
+            "url": "https://github.com/appsbychris/enyo2-stuff/tree/master/SlideableControls/ToasterPopup",
+            "demoUrl": "http://jsfiddle.net/B4QHA/",
+            "submissionDate": "aug 22, 2012",
+            "testedPlatforms": "Google Chrome (PC), Android 4.0+, Blackberry 10, FireFox, IE 10",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A popup that slides in from a side of the screen. You can have it anchored to a side, or un-anchored to have it float to a position. modal, autoDismiss, floating, and centered that behave just like enyo.Popup. Also has support for centeredX and centeredY to align just 1 axis."
         }
     ]
 }

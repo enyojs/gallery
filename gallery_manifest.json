@@ -1870,6 +1870,10 @@
                 {
                     "name": "Enyo 2",
                     "version": "2.2"
+                },
+                {
+                    "name": "Layout",
+                    "version": "2.2"
                 }
             ],
             "url": "https://github.com/appsbychris/enyo2-stuff/tree/master/SlideableControls/SlideableMenu",
@@ -1888,15 +1892,41 @@
                 {
                     "name": "Enyo 2",
                     "version": "2.2"
+                },
+                {
+                    "name": "Layout",
+                    "version": "2.2"
                 }
             ],
             "url": "https://github.com/appsbychris/enyo2-stuff/tree/master/SlideableControls/ToasterPopup",
-            "demoUrl": "http://jsfiddle.net/B4QHA/",
+            "demoUrl": "http://jsfiddle.net/B4QHA/1/",
             "submissionDate": "aug 22, 2012",
             "testedPlatforms": "Google Chrome (PC), Android 4.0+, Blackberry 10, FireFox, IE 10",
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A popup that slides in from a side of the screen. You can have it anchored to a side, or un-anchored to have it float to a position. modal, autoDismiss, floating, and centered that behave just like enyo.Popup. Also has support for centeredX and centeredY to align just 1 axis."
+        },
+        {
+            "name": "SlideableSnapScroller",
+            "displayName": "SlideableSnapScroller",
+            "owner": "appsbychris",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": "2.2"
+                },
+                {
+                    "name": "Layout",
+                    "version": "2.2"
+                }
+            ],
+            "url": "https://github.com/appsbychris/enyo2-stuff/tree/master/SlideableControls/SlideableSnapScroller",
+            "demoUrl": "http://jsfiddle.net/LnURX/",
+            "submissionDate": "aug 28, 2012",
+            "testedPlatforms": "Google Chrome (PC), Android 4.0+, Blackberry 10, FireFox, IE 10",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A snap scroller control that is based on the Slideable. Currently only supports horizontal scrolling. Optimized for best performance."
         }
     ]
 }

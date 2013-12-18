@@ -163,6 +163,11 @@
             "name": "OnCron Engineering, Inc.",
             "website": "http://www.oncron.com",
             "twitter": "OnCronEng"
+        },
+        "outliet": {
+            "name": "SeongWoong",
+            "website": "https://www.facebook.com/seongwoong.oh",
+            "twitter": "@outliet"
         }
     },
     "widgets": [
@@ -1927,6 +1932,36 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A snap scroller control that is based on the Slideable. Currently only supports horizontal scrolling. Optimized for best performance."
+        },
+        {
+            "name": "outliet.dodge",
+            "displayName": "dodge",
+            "owner": "outliet",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": "2.2"
+                },
+                {
+                    "name": "Onyx",
+                    "version": "2.2"
+                },
+                {
+                    "name": "Layout",
+                    "version": "2.2"
+                },
+                {
+                    "name": "Canvas",
+                    "version": "2.2"
+                }
+            ],
+            "url": "https://github.com/outliet/dodge/",
+            "demoUrl": "http://jsfiddle.net/j97VN/",
+            "submissionDate": "Dec 18, 2013",
+            "testedPlatforms": "Chrome (Desktop, Android)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A game application. Avoiding missiles. Control with keyboard(arrow) or mouse(drag)"
         }
     ]
 }

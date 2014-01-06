@@ -168,6 +168,11 @@
             "name": "SeongWoong",
             "website": "https://www.facebook.com/seongwoong.oh",
             "twitter": "@outliet"
+        },
+        "jk-park": {
+            "name": "Jeong-geun Park",
+            "website": "https://github.com/jk-park",
+            "twitter": ""
         }
     },
     "widgets": [
@@ -1962,6 +1967,32 @@
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A game application. Avoiding missiles. Control with keyboard(arrow) or mouse(drag)"
+        },
+        {
+            "name": "jk-park.enyoEventBench",
+            "displayName": "Enyo Event Handling Benchmark",
+            "owner": "jk-park",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": "2.2"
+                },
+                {
+                    "name": "Onyx",
+                    "version": "2.2"
+                },
+                {
+                    "name": "Layout",
+                    "version": "2.2"
+                },
+            ],
+            "url": "https://github.com/jk-park/enyo-event-bench",
+            "demoUrl": "",
+            "submissionDate": "Dec 27, 2013",
+            "testedPlatforms": "FireFox 26.0(Windows), Chrome 31.0(Windows), Opera 17.0(Windows), Internet Explorer 10(Windows)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A simple Enyo app to test performance(execution time) of some of Enyo framework's event handling APIs. Includes tests for full Enyo framework loading, calling event handler, registering new events and dispatching mouse events."
         }
     ]
 }

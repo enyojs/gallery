@@ -1996,7 +1996,7 @@
         },
         {
             "name": "tld.Captcha",
-            "displayName": "EnyoCaptcha",
+            "displayName": "Enyo Captcha",
             "owner": "pcimino",
             "dependencies": [
                 {

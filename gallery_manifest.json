@@ -2024,7 +2024,7 @@
             "url": "https://github.com/Screamo/real_estate_sim",
             "demoUrl": "",
             "submissionDate": "Jan 9, 2014",
-            "testedPlatforms": "Chrome 31.0(Windows)","Internet Explorer 10(Windows)"
+            "testedPlatforms": "Chrome 31.0(Windows), Internet Explorer 10(Windows)"
             "license": "Apache 2.0",
             "version": "1.0",
             "blurb": "A real estate simulator game that features purchasing/selling land and building stuff"

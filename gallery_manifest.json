@@ -2002,7 +2002,7 @@
         {
             "name": "kmkim.RealEstateSim",
             "displayName": "Enyo Real Estate Simulator Game",
-            "owner": "jk-park",
+            "owner": "kmkim",
             "dependencies": [
                 {
                     "name": "Enyo 2",

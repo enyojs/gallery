@@ -1989,7 +1989,7 @@
                 {
                     "name": "Layout",
                     "version": "2.2"
-                },
+                }
             ],
             "url": "https://github.com/jk-park/enyo-event-bench",
             "demoUrl": "",
@@ -2041,7 +2041,7 @@
                 {
                     "name": "Canvas",
                     "version": "2.2"
-                },
+                }
             ],
             "url": "https://github.com/Screamo/real_estate_sim",
             "demoUrl": "",

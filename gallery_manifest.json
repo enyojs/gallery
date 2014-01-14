@@ -173,6 +173,11 @@
             "name": "Jeong-geun Park",
             "website": "https://github.com/jk-park",
             "twitter": ""
+        },
+        "kmkim": {
+            "name": "Kyungmin Kim",
+            "website": "https://github.com/Screamo",
+            "twitter": ""
         }
     },
     "widgets": [
@@ -2015,6 +2020,36 @@
             "license": "MIT License",
             "version": "0.5",
             "blurb": "Drag and drop puzzle captcha (demonstrator)."
+        },
+        {
+            "name": "kmkim.RealEstateSim",
+            "displayName": "Enyo Real Estate Simulator Game",
+            "owner": "kmkim",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                },
+                {
+                    "name": "Onyx",
+                    "version": "2.2"
+                },
+                {
+                    "name": "Layout",
+                    "version": "2.2"
+                },
+                {
+                    "name": "Canvas",
+                    "version": "2.2"
+                },
+            ],
+            "url": "https://github.com/Screamo/real_estate_sim",
+            "demoUrl": "",
+            "submissionDate": "Jan 14, 2014",
+            "testedPlatforms": "Chrome 31.0(Windows), Internet Explorer 10(Windows)",
+            "license": "Apache 2.0",
+            "version": "1.0",
+            "blurb": "A real estate simulator game that features purchasing/selling land and building stuff"
         }
     ]
 }

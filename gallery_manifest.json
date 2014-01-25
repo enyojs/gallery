@@ -1,5 +1,10 @@
 {
     "owners": {
+        "dimitrk": {
+            "name": "DimitrK",
+            "website": "http://www.appopsi.com",
+            "twitter": "jimfeedback"
+        },
         "Rahien": {
             "name": "Rahien",
             "website": "https://github.com/Rahien",
@@ -181,6 +186,24 @@
         }
     },
     "widgets": [
+        {
+            "name": "dimitrk.enigma",
+            "displayName": "Enigma",
+            "owner": "dimitrk",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/DimitrK/enigma",
+            "demoUrl": "http://dimitrk.github.io/enyo/enigma/",
+            "submissionDate": "Jan 26, 2014",
+            "testedPlatforms": "Firefox 26.0.0 (windows 7), IE 10 (windows 7), Chrome 34.0.1805.0 canary (window 7), Chrome 32.0.1700.72 (windows 7), Opera 12.15 (windows 7)",
+            "license": "BSD",
+            "version": "1.0",
+            "blurb": "EnigmaJS is a Enyo encryption/encoding library. Form more information see the github project page."
+        },
         {
             "name": "rahien.ReorderableList",
             "displayName": "Reorderable List",

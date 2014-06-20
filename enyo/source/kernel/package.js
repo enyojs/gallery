@@ -1,0 +1,12 @@
+enyo.depends(
+	"log.js",
+	"lang.js",
+	"job.js",
+	"macroize.js",
+	"Oop.js",
+	"Object.js",
+	"Component.js",
+	"UiComponent.js",
+	"Layout.js",
+	"Signals.js"
+);

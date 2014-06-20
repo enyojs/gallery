@@ -1,113 +1,24 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <title>Enyo Community Gallery</title>
-                <meta name="apple-mobile-web-app-capable" content="yes" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-                <script src="http://enyojs.com/enyo-2.2.0/enyo.js"></script>
-                <link href="http://enyojs.com/enyo-2.2.0/enyo.css" rel="stylesheet"></link>
-                <script src="package.js"></script>
-        </head>
-        <body class="onyx enyo-unselectable">
-                <script>
-                        new App().renderInto(document.body);
-                </script>
-                <noscript>
-
-                <p>The Enyo Community Gallery is a collection of libraries,
-                controls, and doodads written by the larger <a
-                href="http://enyojs.com/">Enyo JavaScript</a> programming community.
-                <p>For contribution information, see the
-                <a href="https://github.com/enyojs/gallery">Enyo Gallery github page</a>.
-
-                <p>The gallery includes:</p>
-                <ul>
-                <li><a href="http://enyojs.com/gallery/#kmkim.RealEstateSim">Example Enyo Game App</a>
-                <li><a href="http://enyojs.com/gallery/#jk-park.enyoEventBench">Event handling benchmark</a>
-                <li><a href="http://enyojs.com/gallery/#rahien.ReorderableList">Reorderable List</a>
-                <li><a href="http://enyojs.com/gallery/#gts.ProgressDialog">Progress Dialog</a>
-                <li><a href="http://enyojs.com/gallery/#nbt.OpenLayers">OpenLayers Control</a>
-                <li><a href="http://enyojs.com/gallery/#rwatkins.MenuPane">Menupage Control</a>
-                <li><a href="http://enyojs.com/gallery/#omastudios.Storage">LocalStorage Wrapper</a>
-                <li><a href="http://enyojs.com/gallery/#MaKleSoft.AnimatedToggleButton">Animated Togglebuttons</a>
-                <li><a href="http://enyojs.com/gallery/#villo.Book">Books for Enyo 2</a>
-                <li><a href="http://enyojs.com/gallery/#germboy.Textarea">Enyo Textarea control</a>
-                <li><a href="http://enyojs.com/gallery/#germboy.Progress">Enyp Progress controls</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.TextArea">Onyx themed Textarea</a>
-                <li><a href="http://enyojs.com/gallery/#morethanreal.GoogleMap">Enyo Google Maps control</a>
-                <li><a href="http://enyojs.com/gallery/#isandunk.onyx-graphical-assets">Onyx Graphical Assets</a>
-                <li><a href="http://enyojs.com/gallery/#MaKleSoft.SelectDecorator">SelectDecorator kind</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.LevelProgress">LevelProgress &amp; RatingLevel control</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.UpDown">Up and down control</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.NavigationBar">Navigation/Path Bar</a>
-                <li><a href="http://enyojs.com/gallery/#JayCanuck.XmlpRequest">XmlpRequest</a>
-                <li><a href="http://enyojs.com/gallery/#JayCanuck.YqlpRequest">YqlpRequest</a>
-                <li><a href="http://enyojs.com/gallery/#JayCanuck.webOSExt">webOSExt</a>
-                <li><a href="http://enyojs.com/gallery/#JayCanuck.JavaApplet">JavaApplet</a>
-                <li><a href="http://enyojs.com/gallery/#JayCanuck.FileInputDecorator">FileInputDecorator</a>
-                <li><a href="http://enyojs.com/gallery/#JayCanuck.WebAppInstaller">WebAppInstaller</a>
-                <li><a href="http://enyojs.com/gallery/#JayCanuck.Fader">Fader</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.Localize">Localization module</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.GradientSlider">Gradient Slider</a>
-                <li><a href="http://enyojs.com/gallery/#germboy.Accordion">Accordion Control</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.DynamicList">Dynamic loaded list</a>
-                <li><a href="http://enyojs.com/gallery/#MachiApps.DatePicker">Date Picker</a>
-                <li><a href="http://enyojs.com/gallery/#MachiApps.CalendarSelector">Calendar Date Picker</a>
-                <li><a href="http://enyojs.com/gallery/#onecrayon.Database">SQLite Database class</a>
-                <li><a href="http://enyojs.com/gallery/#germboy.DateScroller">Date Scroller Calendar Control</a>
-                <li><a href="http://enyojs.com/gallery/#rwatkins.SnapScroller">SnapScroller Control</a>
-                <li><a href="http://enyojs.com/gallery/#gts.DatePicker">Calendar Date Picker</a>
-                <li><a href="http://enyojs.com/gallery/#com.Pre101.Masonry">Masonry Layout Control</a>
-                <li><a href="http://enyojs.com/gallery/#MachiApps.Checkboxes">Colored Checkboxes</a>
-                <li><a href="http://enyojs.com/gallery/#newness.Calliope">Calliope Visual Editor</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.Notification">Notification</a>
-                <li><a href="http://enyojs.com/gallery/#newness.InfiniteSlidingPane">Infinite SlidingPane</a>
-                <li><a href="http://enyojs.com/gallery/#sfeast.SelectableRepeaters">Selectable Repeaters</a>
-                <li><a href="http://enyojs.com/gallery/#whatfield73.ClassicWebService">Classic WebService</a>
-                <li><a href="http://enyojs.com/gallery/#whatfield73.localstoragedb">LocalStorage DB</a>
-                <li><a href="http://enyojs.com/gallery/#fxspec06.Alert">Alert</a>
-                <li><a href="http://enyojs.com/gallery/#ShiftyAxel.more-arrangers">More Arrangers</a>
-                <li><a href="http://enyojs.com/gallery/#ShiftyAxel.vendor-prefix">Vendor Prefix</a>
-                <li><a href="http://enyojs.com/gallery/#sugardave.View">View</a>
-                <li><a href="http://enyojs.com/gallery/#sugardave.PulloutToolbar">PulloutToolbar</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.Marquee">Marquee</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.Folding">Folding</a>
-                <li><a href="http://enyojs.com/gallery/#gts.DividerDrawer">Divider Drawer</a>
-                <li><a href="http://enyojs.com/gallery/#gts.SelectorBar">Selector Bar</a>
-                <li><a href="http://enyojs.com/gallery/#gts.ToggleBar">Toggle Bar</a>
-                <li><a href="http://enyojs.com/gallery/#whatfield73.ajaxwebview">Ajax Webview</a>
-                <li><a href="http://enyojs.com/gallery/#gts.TimePicker">Time Picker</a>
-                <li><a href="http://enyojs.com/gallery/#phated.Assertions">Assertions</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.GrowTextBox">GrowTextBox</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.UndoRedo">UndoRedo</a>
-                <li><a href="http://enyojs.com/gallery/#extras.GridLayout">Grid Layout</a>
-                <li><a href="http://enyojs.com/gallery/#extras.AutoCompleteInputDecorator">AutoCompleteInputDecorator</a>
-                <li><a href="http://enyojs.com/gallery/#MacFJA.Griddable">Griddable Layout</a>
-                <li><a href="http://enyojs.com/gallery/#Video">Video</a>
-                <li><a href="http://enyojs.com/gallery/#expandable.RadioGroup">Expandable Radio Group</a>
-                <li><a href="http://enyojs.com/gallery/#TitledMenu">Titled Menu</a>
-                <li><a href="http://enyojs.com/gallery/#android.HSnapScroller">android.HSnapScroller</a>
-                <li><a href="http://enyojs.com/gallery/#tld.Shape2D">Basic Canvas 2D Shapes</a>
-                <li><a href="http://enyojs.com/gallery/#webosports.webos-ports-lib">webos-ports-lib</a>
-                <li><a href="http://enyojs.com/gallery/#tld.Gravatar">Avatar from Gravatar Image</a>
-                <li><a href="http://enyojs.com/gallery/#gts.IntegerPicker">Integer Picker</a>
-                <li><a href="http://enyojs.com/gallery/#jb.InAppBrowser">InAppBrowser</a>
-                <li><a href="http://enyojs.com/gallery/#gts.EventMenu">Event Menu</a>
-                <li><a href="http://enyojs.com/gallery/#rwatkins.Panorama">Panorama</a>
-                <li><a href="http://enyojs.com/gallery/#rwatkins.PivotMenu">PivotMenu</a>
-                <li><a href="http://enyojs.com/gallery/#Tally">Tally</a>
-                <li><a href="http://enyojs.com/gallery/#extras.TagInput">TagInput</a>
-                <li><a href="http://enyojs.com/gallery/#extras.TypeAheadInput">TypeAheadInput</a>
-                <li><a href="http://enyojs.com/gallery/#emilkm.enyo-amf">enyo-amf</a>
-                <li><a href="http://enyojs.com/gallery/#gts.MenuImageItem">Menu Image Item</a>
-                <li><a href="http://enyojs.com/gallery/#oncron.FusionCharts">FusionCharts</a>
-                <li><a href="http://enyojs.com/gallery/#SlideableMenu">SlideableMenu</a>
-                <li><a href="http://enyojs.com/gallery/#SlideableMenu">ToasterPopup</a>
-                <li><a href="http://enyojs.com/gallery/#SlideableSnapScroller">SlideableSnapScroller</a>
-                <li><a href="http://enyojs.com/gallery/#tld.Captcha">Enyo Captcha</a>
-                <li><a href="http://enyojs.com/gallery/#dimitrk.enigma">Encryption/Encoding library</a>
-                <!-- <li><a href="http://enyojs.com/gallery/#"></a> -->
-                </ul>
-                </noscript>
-        </body>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Scheduler</title>
+		<link rel="shortcut icon" href="assets/Diary.png"/>
+		<!-- -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<!-- css -->
+		<link href="build/enyo.css" rel="stylesheet"/>
+		<link href="build/app.css" rel="stylesheet"/>
+		<!-- js -->
+		<script src="build/enyo.js"></script>
+		<script src="build/app.js"></script>
+		<script src="source/package.js"></script>
+	</head>
+	<body class="enyo-unselectable">
+		<script>
+			new Scheduler().renderInto(document.body);
+		</script>
+	</body>
 </html>

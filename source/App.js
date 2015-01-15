@@ -2,42 +2,78 @@ enyo.kind({
 	name: "App",
 	kind: "FittableRows",
 	components: [
-		{classes: "toolbar", components: [
-			{classes: "onyx-toolbar-inline toolbar-inner", components: [
+		{kind:"onyx.Toolbar", layoutKind:"FittableColumnsLayout", components: [
 				{tag: "a", attributes: {href: "http://enyojs.com"}, components: [
 					{kind: "Image", src: "images/enyo-logo.png", classes: "toolbar-logo"}
 				]},
-				{content: "Community Gallery"},
-				{classes: "toolbar-search", components: [
-					{kind: "onyx.InputDecorator", classes: "toolbar-search-input-decorator", components: [
-						{kind: "onyx.Input", name: "searchInput", placeholder: "Search...",
-							oninput: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
-						{kind: "Image", name: "clearInput", src: "images/search-input-search.png", ontap: "clearInput"}
-					]}
-				]}
-			]}
+				{tag:"h1", content: "Community Gallery", fit:true}
 		]},
-		{kind: "Scroller", fit: true, classes: "main", ondragfinish: "preventTap", components: [
-			// using media query to determine which one should be displayed
-			{name: "cards", classes: "cards"},
-			{name: "list", classes: "list"}
-		]},
-		{kind: "Details", showing: false, centered: true, modal: true, floating: true, onHide: "hideDetails"}
+		{
+			fit:true,
+			kind:"Panels",
+			arrangerKind:"CollapsingArranger",
+			classes:"data-repeater-sample",
+			components:[{
+				kind:"FittableRows",
+				components:[
+					{classes: "toolbar-search", components: [
+						{kind: "onyx.InputDecorator", classes: "toolbar-search-input-decorator", components: [
+							{kind: "onyx.Input", name: "searchInput", placeholder: "Search...",
+								oninput: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
+							{kind: "Image", name: "clearInput", src: "images/search-input-search.png", style:"float:right;", ontap: "clearInput"}
+						]}
+					]},
+					{name: "list", kind:"enyo.DataList",
+						style:"width:320px;", components: [
+						{classes:"repeater-item", ontap:"itemTap", components: [
+							{classes: "name-wrapper", components: [
+								{
+									style:"width:220px",
+									components:[
+										{name: "name", classes: "name last"},
+										{name: "displayName", classes: "name"},
+									]
+								},
+								{classes: "icon-holder", tag: "span", components: [
+									{name: "icon", kind: "Image", classes: "icon"}
+								]},
+								{name:"createdBy", classes:"name last small"}
+								//{name: "lastNameLetter", classes: "name last-letter", tag: "span"}
+							]}
+						], bindings: [
+							{from: ".model.name", to: ".$.name.content"},
+							{from: ".model.displayName", to: ".$.displayName.content"},
+							{from: ".model.owner", to: ".$.createdBy.content",
+								transform:function(v,d,b){var ownerInfo = b.owner.owner.lookupOwnerInfo(v); return ownerInfo?("by " + ownerInfo.name):"";}},
+							{from: ".model", to: ".$.icon.src", transform: function (v,d,b) { if (!v) return ""; return ("gallery_images/" + v.get("name") + ".jpg") }},
+							{from: ".model", to: ".classes", transform: function(v,d,b){return ("repeater-item class" + (1+b.owner.index%5));}}
+						]}
+					]},
+
+				]
+				},
+				{kind: "Details", fit: true, classes:"details"}
+			]
+		}
 	],
 	create: function() {
 		this.inherited(arguments);
 		window.onhashchange = enyo.bind(this, "hashChange");
 		//this.$.scroller.getStrategy().translateOptimized = true;
+		this.widgets = new WidgetCollection();
+		this.owners = {};//new OwnerCollection();
+		this.$.list.set("collection", this.widgets);
 	},
 	rendered: function() {
 		this.inherited(arguments);
 		this.fetchGalleryData();
 	},
+	/*
 	resizeHandler: function() {
 		this.inherited(arguments);
 		this.$.details.adjustSize(this.getBounds());
 		this.$.details.updatePosition();
-	},
+	},*/
 	handleBlurFocus: function(inSender, inEvent) {
 		inSender.addRemoveClass("toolbar-blurred", inEvent.type === "focus");
 	},
@@ -73,39 +109,23 @@ enyo.kind({
 	fetchGalleryData: function() {
 		new enyo.Ajax({url: "gallery_manifest.json"})
 			.response(this, function(inSender, inResponse) {
-				this.widgets = {};
 				var ws = inResponse.widgets;
-				for (var i in ws) {
-					var w = ws[i];
-					this.widgets[w.name] = w;
-					w.owner = inResponse.owners[w.owner];
-				}
-				this.renderItems();
+				this.widgets.add(ws, {merge:true});
+
+				var os = inResponse.owners;
+				this.owners = os;
+				console.log("owners", this.owners);
+				console.log("wigets", this.widgets);
 				this.hashChange();
 			})
 			.go();
 	},
-	renderItems: function(customItems) {
-		this.$.cards.destroyClientControls();
-		this.$.list.destroyClientControls();
-		//
-		var items = customItems || this.widgets;
-		//
-		// to sorted by submission date array
-		items = this.toDateSortedArray(items);
-		//
-		for (var i=0, w; (w=items[i]); i++) {
-			var more = {info: w, ontap: "itemTap"};
-			this.createComponent({kind: "Card", container: this.$.cards}, more);
-			this.createComponent({kind: "ListItem", container: this.$.list}, more);
-		}
-		// to make cards in last row left-aligned
-		for (i=0; i<3; i++) {
-			this.createComponent({kind: "Card", container: this.$.cards, classes: "card-empty"});
-		}
-		this.$.cards.render();
-		this.$.list.render();
+
+	lookupOwnerInfo: function(owner){
+		var ownerInfo = this.owners[owner];
+		return ownerInfo;
 	},
+
 	toDateSortedArray: function(inItems) {
 		var ls = [];
 		for (var n in inItems) {
@@ -132,16 +152,19 @@ enyo.kind({
 			this.setHashComponentName("");
 		}
 	},
-	itemTap: function(inSender) {
+	itemTap: function(inSender, inEvent) {
 		this.itemTapped = true;
-		this.setHashComponentName(inSender.info.name);
+		console.log("tapped", inSender, inEvent);
+		var name = inEvent.model.get("name");
+		this.setHashComponentName(name);
 		return true;
 	},
-	showDetails: function(inInfo) {
-		this.$.details.setInfo(inInfo);
-		this.$.details.adjustSize(this.getBounds());
+	showDetails: function(widget) {
+
+		this.$.details.setWidget(widget);
+/*		this.$.details.adjustSize(this.getBounds());
 		this.$.details.show();
-		onyx.scrim.show();
+		//onyx.scrim.show();*/
 	},
 	hideDetails: function() {
 		onyx.scrim.hide();
@@ -158,64 +181,24 @@ enyo.kind({
 	},
 	hashChange: function() {
 		var n = this.getHashComponentName();
-		if (n && this.widgets[n]) {
-			this.showDetails(this.widgets[n]);
-		}
-	}
-});
-
-enyo.kind({
-	name: "ListItem",
-	classes:"listitem",
-	published: {
-		info: ""
-	},
-	components: [
-		{name: "name", classes: "name"},
-		{name: "owner", classes: "owner"}
-	],
-	create: function() {
-		this.inherited(arguments);
-		this.infoChanged();
-	},
-	infoChanged: function() {
-		var i = this.info;
-		if (!i) {
-			return;
-		}
-		this.$.name.setContent(i.displayName);
-		this.$.owner.setContent("by " + i.owner.name);
-	}
-});
-
-enyo.kind({
-	name: "Card",
-	kind: "ListItem",
-	kindClasses: "card",
-	components: [
-		{classes: "card-topbar", components: [
-			{name: "name", classes: "name"},
-			{name: "owner", classes: "owner"}
-		]},
-		{classes: "icon-holder", components: [
-			{name: "icon", kind: "Image", classes: "icon"}
-		]}
-	],
-	infoChanged: function() {
-		this.inherited(arguments);
-		if (this.info) {
-			this.$.icon.setSrc("gallery_images/" + this.info.name + ".jpg");
+		console.log("hashname", n);
+		var widget =  enyo.store.find(WidgetModel,
+						function(model){return (model.get("name")===n);},
+						{all:false});
+		if (n && widget) {
+			this.showDetails(widget);
 		}
 	}
 });
 
 enyo.kind({
 	name: "Details",
-	kind: "onyx.Popup",
+	kind:"FittableRows",
+	//kind: "onyx.Popup",
 	kindClasses: "details",
 	layoutKind: "FittableRowsLayout",
 	published: {
-		info: "",
+		widget: null,
 		maxHeight: ""
 	},
 	components: [
@@ -244,15 +227,19 @@ enyo.kind({
 	],
 	create: function() {
 		this.inherited(arguments);
-		this.infoChanged();
+		this.widgetChanged();
 	},
 	adjustSize: function(inContainerBounds) {
 		var b = inContainerBounds;
 		this.applyStyle("width", Math.min(720, b.width-40) + "px");
 		this.applyStyle("height", Math.min(800, b.height-80) + "px");
 	},
-	infoChanged: function() {
-		var i = this.info;
+	widgetChanged: function() {
+		if (!this.widget){
+			return;
+		}
+		console.log("widget in details is", this.widget);
+		var i = this.widget.raw();
 		if (!i) {
 			return;
 		}
@@ -282,11 +269,11 @@ enyo.kind({
 		this.$.dependencies.setNameValue({name: "Dependencies", value: (dep.length && dep.join(", ") || "None")});
 	},
 	gotoSource: function() {
-		window.open(this.info.url);
+		window.open(this.widget.get("url"));
 		return true;
 	},
 	gotoDemo: function() {
-		window.open(this.info.demoUrl);
+		window.open(this.widget.get("demoUrl"));
 		return true;
 	}
 });

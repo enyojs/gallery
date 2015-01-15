@@ -4,57 +4,46 @@ a img {
 
 /* toolbar */
 
-.toolbar {
-	background-color: #090a0b;
-	padding: 5px;
-}
-
-.toolbar-inner {
-	display: block;
-	max-width: 1000px;
-	margin: 0 auto;
-	padding-right: 10px;
-	
-	font-size: 18px;
-	font-style: italic;
-	color: #939393;
+.onyx-toolbar{
+	padding:0px;
 }
 
 .toolbar-logo {
-	margin: -8px 0 -16px;
+	margin: -1px 0px -1px -7px;
+	height: 80px;
+	background-color: lightblue;
+	padding: 15px;
+	padding-right: 20px;
 }
 
 .toolbar-search {
-	margin-top: 1px;
-	float: right;
+	width:100%;
 }
 
 .toolbar-search-input-decorator {
 	padding: 5px;
 	padding-top: 0px;
 	background-color: white;
+	width:100%;
 }
-
+/*
 .toolbar-blurred {
 	color: #aaaaaa;
-}
+}*/
 
 /* main */
 
 .main {
 	background-color: white;
 }
-
+/*
 .cards {
 	text-align: center;
 	max-width: 1100px;
 	margin: 0 auto;
 	padding-top: 20px;
 }
-
-.list {
-	display: none;
-}
+*/
 
 /* */
 
@@ -83,14 +72,18 @@ a img {
 }
 
 .icon-holder {
-	text-align: center;
-	padding-top: 16px;
-	background-color: white;
-}
+	display: block;
+	position: absolute;
+	right: 20px;
+	margin-top: -40px;
+	background-color: #FFFFFF;
+	height: 80px;
+	width: 80px;
+	padding: 0px;}
 
 .icon {
-	width: 96px;
-	height: 96px;
+	width: 80px;
+	height: 80px;
 }
 
 .blurb {
@@ -142,11 +135,9 @@ a img {
 /* Details */
 
 .details {
-	position: absolute;
 	z-index: 10;
-	border-radius: 16px;
-	background-color: white;
 	font-size: 14px;
+	background-color:white;
 }
 
 .details-header {
@@ -212,18 +203,6 @@ a img {
 /* */
 
 @media (max-width: 600px) {
-	.cards {
-		display: none;
-	}
-
-	.list {
-		display: block;
-	}
-	
-	.toolbar-search {
-		display: none;
-	}
-	
 	.details-scroller-content {
 		padding: 6px 16px;
 	}
@@ -236,3 +215,32 @@ a img {
 	}
 }
 
+
+
+.data-repeater-sample, .data-repeater-sample .repeater-item, .data-repeater-sample .name-wrapper, .data-repeater-sample .repeater-item span {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box;}
+.data-repeater-sample .repeater-item {width: 100%; width: 320px; height: 100px; color: #FFFFFF; margin-bottom: 10px; position: relative;}
+.data-repeater-sample .name-wrapper {position: absolute; height: 35px; top: 50%; left: 0px; margin-top: -17.5px; width: 100%;}
+.data-repeater-sample .repeater-item .name {padding: 4px; font-size: 20px; font-weight: bold; line-height: 18px;}
+
+.data-repeater-sample .repeater-item .name.last {font-weight: normal; font-size: 14px; font-style: italic; margin-top:-35px;}
+.data-repeater-sample .repeater-item .name.last.small {font-size:12px; margin:0px; padding:4px; line-height:14px;}
+.data-repeater-sample .repeater-item .name.last-letter {display: block; position: absolute; top: 50%; right: 0; margin-top: -25px; text-align: right; font-weight: normal; font-size: 30px; background-color: #FFFFFF; line-height: 42px; height: 50px;
+	width: 40px; padding: 5px; border-radius: 25px 0 0 25px;}
+
+.data-repeater-sample .repeater-item.class1 .name.last-letter {color: #FF7200;}
+.data-repeater-sample .repeater-item.class2 .name.last-letter {color: #FBAA12;}
+.data-repeater-sample .repeater-item.class3 .name.last-letter {color: #067AB5;}
+.data-repeater-sample .repeater-item.class4 .name.last-letter {color: #2E92CE;}
+.data-repeater-sample .repeater-item.class5 .name.last-letter {color: #333333;}
+.data-repeater-sample .repeater-item.class1 {background: #FF7200;}
+.data-repeater-sample .repeater-item.class2 {background: #FBAA12;}
+.data-repeater-sample .repeater-item.class3 {background: #067AB5;}
+.data-repeater-sample .repeater-item.class4 {background: #2E92CE;}
+.data-repeater-sample .repeater-item.class5 {background: #333333;}
+.data-repeater-sample .repeater-item.class1.selected,
+.data-repeater-sample .repeater-item.class2.selected,
+.data-repeater-sample .repeater-item.class3.selected,
+.data-repeater-sample .repeater-item.class4.selected,
+.data-repeater-sample .repeater-item.class5.selected {background: #FFFFFF; color: #000000;}
+/* because there is some generic .item css applied with no scope in sampler */
+.data-repeater-sample .item {border-bottom: none;}

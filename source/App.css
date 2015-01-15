@@ -81,6 +81,11 @@ a img {
 	width: 80px;
 	padding: 0px;}
 
+.detail.icon-holder{
+	position:relative;
+	margin:0px;
+}
+
 .icon {
 	width: 80px;
 	height: 80px;
@@ -137,7 +142,7 @@ a img {
 .details {
 	z-index: 10;
 	font-size: 14px;
-	background-color:white;
+	background-color:#ccc;
 }
 
 .details-header {
@@ -205,13 +210,6 @@ a img {
 @media (max-width: 600px) {
 	.details-scroller-content {
 		padding: 6px 16px;
-	}
-}
-
-/* IE8 border hack */
-@media \0screen {
-	.card {
-		border: 1px solid rgb(234, 234, 234);
 	}
 }
 

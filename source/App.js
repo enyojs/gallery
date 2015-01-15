@@ -211,7 +211,7 @@ enyo.kind({
 		{kind: "Scroller", horizontal: "hidden", fit: true, classes: "details-scroller", components: [
 			{classes: "details-scroller-content", components: [
 				{name: "blurb", classes: "blurb", allowHtml: true},
-				{classes: "icon-holder", components: [
+				{classes: "detail icon-holder", components: [
 					{name: "icon", kind: "Image", classes: "icon"}
 				]},
 				{classes: "details-buttons", defaultKind: "onyx.Button", components: [

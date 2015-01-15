@@ -46,12 +46,27 @@ a img {
 	padding: 6px 18px;
 	overflow: hidden;
 	border-radius: 0px;
-	border: 1px solid #707070;
+	/* border: 1px solid #707070; */
 	border: 1px solid rgba(15, 15, 15, 0.2);
 	/* border-bottom: 1px solid rgba(15, 15, 15, 0.5); */
 	box-shadow: none;
 	background: #e1e1e1;
 	text-overflow: ellipsis;
+}
+
+.onyx-menu{
+	min-width: 160px;
+	top: 100%;
+	left: 0;
+	margin-top: 0px;
+	padding: 3px 0;
+	border-radius: 0px;
+	width: 100%;
+}
+
+.onyx-popup{
+	background: #e1e1e1;
+	color:#000;
 }
 /*
 .toolbar-blurred {
@@ -244,7 +259,7 @@ a img {
 
 .data-repeater-sample, .data-repeater-sample .repeater-item, .data-repeater-sample .name-wrapper, .data-repeater-sample .repeater-item span {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box;}
 .data-repeater-sample .repeater-item {width: 100%; width: 320px; height: 100px; color: #FFFFFF; margin-bottom: 10px; position: inherit;}
-.data-repeater-sample .name-wrapper {position: absolute; height: 35px; top: 50%; left: 0px; margin-top: -57.5px; width: 100%;}
+.data-repeater-sample .name-wrapper {position: absolute; height: 35px; top: 50%; left: 0px; margin-top: -50.5px; width: 100%;}
 .data-repeater-sample .repeater-item .name {padding: 4px; font-size: 20px; font-weight: bold; line-height: 20px; }
 
 .data-repeater-sample .repeater-item .name.last {font-weight: normal; font-size: 14px; font-style: italic; line-height:14px;}

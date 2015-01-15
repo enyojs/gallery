@@ -34,7 +34,24 @@ a img {
 	padding: 5px;
 	padding-top: 0px;
 	background-color: white;
-	width:100%;
+}
+
+.onyx-button {
+	/* outline: 0; */
+	/* color: #292929; */
+	font-size: 16px;
+	text-align: center;
+	white-space: nowrap;
+	margin: 0;
+	padding: 6px 18px;
+	overflow: hidden;
+	border-radius: 0px;
+	border: 1px solid #707070;
+	border: 1px solid rgba(15, 15, 15, 0.2);
+	/* border-bottom: 1px solid rgba(15, 15, 15, 0.5); */
+	box-shadow: none;
+	background: #e1e1e1;
+	text-overflow: ellipsis;
 }
 /*
 .toolbar-blurred {

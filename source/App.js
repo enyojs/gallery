@@ -1,5 +1,6 @@
 enyo.kind({
 	name: "App",
+	classes:"enyo-fill",
 	kind: "FittableRows",
 	components: [
 		{kind:"onyx.Toolbar", layoutKind:"FittableColumnsLayout", components: [
@@ -9,52 +10,61 @@ enyo.kind({
 				{tag:"h1", content: "Community Gallery", fit:true}
 		]},
 		{
-			fit:true,
 			kind:"Panels",
 			arrangerKind:"CollapsingArranger",
-			classes:"data-repeater-sample",
-			components:[{
-				kind:"FittableRows",
-				components:[
-					{classes: "toolbar-search", components: [
-						{kind: "onyx.InputDecorator", classes: "toolbar-search-input-decorator", components: [
-							{kind: "onyx.Input", name: "searchInput", placeholder: "Search...",
-								oninput: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
-							{kind: "Image", name: "clearInput", src: "images/search-input-search.png", style:"float:right;", ontap: "clearInput"}
-						]}
-					]},
-					{name: "list", kind:"enyo.DataList",
-						style:"width:320px;", components: [
-						{classes:"repeater-item", ontap:"itemTap", components: [
-							{classes: "name-wrapper", components: [
-								{
-									style:"width:220px",
-									components:[
-										{name: "name", classes: "name last"},
-										{name: "displayName", classes: "name"},
-									]
-								},
-								{classes: "icon-holder", tag: "span", components: [
-									{name: "icon", kind: "Image", classes: "icon"}
-								]},
-								{name:"createdBy", classes:"name last small"}
-								//{name: "lastNameLetter", classes: "name last-letter", tag: "span"}
+			fit:true,
+			components:[
+				{
+					name:"listPanel",
+					kind:"FittableRows",
+					style:"width:100%;",
+					classes:"animated-panel",
+					components:[
+						{classes: "toolbar-search", components: [
+							{kind: "onyx.InputDecorator", classes: "toolbar-search-input-decorator", components: [
+								{kind: "onyx.Input", name: "searchInput", placeholder: "Search...",
+									oninput: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
+								{kind: "Image", name: "clearInput", src: "images/search-input-search.png", style:"float:right;", ontap: "clearInput"}
 							]}
-						], bindings: [
-							{from: ".model.name", to: ".$.name.content"},
-							{from: ".model.displayName", to: ".$.displayName.content"},
-							{from: ".model.owner", to: ".$.createdBy.content",
-								transform:function(v,d,b){var ownerInfo = b.owner.owner.lookupOwnerInfo(v); return ownerInfo?("by " + ownerInfo.name):"";}},
-							{from: ".model", to: ".$.icon.src", transform: function (v,d,b) { if (!v) return ""; return ("gallery_images/" + v.get("name") + ".jpg") }},
-							{from: ".model", to: ".classes", transform: function(v,d,b){return ("repeater-item class" + (1+b.owner.index%5));}}
-						]}
-					]},
+						]},
+						{name: "list", kind:"enyo.DataGridList",
+							fit:true,
+							//orientation:"horizontal",
+							scrollerOptions:{touch:true},
+							minWidth: 320, minHeight: 110, spacing: 5,
+							classes:"data-repeater-sample",
+							components: [
+								{classes:"repeater-item", ontap:"itemTap", components: [
+									{classes: "name-wrapper", components: [
+										{
+											style:"width:220px",
+											components:[
+												{name: "displayName", classes: "name"},
+												{name:"createdBy", classes:"name last small"},
+												{name: "name", classes: "name last bottom"},
+											]
+										},
+										{classes: "icon-holder", tag: "span", components: [
+											{name: "icon", kind: "Image", classes: "icon"}
+										]},
+										//{name: "lastNameLetter", classes: "name last-letter", tag: "span"}
+									]}
+								], bindings: [
+									{from: ".model.name", to: ".$.name.content"},
+									{from: ".model.displayName", to: ".$.displayName.content"},
+									{from: ".model.owner", to: ".$.createdBy.content",
+										transform:function(v,d,b){var ownerInfo = b.owner.owner.lookupOwnerInfo(v); return ownerInfo?("by " + ownerInfo.name):"";}},
+									{from: ".model", to: ".$.icon.src", transform: function (v,d,b) { if (!v) return ""; return ("gallery_images/" + v.get("name") + ".jpg") }},
+									{from: ".model", to: ".classes", transform: function(v,d,b){return ("repeater-item class" + (1+b.owner.index%5));}}
+								]}
+							]}
 
-				]
+					]
 				},
-				{kind: "Details", fit: true, classes:"details"}
+				{kind: "Details", fit: true, classes:"details animated-panel", onHide: "hideDetails"},
 			]
 		}
+
 	],
 	create: function() {
 		this.inherited(arguments);
@@ -162,12 +172,20 @@ enyo.kind({
 	showDetails: function(widget) {
 
 		this.$.details.setWidget(widget);
+		if (enyo.Panels.isScreenNarrow()){
+			this.$.panels.set("index",1);
+		}else{
+			this.$.panels.set("index",0);
+		}
 /*		this.$.details.adjustSize(this.getBounds());
 		this.$.details.show();
 		//onyx.scrim.show();*/
 	},
 	hideDetails: function() {
-		onyx.scrim.hide();
+		//onyx.scrim.hide();
+		this.$.listPanel.setBounds({width:"100%"});
+		this.$.panels.set("index",0);
+		this.$.panels.resize();
 		this.back();
 	},
 	preventTap: function(inSender, inEvent) {
@@ -181,11 +199,13 @@ enyo.kind({
 	},
 	hashChange: function() {
 		var n = this.getHashComponentName();
-		console.log("hashname", n);
 		var widget =  enyo.store.find(WidgetModel,
 						function(model){return (model.get("name")===n);},
 						{all:false});
 		if (n && widget) {
+			this.$.listPanel.setBounds({width:"320px"});
+			this.$.panels.set("index",0);
+			this.$.panels.resize();
 			this.showDetails(widget);
 		}
 	}
@@ -201,9 +221,12 @@ enyo.kind({
 		widget: null,
 		maxHeight: ""
 	},
+	events:{
+		onHide:""
+	},
 	components: [
 		{classes: "details-header", components: [
-			{name: "close", kind: "onyx.Icon", src: "images/close-icon.png", classes: "details-close", ontap: "hide"},
+			{name: "close", kind: "onyx.Icon", src: "images/close-icon.png", classes: "details-close", ontap: "doHide"},
 			{name: "name", classes: "name"},
 			{name: "owner", classes: "owner"},
 			{name: "links", classes: "links", allowHtml: true}
@@ -238,7 +261,7 @@ enyo.kind({
 		if (!this.widget){
 			return;
 		}
-		console.log("widget in details is", this.widget);
+		//console.log("widget in details is", this.widget);
 		var i = this.widget.raw();
 		if (!i) {
 			return;

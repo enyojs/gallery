@@ -6,18 +6,28 @@ a img {
 
 .onyx-toolbar{
 	padding:0px;
+	background-color: #5dc4ff;
+	color:#ffffff;
+	border:0px;
 }
-
 .toolbar-logo {
 	margin: -1px 0px -1px -7px;
 	height: 80px;
-	background-color: lightblue;
 	padding: 15px;
 	padding-right: 20px;
+	position: relative;
+	top:4px;
+}
+
+@media (min-width: 768px) {
+	h1 {
+		font-family: 'Raleway', sans-serif;
+		font-weight: normal;
+	}
 }
 
 .toolbar-search {
-	width:100%;
+	margin:3px;
 }
 
 .toolbar-search-input-decorator {
@@ -216,12 +226,13 @@ a img {
 
 
 .data-repeater-sample, .data-repeater-sample .repeater-item, .data-repeater-sample .name-wrapper, .data-repeater-sample .repeater-item span {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box;}
-.data-repeater-sample .repeater-item {width: 100%; width: 320px; height: 100px; color: #FFFFFF; margin-bottom: 10px; position: relative;}
-.data-repeater-sample .name-wrapper {position: absolute; height: 35px; top: 50%; left: 0px; margin-top: -17.5px; width: 100%;}
-.data-repeater-sample .repeater-item .name {padding: 4px; font-size: 20px; font-weight: bold; line-height: 18px;}
+.data-repeater-sample .repeater-item {width: 100%; width: 320px; height: 100px; color: #FFFFFF; margin-bottom: 10px; position: inherit;}
+.data-repeater-sample .name-wrapper {position: absolute; height: 35px; top: 50%; left: 0px; margin-top: -57.5px; width: 100%;}
+.data-repeater-sample .repeater-item .name {padding: 4px; font-size: 20px; font-weight: bold; line-height: 20px; }
 
-.data-repeater-sample .repeater-item .name.last {font-weight: normal; font-size: 14px; font-style: italic; margin-top:-35px;}
-.data-repeater-sample .repeater-item .name.last.small {font-size:12px; margin:0px; padding:4px; line-height:14px;}
+.data-repeater-sample .repeater-item .name.last {font-weight: normal; font-size: 14px; font-style: italic; line-height:14px;}
+.data-repeater-sample .repeater-item .name.last.small {font-size:12px; margin:0px; padding:4px; line-height:12px;}
+.data-repeater-sample .repeater-item .name.last.bottom {position:absolute; top:90px;}
 .data-repeater-sample .repeater-item .name.last-letter {display: block; position: absolute; top: 50%; right: 0; margin-top: -25px; text-align: right; font-weight: normal; font-size: 30px; background-color: #FFFFFF; line-height: 42px; height: 50px;
 	width: 40px; padding: 5px; border-radius: 25px 0 0 25px;}
 

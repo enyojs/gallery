@@ -20,9 +20,17 @@ enyo.kind({
 					style:"width:100%;",
 					components:[
 						{classes: "toolbar-search enyo-children-inline", components: [
-							{kind: "onyx.MenuDecorator", onSelect: "itemSelected", style:"min-width:150px; margin-right:5px;", components: [
-								{content: "Categories", kind: "onyx.Button", onActivate: "preventMenuActivate", style: "border-right:0px;"},
-								{allowHtml:true, content:"&#x25BC;", style: "border-radius: 1 3px 3px 1; border-left:0px;"},
+							{kind: "onyx.MenuDecorator", onSelect: "itemSelected", classes: "toolbar-search-menu-decorator", style:"margin-right:5px;",
+								components: [
+								{
+									kind:"FittableColumns",
+									style:"position:relative; width:100%;",
+									defaultKind:"onyx.Button",
+									components:[
+										{content: "Categories", kind: "onyx.Button", onActivate: "preventMenuActivate", style: "border-right:0px;", fit:true},
+										{allowHtml:true, content:"&#x25BC;", style: "border-radius: 1 3px 3px 1; border-left:0px;"},
+									]
+								},
 								{kind: "onyx.Menu", components: [
 									{content: "1"},
 									{content: "2"},
@@ -30,7 +38,7 @@ enyo.kind({
 									{content: "3"}
 								]}
 							]},
-							{kind: "onyx.InputDecorator", classes: "toolbar-search-input-decorator", style:"min-width:80%;", components: [
+							{kind: "onyx.InputDecorator", classes: "toolbar-search-input-decorator", components: [
 								{kind: "onyx.Input", name: "searchInput", placeholder: "Search...",
 									oninput: "handleSearch", onblur: "handleBlurFocus", onfocus: "handleBlurFocus", defaultFocus: true},
 								{kind: "Image", name: "clearInput", src: "images/search-input-search.png", style:"float:right;", ontap: "clearInput"}

@@ -232,12 +232,30 @@ a img {
 	font-size: 14px;
 }
 
+@media (min-width: 320px) {
+	.toolbar-search-menu-decorator {
+		width: 150px;
+	}
+	.toolbar-search-input-decorator {
+		width: 800px;
+		max-width:60%;
+	}
+}
 /* */
+@media (max-width: 320px) {
+	.toolbar-search-menu-decorator{
+		width:100%;
+	}
+	.toolbar-search-input-decorator {
+		width:100%;
+	}
+}
 
 @media (max-width: 600px) {
 	.details-scroller-content {
 		padding: 6px 16px;
 	}
+
 }
 
 

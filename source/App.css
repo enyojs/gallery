@@ -113,7 +113,7 @@ a img {
 	display: block;
 	position: absolute;
 	right: 10px;
-	margin-top: -55px;
+	margin-top: -30px;
 	background-color: #FFFFFF;
 	height: 80px;
 	width: 80px;
@@ -129,19 +129,6 @@ a img {
 	padding: 18px 0 20px;
 	font-size: 14px;
 	font-style: normal;
-}
-
-/* ListItem */
-
-.listitem {
-	height: 50px;
-	padding: 10px;
-	border-bottom: 1px solid #ddd;
-}
-
-.listitem:active {
-	background-color: #cde7fe;
-	box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Details */
@@ -262,7 +249,7 @@ a img {
 
 .data-repeater-sample .repeater-item .name.last {font-weight: normal; font-size: 12px; font-style: italic; line-height:14px;}
 .data-repeater-sample .repeater-item .name.last.small {font-size:12px; margin:0px; padding:4px; line-height:12px;}
-.data-repeater-sample .repeater-item .name.last.bottom {position:absolute; bottom:80px; font-weight: 100; position:relative;}
+.data-repeater-sample .repeater-item .name.last.bottom {position:absolute; bottom:0px; font-weight: 100;}
 .data-repeater-sample .repeater-item .name.last-letter {display: block; position: absolute; top: 50%; right: 0; margin-top: -25px; text-align: right; font-weight: normal; font-size: 30px; background-color: #FFFFFF; line-height: 42px; height: 50px;
 	width: 40px; padding: 5px; border-radius: 25px 0 0 25px;}
 

@@ -50,14 +50,14 @@ enyo.kind({
 											components:[
 												{name: "displayName", classes: "name"},
 												{name:"createdBy", classes:"name last"},
-												{name: "name", classes: "name last bottom"},
 											]
 										},
 										{classes: "icon-holder", tag: "span", components: [
 											{name: "icon", kind: "Image", classes: "icon"}
 										]},
 										//{name: "lastNameLetter", classes: "name last-letter", tag: "span"}
-									]}
+									]},
+									{name: "name", classes: "name last bottom"},
 								], bindings: [
 									{from: ".model.name", to: ".$.name.content"},
 									{from: ".model.displayName", to: ".$.displayName.content"},

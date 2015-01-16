@@ -49,7 +49,7 @@ enyo.kind({
 											style:"width:220px",
 											components:[
 												{name: "displayName", classes: "name"},
-												{name:"createdBy", classes:"name last small"},
+												{name:"createdBy", classes:"name last"},
 												{name: "name", classes: "name last bottom"},
 											]
 										},
@@ -141,8 +141,7 @@ enyo.kind({
 	},
 
 	lookupOwnerInfo: function(owner){
-		var ownerInfo = this.owners[owner];
-		return ownerInfo;
+		return this.owners[owner];;
 	},
 
 	toDateSortedArray: function(inItems) {
@@ -163,14 +162,6 @@ enyo.kind({
 		});
 		return ls;
 	},
-	back: function() {
-		if (this.itemTapped) {
-			this.itemTapped = false;
-			window.history.back();
-		} else {
-			this.setHashComponentName("");
-		}
-	},
 	itemTap: function(inSender, inEvent) {
 		this.itemTapped = true;
 		console.log("tapped", inSender, inEvent);
@@ -180,22 +171,27 @@ enyo.kind({
 	},
 	showDetails: function(widget) {
 
-		this.$.details.setWidget(widget);
+		this.$.details.set("widget", widget);
+		this.$.details.set("ownerInfo", this.lookupOwnerInfo(widget.get("owner")));
 		if (enyo.Panels.isScreenNarrow()){
 			this.$.panels.set("index",1);
 		}else{
 			this.$.panels.set("index",0);
 		}
-/*		this.$.details.adjustSize(this.getBounds());
-		this.$.details.show();
-		//onyx.scrim.show();*/
 	},
 	hideDetails: function() {
-		//onyx.scrim.hide();
 		this.$.listPanel.setBounds({width:"100%"});
 		this.$.panels.set("index",0);
 		this.$.panels.resize();
 		this.back();
+	},
+	back: function() {
+		if (this.itemTapped) {
+			this.itemTapped = false;
+			window.history.back();
+		} else {
+			this.setHashComponentName("");
+		}
 	},
 	preventTap: function(inSender, inEvent) {
 		inEvent.preventTap();
@@ -227,25 +223,41 @@ enyo.kind({
 	kindClasses: "details",
 	layoutKind: "FittableRowsLayout",
 	published: {
-		widget: null,
+		widget:null,
+		ownerInfo:null,
 		maxHeight: ""
 	},
 	events:{
 		onHide:""
 	},
+	bindings:[
+		{from:".ownerInfo.name", to:".$.owner.content"},
+		{from:".ownerInfo", to:".$.links.content", transform: function(v,d,b){
+			if (!v) {return "";}
+			var links = "";
+			if (v.website) {
+				links = "<a href='" + v.website + "' target='_blank'>Website</a>";
+			}
+			if (v.twitter) {
+				links += "<a href='http://www.twitter.com/" + v.twitter + "' target='_blank'>Twitter</a>";
+			}
+			return links;
+		}}
+	],
 	components: [
 		{classes: "details-header", components: [
 			{name: "close", kind: "onyx.Icon", src: "images/close-icon.png", classes: "details-close", ontap: "doHide"},
-			{name: "name", classes: "name"},
-			{name: "owner", classes: "owner"},
-			{name: "links", classes: "links", allowHtml: true}
+			{name: "name", classes: "details-name", tag:"h1"},
+			{name: "owner", classes: "details-owner", tag:"h2"},
+			{name: "links", classes: "details-links", allowHtml: true}
 		]},
 		{kind: "Scroller", horizontal: "hidden", fit: true, classes: "details-scroller", components: [
 			{classes: "details-scroller-content", components: [
-				{name: "blurb", classes: "blurb", allowHtml: true},
-				{classes: "detail icon-holder", components: [
-					{name: "icon", kind: "Image", classes: "icon"}
+				{name: "blurb", kind:"Field", classes: "blurb"},
+				{classes: "details-icon-holder", components: [
+					{name: "icon", kind: "Image", classes: "details-icon"}
 				]},
+				{tag:"br"},
 				{classes: "details-buttons", defaultKind: "onyx.Button", components: [
 					{name: "demo", classes: "onyx-blue", content: "Demo", ontap: "gotoDemo"},
 					{name: "source", classes: "onyx-blue", content: "View Source", ontap: "gotoSource"}
@@ -280,16 +292,8 @@ enyo.kind({
 		//
 		this.$.name.setContent(i.displayName);
 		this.$.owner.setContent("by " + i.owner.name);
-		var links = "";
-		if (i.owner.website) {
-			links = "<a href='" + i.owner.website + "' target='_blank'>Website</a>";
-		}
-		if (i.owner.twitter) {
-			links += "<a href='http://www.twitter.com/" + i.owner.twitter + "' target='_blank'>Twitter</a>";
-		}
-		this.$.links.setContent(links);
 		this.$.icon.setSrc("gallery_images/" + i.name + ".jpg");
-		this.$.blurb.setContent(i.blurb);
+		this.$.blurb.setNameValue({name: "Description", value: (i.blurb ||"")});
 		//
 		this.$.submissionDate.setNameValue({name: "Submission Date", value: (i.submissionDate || "Unknown")});
 		this.$.testedPlatforms.setNameValue({name: "Tested Platforms", value: (i.testedPlatforms || "Unknown")});
@@ -315,7 +319,7 @@ enyo.kind({
 	classes: "field",
 	components: [
 		{name: "name", classes: "field-name"},
-		{name: "value", classes: "field-value"}
+		{name: "value", classes: "field-value", allowHtml:true}
 	],
 	setNameValue: function(inNameValue) {
 		this.$.name.setContent(inNameValue.name);

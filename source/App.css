@@ -105,10 +105,6 @@ a img {
 	text-overflow: ellipsis;
 }
 
-.links {
-	display: inline-block;
-}
-
 .links > * {
 	padding-left: 10px;
 }
@@ -116,16 +112,12 @@ a img {
 .icon-holder {
 	display: block;
 	position: absolute;
-	right: 20px;
-	margin-top: -40px;
+	right: 10px;
+	margin-top: -55px;
 	background-color: #FFFFFF;
 	height: 80px;
 	width: 80px;
-	padding: 0px;}
-
-.detail.icon-holder{
-	position:relative;
-	margin:0px;
+	padding: 0px;
 }
 
 .icon {
@@ -136,7 +128,7 @@ a img {
 .blurb {
 	padding: 18px 0 20px;
 	font-size: 14px;
-	font-style: italic;
+	font-style: normal;
 }
 
 /* ListItem */
@@ -152,33 +144,6 @@ a img {
 	box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Card */
-
-.card {
-	display: inline-block;
-	overflow: hidden;
-	width: 220px;
-	height: 220px;
-	margin: 16px;
-	
-	border-radius: 16px;
-	box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
-	
-	text-align: left;
-	font-size: 16px;
-}
-
-.card-topbar {
-	background-color: #EAEAEA;
-	padding: 16px;
-	color: #5A5A5A;
-}
-
-.card-empty {
-	box-shadow: none;
-	height: 0;
-}
-
 /* Details */
 
 .details {
@@ -188,13 +153,30 @@ a img {
 }
 
 .details-header {
-	padding: 22px 48px 16px;
+	padding: 0px 10px 10px 20px;
 	border-bottom: 1px solid #eee;
+}
+
+.details-name{
+	padding: 0px;
+	font-weight: bold;
+	white-space: nowrap;
+	margin-bottom:0px;
+}
+
+.details-owner {
+	display: inline-block;
+	font-size: 14px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-bottom:0px;
+	margin-top:8px;
+	vertical-align: baseline;
 }
 
 .details-buttons {
 	text-align: center;
-	padding: 32px 0 16px;
 }
 
 .details-buttons .onyx-button {
@@ -218,17 +200,34 @@ a img {
 	z-index: 1;
 }
 
-.details .name {
-	font-size: 24px;
-	padding-bottom: 4px;
+.details-icon-holder{
+	position:relative;
+	margin:0px;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:0px;
 }
 
-.details .icon {
+
+.details-icon {
 	width: auto;
 	height: auto;
 	max-height: 200px;
 	max-width: 200px;
 }
+
+.details-links {
+	display: inline-block;
+	margin-top:8px;
+	vertical-align: baseline;
+	margin-left:10px;
+}
+
+
+.details-links a {
+	margin-left:10px;
+}
+
 
 /* Field */
 
@@ -244,7 +243,6 @@ a img {
 .field-value {
 	padding-top: 4px;
 	font-size: 14px;
-	font-style: italic;
 }
 
 /* */
@@ -259,12 +257,12 @@ a img {
 
 .data-repeater-sample, .data-repeater-sample .repeater-item, .data-repeater-sample .name-wrapper, .data-repeater-sample .repeater-item span {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box;}
 .data-repeater-sample .repeater-item {width: 100%; width: 320px; height: 100px; color: #FFFFFF; margin-bottom: 10px; position: inherit;}
-.data-repeater-sample .name-wrapper {position: absolute; height: 35px; top: 50%; left: 0px; margin-top: -50.5px; width: 100%;}
+.data-repeater-sample .name-wrapper {position: absolute; height: 35px; top: 50px; left: 0px; margin-top: -50.5px; width: 100%;}
 .data-repeater-sample .repeater-item .name {padding: 4px; font-size: 20px; font-weight: bold; line-height: 20px; }
 
-.data-repeater-sample .repeater-item .name.last {font-weight: normal; font-size: 14px; font-style: italic; line-height:14px;}
+.data-repeater-sample .repeater-item .name.last {font-weight: normal; font-size: 12px; font-style: italic; line-height:14px;}
 .data-repeater-sample .repeater-item .name.last.small {font-size:12px; margin:0px; padding:4px; line-height:12px;}
-.data-repeater-sample .repeater-item .name.last.bottom {position:absolute; top:90px;}
+.data-repeater-sample .repeater-item .name.last.bottom {position:absolute; bottom:80px; font-weight: 100; position:relative;}
 .data-repeater-sample .repeater-item .name.last-letter {display: block; position: absolute; top: 50%; right: 0; margin-top: -25px; text-align: right; font-weight: normal; font-size: 30px; background-color: #FFFFFF; line-height: 42px; height: 50px;
 	width: 40px; padding: 5px; border-radius: 25px 0 0 25px;}
 

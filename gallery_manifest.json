@@ -175,7 +175,7 @@
             "website": "https://www.facebook.com/seongwoong.oh",
             "twitter": "@outliet"
         },
-        "jk-park": {
+        "jkpark": {
             "name": "Jeong-geun Park",
             "website": "https://github.com/jk-park",
             "twitter": ""
@@ -2012,9 +2012,9 @@
             "blurb": "A game application. Avoiding missiles. Control with keyboard(arrow) or mouse(drag)"
         },
         {
-            "name": "jk-park.enyoEventBench",
+            "name": "jkpark.EventBench",
             "displayName": "Enyo Event Handling Benchmark",
-            "owner": "jk-park",
+            "owner": "jkpark",
             "dependencies": [
                 {
                     "name": "Enyo 2",

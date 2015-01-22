@@ -187,6 +187,7 @@ enyo.kind({
     categoriesChanged: function(){
         this.$.categoriesMenu.destroyClientControls();
         var categoryComponents = [{content:"All categories"}];
+        this.categories.sort();
         for (var a=0; a<this.categories.length; a++){
             categoryComponents.push({content: this.categories[a]});
         }

@@ -1,4 +1,5 @@
 {
+    "categories": ["Integration", "Encryption", "Utility", "Grid", "Layout"],
     "owners": {
         "dimitrk": {
             "name": "DimitrK",
@@ -202,7 +203,8 @@
             "testedPlatforms": "Firefox 26.0.0 (windows 7), IE 10 (windows 7), Chrome 34.0.1805.0 canary (window 7), Chrome 32.0.1700.72 (windows 7), Opera 12.15 (windows 7)",
             "license": "BSD",
             "version": "1.0",
-            "blurb": "EnigmaJS is a Enyo encryption/encoding library. Form more information see the github project page."
+            "blurb": "EnigmaJS is a Enyo encryption/encoding library. Form more information see the github project page.",
+            "categories": ["Encryption", "Utility", "Integration"]
         },
         {
             "name": "rahien.ReorderableList",

@@ -2,6 +2,11 @@ enyo.kind({
     name: "App",
     classes: "enyo-fill",
     kind: "FittableRows",
+    published:{
+        widgets:null,
+        owners:[],
+        categories:[]
+    },
     components: [
         {
             kind: "onyx.Toolbar", layoutKind: "FittableColumnsLayout", components: [
@@ -16,6 +21,7 @@ enyo.kind({
         {
             kind: "Panels",
             arrangerKind: "CollapsingArranger",
+            draggable:false,
             fit: true,
             components: [
                 {
@@ -26,6 +32,7 @@ enyo.kind({
                         {
                             classes: "toolbar-search enyo-children-inline", components: [
                             {
+                                name: "categoriesMenuDecorator",
                                 kind: "onyx.MenuDecorator",
                                 onSelect: "itemSelected",
                                 classes: "toolbar-search-menu-decorator",
@@ -37,6 +44,7 @@ enyo.kind({
                                         defaultKind: "onyx.Button",
                                         components: [
                                             {
+                                                name: "selectedCategoryButton",
                                                 content: "All categories",
                                                 kind: "onyx.Button",
                                                 onActivate: "preventMenuActivate",
@@ -51,12 +59,8 @@ enyo.kind({
                                         ]
                                     },
                                     {
-                                        kind: "onyx.Menu", components: [
-                                        {content: "1"},
-                                        {content: "2"},
-                                        {classes: "onyx-menu-divider"},
-                                        {content: "3"}
-                                    ]
+                                        name:"categoriesMenu",
+                                        kind: "onyx.Menu", components: []
                                     }
                                 ]
                             },
@@ -134,7 +138,8 @@ enyo.kind({
                                 ]
                                 }
                             ]
-                        }
+                        },
+
 
                     ]
                 },
@@ -161,6 +166,69 @@ enyo.kind({
      this.$.details.adjustSize(this.getBounds());
      this.$.details.updatePosition();
      },*/
+    fetchGalleryData: function () {
+        new enyo.Ajax({url: "gallery_manifest.json"})
+            .response(this, function (inSender, inResponse) {
+                var ws = inResponse.widgets;
+                this.widgets.add(ws, {merge: true});
+
+                var os = inResponse.owners;
+                this.owners = os;
+
+                var cs = inResponse.categories;
+                this.set("categories", cs);
+                console.log("owners", this.owners);
+                console.log("wigets", this.widgets);
+                this.hashChange();
+            })
+            .go();
+    },
+
+    categoriesChanged: function(){
+        this.$.categoriesMenu.destroyClientControls();
+        var categoryComponents = [{content:"All categories"}];
+        for (var a=0; a<this.categories.length; a++){
+            categoryComponents.push({content: this.categories[a]});
+        }
+        this.$.categoriesMenu.createComponents(categoryComponents, {owner:this});
+        this.$.categoriesMenuDecorator.render();
+    },
+
+    itemSelected: function(s,e){
+        var searchValue = e.selected.content||"";
+        this.$.selectedCategoryButton.setContent(searchValue);
+        var searchFunction = function(model){
+            var toCheck = "All categories";
+            var modelCategories = model.get("categories")||[];
+            for (var a=0; a<modelCategories.length; a++){
+                toCheck = toCheck + " " + modelCategories[a];
+            }
+            return (toCheck.toLowerCase().indexOf(searchValue.toLowerCase())!=-1);
+        };
+        var results = enyo.store.find(WidgetModel, searchFunction);
+        this.$.list.set("collection", new WidgetCollection(results));
+        this.set("noResultsFound", results.length);
+    },
+
+    noResultsFoundChanged: function(){
+        if (!this.$.noResultsPopup){
+            this.createComponent({
+                name:"noResultsPopup",
+                kind:"onyx.Popup",
+                autoDismiss:false,
+                centered:true,
+                style:"height:320px; width:320px; text-align:center;",
+                components:[
+                    {
+                        content:"NOTHING FOUND, TRY AGAIN"
+                    }
+                ]
+            })
+            this.$.noResultsPopup.render();
+        }
+        this.$.noResultsPopup.setShowing(!this.noResultsFound);
+    },
+
     handleBlurFocus: function (inSender, inEvent) {
         inSender.addRemoveClass("toolbar-blurred", inEvent.type === "focus");
     },
@@ -184,20 +252,6 @@ enyo.kind({
                 this.$.clearInput.setSrc("images/search-input-cancel.png");
             }
         }
-    },
-    fetchGalleryData: function () {
-        new enyo.Ajax({url: "gallery_manifest.json"})
-            .response(this, function (inSender, inResponse) {
-                var ws = inResponse.widgets;
-                this.widgets.add(ws, {merge: true});
-
-                var os = inResponse.owners;
-                this.owners = os;
-                console.log("owners", this.owners);
-                console.log("wigets", this.widgets);
-                this.hashChange();
-            })
-            .go();
     },
 
     lookupOwnerInfo: function (owner) {

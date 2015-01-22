@@ -143,7 +143,7 @@ enyo.kind({
 
                     ]
                 },
-                {kind: "Details", fit: true, classes: "details animated-panel", onHide: "hideDetails"},
+                {kind: "Details", fit:true, classes: "details animated-panel", onHide: "hideDetails"},
             ]
         }
 
@@ -153,7 +153,7 @@ enyo.kind({
         window.onhashchange = enyo.bind(this, "hashChange");
         //this.$.scroller.getStrategy().translateOptimized = true;
         this.widgets = new WidgetCollection();
-        this.owners = {};//new OwnerCollection();
+        this.owners = {};
         this.$.list.set("collection", this.widgets);
     },
     rendered: function () {
@@ -217,10 +217,12 @@ enyo.kind({
                 kind:"onyx.Popup",
                 autoDismiss:false,
                 centered:true,
-                style:"height:320px; width:320px; text-align:center;",
+                style:"height:280px; width:320px; text-align:center;",
                 components:[
                     {
-                        content:"NOTHING FOUND, TRY AGAIN"
+                        style:"font-size:20px; margin-top:20%;",
+                        allowHtml:true,
+                        content:"No components matching category search found. <BR/><BR/>Please check out a different category!"
                     }
                 ]
             })
@@ -368,10 +370,10 @@ enyo.kind({
     components: [
         {
             classes: "details-header", components: [
-            {name: "close", kind: "onyx.Icon", src: "images/close-icon.png", classes: "details-close", ontap: "doHide"},
             {name: "name", classes: "details-name", tag: "h1"},
             {name: "owner", classes: "details-owner", tag: "h2"},
-            {name: "links", classes: "details-links", allowHtml: true}
+            {name: "links", classes: "details-links", allowHtml: true},
+            {name: "close", kind: "onyx.Icon", src: "images/close-icon.png", classes: "details-close", ontap: "doHide"},
         ]
         },
         {

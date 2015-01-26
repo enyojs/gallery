@@ -1,5 +1,10 @@
 {
     "owners": {
+         "Saramean": {
+            "name": "Taehwa Kang",
+            "website": "",
+            "twitter": ""
+        },
         "dimitrk": {
             "name": "DimitrK",
             "website": "http://www.appopsi.com",
@@ -186,6 +191,24 @@
         }
     },
     "widgets": [
+        {
+            "name": "Saramean.scheduler",
+            "displayName": "Scheduler",
+            "owner": "Saramean",
+            "dependencies": [
+                {
+                    "name": "Enyo 2",
+                    "version": ""
+                }
+            ],
+            "url": "https://github.com/Saramean/scheduler",
+            "demoUrl": "",
+            "submissionDate": "June 20, 2014",
+            "testedPlatforms": "IE 10 (windows 7), Chrome 32.0.1700.72 (windows 7)",
+            "license": "",
+            "version": "1.0",
+            "blurb": "Enyo scheduler application."
+        },
         {
             "name": "dimitrk.enigma",
             "displayName": "Enigma",

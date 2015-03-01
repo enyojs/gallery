@@ -10,13 +10,9 @@ enyo.kind({
     components: [
         {
             kind: "onyx.Toolbar", layoutKind: "FittableColumnsLayout", components: [
-            {
-                tag: "a", attributes: {href: "http://enyojs.com"}, components: [
-                {kind: "Image", src: "images/enyo-logo.png", classes: "toolbar-logo"}
+                {tag: "span", classes: "toolbar-logo", content: "Enyo"},
+                {tag: "h1", content: "Community Gallery", fit: true}
             ]
-            },
-            {tag: "h1", content: "Community Gallery", fit: true}
-        ]
         },
         {
             kind: "Panels",
@@ -48,7 +44,7 @@ enyo.kind({
                                                 content: "All categories",
                                                 kind: "onyx.Button",
                                                 onActivate: "preventMenuActivate",
-                                                style: "font-size:1.3rem; height:32px; text-align:left; border-right:0px;",
+                                                style: "font-size:1.3rem; height:32px; width: 100%; text-align:left; border-right:0px;",
                                                 fit: true
                                             },
                                             {
@@ -89,10 +85,11 @@ enyo.kind({
                         {
                             name: "list", kind: "enyo.DataGridList",
                             fit: true,
+                            selectionType: "group",
                             //orientation:"horizontal",
                             //scrollerOptions:{style:"padding-right:20px;"},
-                            minWidth: 320, minHeight: 110, spacing: 5,
-                            classes: "data-repeater-sample",
+                            minWidth: 320, minHeight: 110, spacing: 10,
+                            classes: "gallery-list",
                             components: [
                                 {
                                     classes: "repeater-item", ontap: "itemTap", components: [
@@ -102,7 +99,7 @@ enyo.kind({
                                             style: "width:220px",
                                             components: [
                                                 {name: "displayName", classes: "name"},
-                                                {name: "createdBy", classes: "name last"},
+                                                {name: "createdBy", classes: "author"},
                                             ]
                                         },
                                         {
@@ -112,8 +109,8 @@ enyo.kind({
                                         },
                                         //{name: "lastNameLetter", classes: "name last-letter", tag: "span"}
                                     ]
-                                    },
-                                    {name: "name", classes: "name last bottom"},
+                                    }/*,
+                                    {name: "name", classes: "name last bottom"},*/
                                 ], bindings: [
                                     {from: ".model.name", to: ".$.name.content"},
                                     {from: ".model.displayName", to: ".$.displayName.content"},
@@ -128,11 +125,6 @@ enyo.kind({
                                         from: ".model", to: ".$.icon.src", transform: function (v, d, b) {
                                         if (!v) return "";
                                         return ("gallery_images/" + v.get("name") + ".jpg")
-                                    }
-                                    },
-                                    {
-                                        from: ".model", to: ".classes", transform: function (v, d, b) {
-                                        return ("repeater-item class" + (1 + b.owner.index % 5));
                                     }
                                     }
                                 ]
@@ -282,6 +274,7 @@ enyo.kind({
     },
     itemTap: function (inSender, inEvent) {
         this.itemTapped = true;
+        this._selectedIndex = inEvent.index;
         console.log("tapped", inSender, inEvent);
         var name = inEvent.model.get("name");
         this.setHashComponentName(name);
@@ -296,12 +289,16 @@ enyo.kind({
         } else {
             this.$.panels.set("index", 0);
         }
+        this.$.panels.addClass("collapsed");
+        this.$.list.scrollToIndex(this._selectedIndex);
     },
     hideDetails: function () {
         this.$.listPanel.setBounds({width: "100%"});
         this.$.panels.set("index", 0);
         this.$.panels.resize();
+        this.$.panels.removeClass("collapsed");
         this.back();
+        this.$.list.scrollToIndex(this._selectedIndex);
     },
     back: function () {
         if (this.itemTapped) {

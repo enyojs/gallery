@@ -1,3 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,800|Open+Sans:400,700,800|Droid+Sans+Mono:400,800);
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
 a img {
 	border: none;
 }
@@ -5,22 +13,23 @@ a img {
 /* toolbar */
 
 .onyx-toolbar{
-	padding:0px;
-	background-color: #5dc4ff;
+	padding:10px;
+	background: #5dc4ff;
 	color:#ffffff;
 	border:0px;
 }
 .toolbar-logo {
-	margin: -1px 0px -1px -7px;
-	height: 80px;
-	padding: 15px;
-	padding-right: 20px;
-	position: relative;
-	top:4px;
+	color: black;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
 }
 
 @media (min-width: 768px) {
 	h1 {
+		text-transform: uppercase;
+		font-size: 50px;
 		font-family: 'Raleway', sans-serif;
 		font-weight: normal;
 	}
@@ -119,6 +128,8 @@ a img {
 	height: 80px;
 	width: 80px;
 	padding: 0px;
+	border-radius: 50%;
+	overflow:hidden;
 }
 
 .icon {
@@ -137,7 +148,7 @@ a img {
 .details {
 	z-index: 10;
 	font-size: 14px;
-	background-color:#ccc;
+	background-color:#FFFFFF;
 }
 
 .details-header {
@@ -160,7 +171,7 @@ a img {
 	text-overflow: ellipsis;
 	margin-bottom:0px;
 	margin-top:8px;
-	vertical-align: baseline;
+	vertical-align: bottom;
 }
 
 .details-buttons {
@@ -238,9 +249,11 @@ a img {
 	.toolbar-search-menu-decorator {
 		width: 150px;
 	}
-	.toolbar-search-input-decorator {
+	.toolbar-search-input-decorator > input {
 		width: 800px;
-		max-width:60%;
+	}
+	.collapsed .toolbar-search-input-decorator > input {
+		width: 282px;
 	}
 }
 /* */
@@ -260,33 +273,19 @@ a img {
 
 }
 
-
-
-.data-repeater-sample, .data-repeater-sample .repeater-item, .data-repeater-sample .name-wrapper, .data-repeater-sample .repeater-item span {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box;}
-.data-repeater-sample .repeater-item {width: 100%; width: 320px; height: 100px; color: #FFFFFF; margin-bottom: 10px; position: inherit;}
-.data-repeater-sample .name-wrapper {position: absolute; height: 35px; top: 50px; left: 0px; margin-top: -50.5px; width: 100%;}
-.data-repeater-sample .repeater-item .name {padding: 4px; font-size: 18px; font-weight: bold; line-height: 18px; }
-
-.data-repeater-sample .repeater-item .name.last {font-weight: normal; font-size: 12px; font-style: italic; line-height:14px;}
-.data-repeater-sample .repeater-item .name.last.small {font-size:12px; margin:0px; padding:4px; line-height:12px;}
-.data-repeater-sample .repeater-item .name.last.bottom {position:absolute; bottom:0px; font-weight: 100;}
-.data-repeater-sample .repeater-item .name.last-letter {display: block; position: absolute; top: 50%; right: 0; margin-top: -25px; text-align: right; font-weight: normal; font-size: 30px; background-color: #FFFFFF; line-height: 42px; height: 50px;
-	width: 40px; padding: 5px; border-radius: 25px 0 0 25px;}
-
-.data-repeater-sample .repeater-item.class1 .name.last-letter {color: #FF7200;}
-.data-repeater-sample .repeater-item.class2 .name.last-letter {color: #FBAA12;}
-.data-repeater-sample .repeater-item.class3 .name.last-letter {color: #067AB5;}
-.data-repeater-sample .repeater-item.class4 .name.last-letter {color: #2E92CE;}
-.data-repeater-sample .repeater-item.class5 .name.last-letter {color: #333333;}
-.data-repeater-sample .repeater-item.class1 {background: #FF7200;}
-.data-repeater-sample .repeater-item.class2 {background: #FBAA12;}
-.data-repeater-sample .repeater-item.class3 {background: #067AB5;}
-.data-repeater-sample .repeater-item.class4 {background: #2E92CE;}
-.data-repeater-sample .repeater-item.class5 {background: #333333;}
-.data-repeater-sample .repeater-item.class1.selected,
-.data-repeater-sample .repeater-item.class2.selected,
-.data-repeater-sample .repeater-item.class3.selected,
-.data-repeater-sample .repeater-item.class4.selected,
-.data-repeater-sample .repeater-item.class5.selected {background: #FFFFFF; color: #000000;}
-/* because there is some generic .item css applied with no scope in sampler */
-.data-repeater-sample .item {border-bottom: none;}
+.gallery-list {
+	background-color: #FFFFFF;
+}
+.gallery-list .repeater-item {
+	padding: 10px;
+	background-color: #FAFAFA;
+}
+.gallery-list .repeater-item:hover, .gallery-list .repeater-item.selected {
+	background-color: #CBECFF;
+}
+.gallery-list .author {
+	font-size: 12px;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 14px;
+}

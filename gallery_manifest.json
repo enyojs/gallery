@@ -1,4 +1,5 @@
 {
+    "categories": ["Integration", "Encryption", "Utility", "Grid", "Layout", "User Interface", "ProgressBar", "Menu", "Panels", "List", "TextArea", "Icons", "Buttons"],
     "owners": {
         "dimitrk": {
             "name": "DimitrK",
@@ -202,7 +203,8 @@
             "testedPlatforms": "Firefox 26.0.0 (windows 7), IE 10 (windows 7), Chrome 34.0.1805.0 canary (window 7), Chrome 32.0.1700.72 (windows 7), Opera 12.15 (windows 7)",
             "license": "BSD",
             "version": "1.0",
-            "blurb": "EnigmaJS is a Enyo encryption/encoding library. Form more information see the github project page."
+            "blurb": "EnigmaJS is a Enyo encryption/encoding library. Form more information see the github project page.",
+            "categories": ["Encryption", "Utility", "Integration"]
         },
         {
             "name": "rahien.ReorderableList",
@@ -224,7 +226,8 @@
             "testedPlatforms": "Chromium 18.0.1025.168 and 20.0.1132.47 (linux), Firefox 15.0.1 (linux, windows 7), Opera 12.02 (linux, windows 7), Firefox for mobile v. 15.0 (android 2.3), Safari IOS 5.1.1 (ipod), IE 9 (warning: mystical move event prevents dragging in one movement, two clicks are required) (windows 7), Chrome 21.0.1180.89 (windows 7)",
             "license": "MIT",
             "version": "1.0",
-            "blurb": "This component is a multi-purpose extension of the enyojs list component. It allows the user to select items in the list by holding, pull them out and insert them at another location. All using drag and drop."
+            "blurb": "This component is a multi-purpose extension of the enyojs list component. It allows the user to select items in the list by holding, pull them out and insert them at another location. All using drag and drop.",
+            "categories": ["List", "User Interface"]
         },
         {
             "name": "nbt.OpenLayers",
@@ -246,7 +249,8 @@
             "testedPlatforms": "All",
             "license": "LGPL 3",
             "version": "1.0",
-            "blurb": "Enyo 2 Control for OpenLayers (openlayers.org)"
+            "blurb": "Enyo 2 Control for OpenLayers (openlayers.org)",
+            "categories": ["Integration"]
         },
         {
             "name": "rwatkins.MenuPane",
@@ -268,7 +272,8 @@
             "testedPlatforms": "Android 2+, iOS 5+, Chrome 17+, Safari 5.1+, Firefox 10+",
             "license": "Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation.",
             "version": "1",
-            "blurb": "An Enyo 2.0 control for managing Pane/View swapping via animated menus on the left and right of the Pane - much like the menu UI component used in the Path and Facebook apps on iOS and Android.  It takes a set of views to swap between, much like a simplified 1.0 Pane/View control. But also takes a set of controls to compose the left or right menus and animates the display of the menus. It does nice little things, like if you click a menu item it \"pushes out\" the view before doing the swap, or just closed the menu if the selection hasn't changed."
+            "blurb": "An Enyo 2.0 control for managing Pane/View swapping via animated menus on the left and right of the Pane - much like the menu UI component used in the Path and Facebook apps on iOS and Android.  It takes a set of views to swap between, much like a simplified 1.0 Pane/View control. But also takes a set of controls to compose the left or right menus and animates the display of the menus. It does nice little things, like if you click a menu item it \"pushes out\" the view before doing the swap, or just closed the menu if the selection hasn't changed.",
+            "categories": ["Panels", "Layout", "User Interface"]
         },
         {
             "name": "omastudios.Storage",
@@ -285,7 +290,8 @@
             "testedPlatforms": "Unknown",
             "license": "Unknown",
             "version": "1",
-            "blurb": "Simple wrapper around browser localStorage."
+            "blurb": "Simple wrapper around browser localStorage.",
+            "categories": ["Utility"]
         },
         {
             "name": "MaKleSoft.AnimatedToggleButton",
@@ -307,7 +313,8 @@
             "testedPlatforms": "Google Chrome, Safari, IE 9",
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
             "version": "1",
-            "blurb": "An extension fo the ToggleButton kind that animates between the on and off position and allows actual dragging of the knob."
+            "blurb": "An extension fo the ToggleButton kind that animates between the on and off position and allows actual dragging of the knob.",
+            "categories": ["User Interface", "Buttons"]
         },
         {
             "name": "villo.Book",
@@ -325,7 +332,8 @@
             "testedPlatforms": "Chrome, Safari, Firefox, IE",
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
             "version": "1",
-            "blurb": "Books aims to replicate the Pane kind found in Enyo 1. Books create a collection of \"Pages\", with given page numbers and names that you can move between."
+            "blurb": "Books aims to replicate the Pane kind found in Enyo 1. Books create a collection of \"Pages\", with given page numbers and names that you can move between.",
+            "categories": ["Panels", "Layout", "User Interface"]
         },
         {
             "name": "germboy.Textarea",
@@ -343,7 +351,8 @@
             "testedPlatforms": "Unknown",
             "license": "Unknown",
             "version": "1",
-            "blurb": "A simple textarea control, including a version with Onyx styling."
+            "blurb": "A simple textarea control, including a version with Onyx styling.",
+            "categories": ["User Interface"]
         },
         {
             "name": "germboy.Progress",
@@ -361,7 +370,8 @@
             "testedPlatforms": "Unknown",
             "license": "Unknown",
             "version": "1",
-            "blurb": "A set of progress controls (Progress, ProgressBar, and ProgressButton) with Onyx styling."
+            "blurb": "A set of progress controls (Progress, ProgressBar, and ProgressButton) with Onyx styling.",
+            "categories": ["User Interface", "ProgressBar"]
         },
         {
             "name": "MacFJA.TextArea",
@@ -383,7 +393,8 @@
             "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 17.0.963.56 (Mac), Safari (iOS 5.1)",
             "license": "Apache 2.0",
             "version": "1.1",
-            "blurb": "A TextArea control (based on onyx.Input) that automatically resizes. (Prefer MacFJA.GrowTextBox)"
+            "blurb": "A TextArea control (based on onyx.Input) that automatically resizes. (Prefer MacFJA.GrowTextBox)",
+            "categories": ["User Interface", "TextArea"]
         },
         {
             "name": "morethanreal.GoogleMap",
@@ -400,7 +411,8 @@
             "testedPlatforms": "Chrome, Safari",
             "license": "Unknown",
             "version": "1",
-            "blurb": "A Google Map control for Enyo 2."
+            "blurb": "A Google Map control for Enyo 2.",
+            "categories": ["Integration"]
         },
         {
             "name": "isandunk.onyx-graphical-assets",
@@ -413,7 +425,8 @@
             "testedPlatforms": "Unknown",
             "license": "Unknown",
             "version": "1",
-            "blurb": "This is a selection of icons for Onyx, the widget library for EnyoJS. It is an attempt provide the community with a method of consistenty reproducing the interface icons that appear in many of the original Enyo 1.0 applications."
+            "blurb": "This is a selection of icons for Onyx, the widget library for EnyoJS. It is an attempt provide the community with a method of consistenty reproducing the interface icons that appear in many of the original Enyo 1.0 applications.",
+            "categories": ["User Interface", "Icons"]
         },
         {
             "name": "MaKleSoft.SelectDecorator",
@@ -435,7 +448,8 @@
             "testedPlatforms": "Google Chrome, Safari, IE 9",
             "license": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.",
             "version": "1",
-            "blurb": "For one of my current projects I needed a way to style select elements so I came up with a SelectDecorator kind that can be wrapped around Select kinds to provide onyx-like styling. It works similar to the InputDecorator kind.  Note that the SelectDecorator does not style the actual selection popup."
+            "blurb": "For one of my current projects I needed a way to style select elements so I came up with a SelectDecorator kind that can be wrapped around Select kinds to provide onyx-like styling. It works similar to the InputDecorator kind.  Note that the SelectDecorator does not style the actual selection popup.",
+            "categories": ["User Interface"]
         },
         {
             "name": "MacFJA.LevelProgress",
@@ -453,7 +467,8 @@
             "testedPlatforms": "Opera 11.61 (Mac), Safari 5.1.5 (Mac), Google Chrome 17.0.963.56 (Mac), Safari (iOS 5.1)",
             "license": "Apache 2.0",
             "version": "1.0",
-            "blurb": "2 controls (the second based on the first) to display level progress bar and a rating bar. Features live value change by clicking or \"sliding\", and critical value and warning value for \"LevelProgress\"."
+            "blurb": "2 controls (the second based on the first) to display level progress bar and a rating bar. Features live value change by clicking or \"sliding\", and critical value and warning value for \"LevelProgress\".",
+            "categories": ["User Interface", "ProgressBar"]
         },
         {
             "name": "MacFJA.UpDown",

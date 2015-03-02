@@ -17,7 +17,8 @@ The gallery is a simple Enyo app hosted from our github repo. To register a new 
 6. Submit a github pull request to the `gh-pages` branch of `enyojs/gallery`
 
 The format of gallery_manifest.json is as follows:
-
+    "categories": [],               // All possible categories. Please try to use categories already listed but
+                                    // you may add category to list if needed.
 	"owners": {						// List of authors, referenced by component descriptions
 		"xxxx": {					// Author id (github username)
 			"name": "",				// Display name for author
@@ -44,7 +45,8 @@ The format of gallery_manifest.json is as follows:
 			"testedPlatforms": "",	// List of platforms this component was tested on
             "license": "",			// Reference to standard license (i.e. "Apache 2.0" or license text)
             "version": "1",			// Version of this component (optional)
-            "blurb": ""				// Description of component
+            "blurb": "",			// Description of component
+            "categories": []        // Categories from above that component belongs to. Array of strings (i.e., ["Buttons", "Panels"]
         },
         ...
 	]
